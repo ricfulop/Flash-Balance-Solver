@@ -324,23 +324,23 @@ MATERIAL_DATABASE: Dict[str, MaterialParameters] = {
 
     # =========================================================================
     # CARBIDES (per mole SiC)
-    # SiC Flash is limited by the strong covalent Si-C bonds
-    # The relevant barrier is the sublimation/decomposition energy
-    # rather than oxidation, giving a much higher effective barrier
+    # SiC formation: Si(s) + C(s) → SiC(s)
+    # Thermodynamic data from NIST-JANAF tables (ΔH°f = -73 kJ/mol)
+    # Strong covalent bonds → high ksoft (less softening), low phonon coupling
     # =========================================================================
     "SiC": MaterialParameters(
         name="Silicon Carbide",
         family=MaterialFamily.CARBIDE,
-        Ea=1.2,             # High activation for covalent semiconductor
-        sigma_0=5.0e3,
-        beta=1.2,           # Moderate softening
-        alpha_res=0.10,
-        gamma=2.2,
-        delta_H=-600000,    # Higher effective barrier (covalent bond energy)
-        delta_S=-80,
+        Ea=0.9,             # Effective activation at sintering temperatures
+        sigma_0=1.0e4,      # Pre-exponential for powder compact
+        beta=1.2,           # Ridge parameter
+        alpha_res=0.05,     # Low phonon coupling (covalent material)
+        gamma=1.8,
+        delta_H=-73000,     # Formation enthalpy (NIST-JANAF)
+        delta_S=-13,        # Formation entropy
         n_electrons=4,
-        r_eff=8e-6,
-        ksoft=0.35,         # Moderate ksoft
+        r_eff=4e-6,         # Small localization length
+        ksoft=0.88,         # High ksoft - covalent bonds resist softening
     ),
 
     # =========================================================================
