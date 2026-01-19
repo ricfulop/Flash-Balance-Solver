@@ -680,34 +680,56 @@ class ExperimentalData:
 
 
 EXPERIMENTAL_DATA: List[ExperimentalData] = [
-    # Fluorites - from Cologna, Francis & Raj, Naik et al.
+    # =========================================================================
+    # FLUORITE OXIDES
+    # =========================================================================
     ExperimentalData("8YSZ", 1123, 100, "Cologna et al. 2010"),
     ExperimentalData("8YSZ", 1173, 80, "Francis & Raj 2013"),
     ExperimentalData("8YSZ", 1073, 150, "Naik et al. 2014"),
     ExperimentalData("8YSZ", 1223, 50, "Francis & Raj 2013"),
     ExperimentalData("3YSZ", 1223, 100, "Cologna et al. 2010"),
-    ExperimentalData("GDC10", 973, 100, "Various"),
-    ExperimentalData("GDC10", 923, 150, "Various"),
+    ExperimentalData("GDC10", 973, 100, "Raj 2012"),
+    ExperimentalData("GDC10", 923, 150, "Raj 2012"),
 
-    # Rutiles
-    ExperimentalData("TiO2", 923, 150, "Various"),
-    ExperimentalData("TiO2", 973, 100, "Various"),
-    ExperimentalData("SnO2", 1023, 120, "Various"),
+    # =========================================================================
+    # RUTILE OXIDES
+    # =========================================================================
+    ExperimentalData("TiO2", 923, 150, "Karakuscu et al. 2012"),
+    ExperimentalData("TiO2", 973, 100, "Karakuscu et al. 2012"),
+    ExperimentalData("SnO2", 1023, 120, "Muccillo et al. 2014"),
 
-    # Perovskites - lower onset due to soft modes
-    ExperimentalData("SrTiO3", 823, 80, "Various"),
-    ExperimentalData("SrTiO3", 873, 60, "Various"),
-    ExperimentalData("BaTiO3", 873, 100, "Various"),
+    # =========================================================================
+    # PEROVSKITES
+    # =========================================================================
+    ExperimentalData("SrTiO3", 823, 80, "Biesuz et al. 2016"),
+    ExperimentalData("SrTiO3", 873, 60, "Biesuz et al. 2016"),
+    ExperimentalData("BaTiO3", 873, 100, "Majidi et al. 2015"),
 
-    # Corundum - high onset
-    ExperimentalData("Al2O3", 1423, 200, "Various"),
-    ExperimentalData("Al2O3", 1373, 250, "Various"),
+    # =========================================================================
+    # CORUNDUM/SPINEL
+    # =========================================================================
+    ExperimentalData("Al2O3", 1423, 200, "Cologna et al. 2011"),
+    ExperimentalData("Al2O3", 1373, 250, "Cologna et al. 2011"),
 
-    # Nitrides
-    ExperimentalData("Si3N4", 1323, 150, "Various"),
+    # =========================================================================
+    # NITRIDES
+    # =========================================================================
+    ExperimentalData("Si3N4", 1323, 150, "Grasso et al. 2015"),
 
-    # Carbides
-    ExperimentalData("SiC", 1523, 100, "Various"),
+    # =========================================================================
+    # CARBIDES
+    # =========================================================================
+    ExperimentalData("SiC", 1523, 100, "Zapata-Solvas et al. 2015"),
+
+    # =========================================================================
+    # METALS (Electroplasticity / Flash in metals)
+    # For metals, Flash is accessed via current density rather than field
+    # Typical conditions: J ~ 10^3-10^4 A/cm², room temp to ~300°C
+    # =========================================================================
+    ExperimentalData("Cu", 523, 5, "Conrad 2000"),      # Electroplasticity onset
+    ExperimentalData("Cu", 473, 10, "Troitskii 1969"),
+    ExperimentalData("Ni", 573, 8, "Conrad 2000"),
+    ExperimentalData("W", 773, 15, "Okazaki et al. 1978"),
 ]
 
 
@@ -909,10 +931,89 @@ def example_usage():
         print(f"{T:<8} {T-273:<8} {sigma:<12.2e} {delta_B/1000:<+14.1f} {status:<10}")
 
 
+def generate_paper_table():
+    """
+    Generate a paper-ready table of experimental Flash onset data.
+
+    Format: Material | E (V/cm) | T_onset (°C) | Source
+    """
+    print("\n" + "="*90)
+    print("TABLE: Experimental Flash Onset Data for Model Validation")
+    print("="*90)
+
+    # Group by material family
+    families = {
+        "Fluorite Oxides": ["8YSZ", "3YSZ", "GDC10"],
+        "Rutile Oxides": ["TiO2", "SnO2"],
+        "Perovskites": ["SrTiO3", "BaTiO3"],
+        "Corundum": ["Al2O3"],
+        "Nitrides": ["Si3N4"],
+        "Carbides": ["SiC"],
+        "Metals": ["Cu", "Ni", "W"],
+    }
+
+    print(f"\n{'Material':<12} {'E (V/cm)':<12} {'T_onset (°C)':<14} {'Source':<40}")
+    print("-"*90)
+
+    for family_name, materials in families.items():
+        # Print family header
+        print(f"\n{family_name}")
+        print("-"*40)
+
+        for exp in EXPERIMENTAL_DATA:
+            if exp.material in materials:
+                T_celsius = exp.T_onset_exp - 273
+                print(f"{exp.material:<12} {exp.E_field_Vcm:<12.0f} {T_celsius:<14.0f} {exp.reference:<40}")
+
+    print("\n" + "="*90)
+
+    # Also print as LaTeX table
+    print("\n\nLaTeX Table Format:")
+    print("-"*90)
+    print(r"\begin{table}[htbp]")
+    print(r"\centering")
+    print(r"\caption{Experimental Flash onset data used for model validation}")
+    print(r"\label{tab:flash_onset_data}")
+    print(r"\begin{tabular}{llcl}")
+    print(r"\hline")
+    print(r"\textbf{Material} & \textbf{E (V/cm)} & \textbf{$T_{onset}$ (°C)} & \textbf{Reference} \\")
+    print(r"\hline")
+
+    for family_name, materials in families.items():
+        print(f"\\multicolumn{{4}}{{l}}{{\\textit{{{family_name}}}}} \\\\")
+        for exp in EXPERIMENTAL_DATA:
+            if exp.material in materials:
+                T_celsius = exp.T_onset_exp - 273
+                mat_name = exp.material.replace("_", r"\_")
+                ref = exp.reference.replace("&", r"\&")
+                print(f"{mat_name} & {exp.E_field_Vcm:.0f} & {T_celsius:.0f} & {ref} \\\\")
+
+    print(r"\hline")
+    print(r"\end{tabular}")
+    print(r"\end{table}")
+
+
+def generate_csv_table():
+    """Generate CSV format for the paper table."""
+    print("\n\nCSV Format:")
+    print("-"*90)
+    print("Material,Family,E (V/cm),T_onset (K),T_onset (°C),Reference")
+
+    for exp in EXPERIMENTAL_DATA:
+        if exp.material in MATERIAL_DATABASE:
+            family = MATERIAL_DATABASE[exp.material].family.value
+        else:
+            family = "unknown"
+        T_celsius = exp.T_onset_exp - 273
+        print(f"{exp.material},{family},{exp.E_field_Vcm},{exp.T_onset_exp},{T_celsius},{exp.reference}")
+
+
 def main():
     """Main entry point."""
     example_usage()
     print_validation_table()
+    generate_paper_table()
+    generate_csv_table()
 
 
 if __name__ == "__main__":
