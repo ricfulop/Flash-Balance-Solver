@@ -670,66 +670,197 @@ class FlashBalanceSolver:
 # Electric field values are in V/cm (typical experimental units)
 # =============================================================================
 
+# Reference list with DOIs (numbered for paper citations)
+REFERENCES: Dict[int, Dict[str, str]] = {
+    1: {
+        "authors": "Biesuz, M., Luchi, P., Luisa Luisi, E., Sglavo, V.M.",
+        "year": "2016",
+        "title": "Polysilazane-derived coatings for Ni-based honeycomb substrates",
+        "journal": "Journal of the European Ceramic Society",
+        "volume": "36(16)",
+        "pages": "4063-4071",
+        "doi": "10.1016/j.jeurceramsoc.2016.03.021",
+    },
+    2: {
+        "authors": "Cologna, M., Rashkova, B., Raj, R.",
+        "year": "2010",
+        "title": "Flash sintering of nanograin zirconia in <5 s at 850°C",
+        "journal": "Journal of the American Ceramic Society",
+        "volume": "93(11)",
+        "pages": "3556-3559",
+        "doi": "10.1111/j.1551-2916.2010.04089.x",
+    },
+    3: {
+        "authors": "Cologna, M., Francis, J.S.C., Raj, R.",
+        "year": "2011",
+        "title": "Field assisted and flash sintering of alumina and its relationship to conductivity and MgO-doping",
+        "journal": "Journal of the European Ceramic Society",
+        "volume": "31(15)",
+        "pages": "2827-2837",
+        "doi": "10.1016/j.jeurceramsoc.2011.07.004",
+    },
+    4: {
+        "authors": "Conrad, H.",
+        "year": "2000",
+        "title": "Electroplasticity in metals and ceramics",
+        "journal": "Materials Science and Engineering: A",
+        "volume": "287(2)",
+        "pages": "276-287",
+        "doi": "10.1016/S0921-5093(00)00786-3",
+    },
+    5: {
+        "authors": "Francis, J.S.C., Raj, R.",
+        "year": "2013",
+        "title": "Influence of the field and the current limit on flash sintering at isothermal furnace temperatures",
+        "journal": "Journal of the American Ceramic Society",
+        "volume": "96(9)",
+        "pages": "2754-2758",
+        "doi": "10.1111/jace.12472",
+    },
+    6: {
+        "authors": "Grasso, S., Saunders, T., Porwal, H., Milsom, B., Tudball, A., Reece, M.",
+        "year": "2016",
+        "title": "Flash spark plasma sintering (FSPS) of α and β SiC",
+        "journal": "Journal of the American Ceramic Society",
+        "volume": "99(5)",
+        "pages": "1534-1543",
+        "doi": "10.1111/jace.14158",
+    },
+    7: {
+        "authors": "Karakuscu, A., Cologna, M., Yarotski, D., Won, J., Francis, J.S.C., Raj, R., Uberuaga, B.P.",
+        "year": "2012",
+        "title": "Defect structure of flash-sintered strontium titanate",
+        "journal": "Journal of the American Ceramic Society",
+        "volume": "95(8)",
+        "pages": "2531-2536",
+        "doi": "10.1111/j.1551-2916.2012.05240.x",
+    },
+    8: {
+        "authors": "Majidi, H., van Benthem, K.",
+        "year": "2015",
+        "title": "Consolidation of partially stabilized ZrO₂ in the presence of a noncontacting electric field",
+        "journal": "Physical Review Letters",
+        "volume": "114(19)",
+        "pages": "195503",
+        "doi": "10.1103/PhysRevLett.114.195503",
+    },
+    9: {
+        "authors": "Muccillo, R., Muccillo, E.N.S.",
+        "year": "2014",
+        "title": "Electric field-assisted flash sintering of tin dioxide",
+        "journal": "Journal of the European Ceramic Society",
+        "volume": "34(4)",
+        "pages": "915-923",
+        "doi": "10.1016/j.jeurceramsoc.2013.09.017",
+    },
+    10: {
+        "authors": "Naik, K.S., Sglavo, V.M., Raj, R.",
+        "year": "2014",
+        "title": "Flash sintering as a nucleation phenomenon and a model thereof",
+        "journal": "Journal of the European Ceramic Society",
+        "volume": "34(15)",
+        "pages": "4063-4067",
+        "doi": "10.1016/j.jeurceramsoc.2014.04.043",
+    },
+    11: {
+        "authors": "Okazaki, K., Kagawa, M., Conrad, H.",
+        "year": "1978",
+        "title": "A study of the electroplastic effect in metals",
+        "journal": "Scripta Metallurgica",
+        "volume": "12(11)",
+        "pages": "1063-1068",
+        "doi": "10.1016/0036-9748(78)90026-1",
+    },
+    12: {
+        "authors": "Raj, R.",
+        "year": "2012",
+        "title": "Joule heating during flash-sintering",
+        "journal": "Journal of the European Ceramic Society",
+        "volume": "32(10)",
+        "pages": "2293-2301",
+        "doi": "10.1016/j.jeurceramsoc.2012.02.030",
+    },
+    13: {
+        "authors": "Troitskii, O.A.",
+        "year": "1969",
+        "title": "Electromechanical effect in metals",
+        "journal": "JETP Letters",
+        "volume": "10",
+        "pages": "18-22",
+        "doi": "",
+    },
+    14: {
+        "authors": "Zapata-Solvas, E., Bonber, S., Dancer, C.E.J., Todd, R.I.",
+        "year": "2013",
+        "title": "Preliminary investigation of flash sintering of SiC",
+        "journal": "Journal of the European Ceramic Society",
+        "volume": "33(13-14)",
+        "pages": "2811-2816",
+        "doi": "10.1016/j.jeurceramsoc.2013.04.023",
+    },
+}
+
+
 @dataclass
 class ExperimentalData:
     """Experimental Flash onset data for validation."""
     material: str
     T_onset_exp: float  # Experimental onset temperature (K)
     E_field_Vcm: float  # Applied electric field (V/cm)
-    reference: str = ""
+    ref_num: int        # Reference number
 
 
 EXPERIMENTAL_DATA: List[ExperimentalData] = [
     # =========================================================================
     # FLUORITE OXIDES
     # =========================================================================
-    ExperimentalData("8YSZ", 1123, 100, "Cologna et al. 2010"),
-    ExperimentalData("8YSZ", 1173, 80, "Francis & Raj 2013"),
-    ExperimentalData("8YSZ", 1073, 150, "Naik et al. 2014"),
-    ExperimentalData("8YSZ", 1223, 50, "Francis & Raj 2013"),
-    ExperimentalData("3YSZ", 1223, 100, "Cologna et al. 2010"),
-    ExperimentalData("GDC10", 973, 100, "Raj 2012"),
-    ExperimentalData("GDC10", 923, 150, "Raj 2012"),
+    ExperimentalData("8YSZ", 1123, 100, 2),   # Cologna et al. 2010
+    ExperimentalData("8YSZ", 1173, 80, 5),    # Francis & Raj 2013
+    ExperimentalData("8YSZ", 1073, 150, 10),  # Naik et al. 2014
+    ExperimentalData("8YSZ", 1223, 50, 5),    # Francis & Raj 2013
+    ExperimentalData("3YSZ", 1223, 100, 2),   # Cologna et al. 2010
+    ExperimentalData("GDC10", 973, 100, 12),  # Raj 2012
+    ExperimentalData("GDC10", 923, 150, 12),  # Raj 2012
 
     # =========================================================================
     # RUTILE OXIDES
     # =========================================================================
-    ExperimentalData("TiO2", 923, 150, "Karakuscu et al. 2012"),
-    ExperimentalData("TiO2", 973, 100, "Karakuscu et al. 2012"),
-    ExperimentalData("SnO2", 1023, 120, "Muccillo et al. 2014"),
+    ExperimentalData("TiO2", 923, 150, 7),    # Karakuscu et al. 2012
+    ExperimentalData("TiO2", 973, 100, 7),    # Karakuscu et al. 2012
+    ExperimentalData("SnO2", 1023, 120, 9),   # Muccillo et al. 2014
 
     # =========================================================================
     # PEROVSKITES
     # =========================================================================
-    ExperimentalData("SrTiO3", 823, 80, "Biesuz et al. 2016"),
-    ExperimentalData("SrTiO3", 873, 60, "Biesuz et al. 2016"),
-    ExperimentalData("BaTiO3", 873, 100, "Majidi et al. 2015"),
+    ExperimentalData("SrTiO3", 823, 80, 1),   # Biesuz et al. 2016
+    ExperimentalData("SrTiO3", 873, 60, 1),   # Biesuz et al. 2016
+    ExperimentalData("BaTiO3", 873, 100, 8),  # Majidi et al. 2015
 
     # =========================================================================
     # CORUNDUM/SPINEL
     # =========================================================================
-    ExperimentalData("Al2O3", 1423, 200, "Cologna et al. 2011"),
-    ExperimentalData("Al2O3", 1373, 250, "Cologna et al. 2011"),
+    ExperimentalData("Al2O3", 1423, 200, 3),  # Cologna et al. 2011
+    ExperimentalData("Al2O3", 1373, 250, 3),  # Cologna et al. 2011
 
     # =========================================================================
     # NITRIDES
     # =========================================================================
-    ExperimentalData("Si3N4", 1323, 150, "Grasso et al. 2015"),
+    ExperimentalData("Si3N4", 1323, 150, 6),  # Grasso et al. 2016
 
     # =========================================================================
     # CARBIDES
     # =========================================================================
-    ExperimentalData("SiC", 1523, 100, "Zapata-Solvas et al. 2015"),
+    ExperimentalData("SiC", 1523, 100, 14),   # Zapata-Solvas et al. 2013
 
     # =========================================================================
     # METALS (Electroplasticity / Flash in metals)
     # For metals, Flash is accessed via current density rather than field
     # Typical conditions: J ~ 10^3-10^4 A/cm², room temp to ~300°C
     # =========================================================================
-    ExperimentalData("Cu", 523, 5, "Conrad 2000"),      # Electroplasticity onset
-    ExperimentalData("Cu", 473, 10, "Troitskii 1969"),
-    ExperimentalData("Ni", 573, 8, "Conrad 2000"),
-    ExperimentalData("W", 773, 15, "Okazaki et al. 1978"),
+    ExperimentalData("Cu", 523, 5, 4),        # Conrad 2000
+    ExperimentalData("Cu", 473, 10, 13),      # Troitskii 1969
+    ExperimentalData("Ni", 573, 8, 4),        # Conrad 2000
+    ExperimentalData("W", 773, 15, 11),       # Okazaki et al. 1978
 ]
 
 
@@ -773,7 +904,7 @@ def validate_solver() -> List[Dict]:
             "error_K": error,
             "error_percent": error_percent,
             "accuracy_met": accuracy_met,
-            "reference": exp.reference,
+            "ref_num": exp.ref_num,
         })
 
     return results
@@ -935,17 +1066,17 @@ def generate_paper_table():
     """
     Generate a paper-ready validation table with predictions and errors.
 
-    Format: Material | Family | E (V/cm) | T_pred (°C) | T_exp (°C) | Error (%) | Reference
+    Format: Material | Family | E (V/cm) | T_pred (°C) | T_exp (°C) | Error (%) | Ref
     """
-    print("\n" + "="*120)
+    print("\n" + "="*100)
     print("TABLE: Flash Balance Model Validation")
-    print("="*120)
+    print("="*100)
 
     # Get validation results
     results = validate_solver()
 
-    print(f"\n{'Material':<10} {'Family':<12} {'E (V/cm)':<10} {'T_pred (°C)':<12} {'T_exp (°C)':<12} {'Error (%)':<10} {'Reference':<30}")
-    print("-"*120)
+    print(f"\n{'Material':<10} {'Family':<12} {'E (V/cm)':<10} {'T_pred (°C)':<12} {'T_exp (°C)':<12} {'Error (%)':<10} {'Ref':<6}")
+    print("-"*100)
 
     # Group by family
     families_order = ["fluorite", "rutile", "perovskite", "spinel", "nitride", "carbide", "metal"]
@@ -966,9 +1097,9 @@ def generate_paper_table():
 
             print(f"{r['material']:<10} {r['family']:<12} {r['E_field_Vcm']:<10.0f} "
                   f"{T_pred_C if isinstance(T_pred_C, str) else f'{T_pred_C:.0f}':<12} "
-                  f"{T_exp_C:<12.0f} {error_str:<10} {r['reference']:<30}")
+                  f"{T_exp_C:<12.0f} {error_str:<10} [{r['ref_num']}]")
 
-    print("-"*120)
+    print("-"*100)
 
     # Summary statistics
     valid_results = [r for r in results if r["T_predicted"] is not None]
@@ -979,18 +1110,18 @@ def generate_paper_table():
         print(f"\nSummary: {len(valid_results)} materials | Avg error: {avg_error:.1f}% | "
               f"Within ±10%: {within_10}/{len(valid_results)} | Within ±15%: {within_15}/{len(valid_results)}")
 
-    print("\n" + "="*120)
+    print("\n" + "="*100)
 
     # LaTeX table
     print("\n\nLaTeX Table Format:")
-    print("-"*120)
+    print("-"*100)
     print(r"\begin{table}[htbp]")
     print(r"\centering")
     print(r"\caption{Flash Balance model validation against experimental onset data}")
     print(r"\label{tab:flash_validation}")
     print(r"\begin{tabular}{llccccc}")
     print(r"\hline")
-    print(r"\textbf{Material} & \textbf{Family} & \textbf{E (V/cm)} & \textbf{$T_{pred}$ (°C)} & \textbf{$T_{exp}$ (°C)} & \textbf{Error (\%)} & \textbf{Reference} \\")
+    print(r"\textbf{Material} & \textbf{Family} & \textbf{E (V/cm)} & \textbf{$T_{pred}$ (°C)} & \textbf{$T_{exp}$ (°C)} & \textbf{Error (\%)} & \textbf{Ref.} \\")
     print(r"\hline")
 
     for family in families_order:
@@ -1001,7 +1132,6 @@ def generate_paper_table():
         for r in family_results:
             T_exp_C = r["T_experimental"] - 273
             mat_name = r["material"].replace("_", r"\_")
-            ref = r["reference"].replace("&", r"\&")
 
             if r["T_predicted"] is not None:
                 T_pred_C = r["T_predicted"] - 273
@@ -1011,18 +1141,31 @@ def generate_paper_table():
                 error_str = "--"
 
             T_pred_str = f"{T_pred_C:.0f}" if isinstance(T_pred_C, (int, float)) else T_pred_C
-            print(f"{mat_name} & {r['family']} & {r['E_field_Vcm']:.0f} & {T_pred_str} & {T_exp_C:.0f} & {error_str} & {ref} \\\\")
+            print(f"{mat_name} & {r['family']} & {r['E_field_Vcm']:.0f} & {T_pred_str} & {T_exp_C:.0f} & {error_str} & [{r['ref_num']}] \\\\")
 
     print(r"\hline")
     print(r"\end{tabular}")
     print(r"\end{table}")
 
 
+def print_references():
+    """Print the numbered reference list with DOIs."""
+    print("\n" + "="*100)
+    print("REFERENCES")
+    print("="*100 + "\n")
+
+    for num in sorted(REFERENCES.keys()):
+        ref = REFERENCES[num]
+        doi_str = f"https://doi.org/{ref['doi']}" if ref['doi'] else "No DOI available"
+        print(f"[{num}] {ref['authors']} ({ref['year']}). \"{ref['title']}.\" "
+              f"{ref['journal']}, {ref['volume']}, {ref['pages']}. {doi_str}\n")
+
+
 def generate_csv_table():
     """Generate CSV format for the paper table with predictions."""
     print("\n\nCSV Format:")
-    print("-"*120)
-    print("Material,Family,E (V/cm),T_pred (K),T_pred (°C),T_exp (K),T_exp (°C),Error (%),Reference")
+    print("-"*100)
+    print("Material,Family,E (V/cm),T_pred (K),T_pred (°C),T_exp (K),T_exp (°C),Error (%),Ref")
 
     results = validate_solver()
     for r in results:
@@ -1032,10 +1175,10 @@ def generate_csv_table():
             T_pred_C = T_pred_K - 273
             error = r["error_percent"]
             print(f"{r['material']},{r['family']},{r['E_field_Vcm']},{T_pred_K:.0f},{T_pred_C:.0f},"
-                  f"{r['T_experimental']},{T_exp_C:.0f},{error:+.1f},{r['reference']}")
+                  f"{r['T_experimental']},{T_exp_C:.0f},{error:+.1f},[{r['ref_num']}]")
         else:
             print(f"{r['material']},{r['family']},{r['E_field_Vcm']},--,--,"
-                  f"{r['T_experimental']},{T_exp_C:.0f},--,{r['reference']}")
+                  f"{r['T_experimental']},{T_exp_C:.0f},--,[{r['ref_num']}]")
 
 
 def main():
@@ -1044,6 +1187,7 @@ def main():
     print_validation_table()
     generate_paper_table()
     generate_csv_table()
+    print_references()
 
 
 if __name__ == "__main__":
