@@ -933,60 +933,85 @@ def example_usage():
 
 def generate_paper_table():
     """
-    Generate a paper-ready table of experimental Flash onset data.
+    Generate a paper-ready validation table with predictions and errors.
 
-    Format: Material | E (V/cm) | T_onset (°C) | Source
+    Format: Material | Family | E (V/cm) | T_pred (°C) | T_exp (°C) | Error (%) | Reference
     """
-    print("\n" + "="*90)
-    print("TABLE: Experimental Flash Onset Data for Model Validation")
-    print("="*90)
+    print("\n" + "="*120)
+    print("TABLE: Flash Balance Model Validation")
+    print("="*120)
 
-    # Group by material family
-    families = {
-        "Fluorite Oxides": ["8YSZ", "3YSZ", "GDC10"],
-        "Rutile Oxides": ["TiO2", "SnO2"],
-        "Perovskites": ["SrTiO3", "BaTiO3"],
-        "Corundum": ["Al2O3"],
-        "Nitrides": ["Si3N4"],
-        "Carbides": ["SiC"],
-        "Metals": ["Cu", "Ni", "W"],
-    }
+    # Get validation results
+    results = validate_solver()
 
-    print(f"\n{'Material':<12} {'E (V/cm)':<12} {'T_onset (°C)':<14} {'Source':<40}")
-    print("-"*90)
+    print(f"\n{'Material':<10} {'Family':<12} {'E (V/cm)':<10} {'T_pred (°C)':<12} {'T_exp (°C)':<12} {'Error (%)':<10} {'Reference':<30}")
+    print("-"*120)
 
-    for family_name, materials in families.items():
-        # Print family header
-        print(f"\n{family_name}")
-        print("-"*40)
+    # Group by family
+    families_order = ["fluorite", "rutile", "perovskite", "spinel", "nitride", "carbide", "metal"]
 
-        for exp in EXPERIMENTAL_DATA:
-            if exp.material in materials:
-                T_celsius = exp.T_onset_exp - 273
-                print(f"{exp.material:<12} {exp.E_field_Vcm:<12.0f} {T_celsius:<14.0f} {exp.reference:<40}")
+    for family in families_order:
+        family_results = [r for r in results if r["family"] == family]
+        if not family_results:
+            continue
 
-    print("\n" + "="*90)
+        for r in family_results:
+            T_exp_C = r["T_experimental"] - 273
+            if r["T_predicted"] is not None:
+                T_pred_C = r["T_predicted"] - 273
+                error_str = f"{r['error_percent']:+.1f}"
+            else:
+                T_pred_C = "N/A"
+                error_str = "N/A"
 
-    # Also print as LaTeX table
+            print(f"{r['material']:<10} {r['family']:<12} {r['E_field_Vcm']:<10.0f} "
+                  f"{T_pred_C if isinstance(T_pred_C, str) else f'{T_pred_C:.0f}':<12} "
+                  f"{T_exp_C:<12.0f} {error_str:<10} {r['reference']:<30}")
+
+    print("-"*120)
+
+    # Summary statistics
+    valid_results = [r for r in results if r["T_predicted"] is not None]
+    if valid_results:
+        avg_error = np.mean([abs(r["error_percent"]) for r in valid_results])
+        within_10 = sum(1 for r in valid_results if abs(r["error_percent"]) < 10)
+        within_15 = sum(1 for r in valid_results if abs(r["error_percent"]) < 15)
+        print(f"\nSummary: {len(valid_results)} materials | Avg error: {avg_error:.1f}% | "
+              f"Within ±10%: {within_10}/{len(valid_results)} | Within ±15%: {within_15}/{len(valid_results)}")
+
+    print("\n" + "="*120)
+
+    # LaTeX table
     print("\n\nLaTeX Table Format:")
-    print("-"*90)
+    print("-"*120)
     print(r"\begin{table}[htbp]")
     print(r"\centering")
-    print(r"\caption{Experimental Flash onset data used for model validation}")
-    print(r"\label{tab:flash_onset_data}")
-    print(r"\begin{tabular}{llcl}")
+    print(r"\caption{Flash Balance model validation against experimental onset data}")
+    print(r"\label{tab:flash_validation}")
+    print(r"\begin{tabular}{llccccc}")
     print(r"\hline")
-    print(r"\textbf{Material} & \textbf{E (V/cm)} & \textbf{$T_{onset}$ (°C)} & \textbf{Reference} \\")
+    print(r"\textbf{Material} & \textbf{Family} & \textbf{E (V/cm)} & \textbf{$T_{pred}$ (°C)} & \textbf{$T_{exp}$ (°C)} & \textbf{Error (\%)} & \textbf{Reference} \\")
     print(r"\hline")
 
-    for family_name, materials in families.items():
-        print(f"\\multicolumn{{4}}{{l}}{{\\textit{{{family_name}}}}} \\\\")
-        for exp in EXPERIMENTAL_DATA:
-            if exp.material in materials:
-                T_celsius = exp.T_onset_exp - 273
-                mat_name = exp.material.replace("_", r"\_")
-                ref = exp.reference.replace("&", r"\&")
-                print(f"{mat_name} & {exp.E_field_Vcm:.0f} & {T_celsius:.0f} & {ref} \\\\")
+    for family in families_order:
+        family_results = [r for r in results if r["family"] == family]
+        if not family_results:
+            continue
+
+        for r in family_results:
+            T_exp_C = r["T_experimental"] - 273
+            mat_name = r["material"].replace("_", r"\_")
+            ref = r["reference"].replace("&", r"\&")
+
+            if r["T_predicted"] is not None:
+                T_pred_C = r["T_predicted"] - 273
+                error_str = f"{r['error_percent']:+.1f}"
+            else:
+                T_pred_C = "--"
+                error_str = "--"
+
+            T_pred_str = f"{T_pred_C:.0f}" if isinstance(T_pred_C, (int, float)) else T_pred_C
+            print(f"{mat_name} & {r['family']} & {r['E_field_Vcm']:.0f} & {T_pred_str} & {T_exp_C:.0f} & {error_str} & {ref} \\\\")
 
     print(r"\hline")
     print(r"\end{tabular}")
@@ -994,18 +1019,23 @@ def generate_paper_table():
 
 
 def generate_csv_table():
-    """Generate CSV format for the paper table."""
+    """Generate CSV format for the paper table with predictions."""
     print("\n\nCSV Format:")
-    print("-"*90)
-    print("Material,Family,E (V/cm),T_onset (K),T_onset (°C),Reference")
+    print("-"*120)
+    print("Material,Family,E (V/cm),T_pred (K),T_pred (°C),T_exp (K),T_exp (°C),Error (%),Reference")
 
-    for exp in EXPERIMENTAL_DATA:
-        if exp.material in MATERIAL_DATABASE:
-            family = MATERIAL_DATABASE[exp.material].family.value
+    results = validate_solver()
+    for r in results:
+        T_exp_C = r["T_experimental"] - 273
+        if r["T_predicted"] is not None:
+            T_pred_K = r["T_predicted"]
+            T_pred_C = T_pred_K - 273
+            error = r["error_percent"]
+            print(f"{r['material']},{r['family']},{r['E_field_Vcm']},{T_pred_K:.0f},{T_pred_C:.0f},"
+                  f"{r['T_experimental']},{T_exp_C:.0f},{error:+.1f},{r['reference']}")
         else:
-            family = "unknown"
-        T_celsius = exp.T_onset_exp - 273
-        print(f"{exp.material},{family},{exp.E_field_Vcm},{exp.T_onset_exp},{T_celsius},{exp.reference}")
+            print(f"{r['material']},{r['family']},{r['E_field_Vcm']},--,--,"
+                  f"{r['T_experimental']},{T_exp_C:.0f},--,{r['reference']}")
 
 
 def main():
