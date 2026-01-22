@@ -16,14 +16,16 @@ Where:
 When microstructure data is available:
 
 ```
-E_crit = (C / √σ(T)) × (d₅₀/500nm)^-0.10 × (φ/0.45)^0.45 × (β/10°C/min)^0.05
+E_crit = (C / √σ(T)) × (d₅₀/500nm)^-0.10 × (φ/0.45)^0.45 × (HR/10°C/min)^0.05
 ```
 
 | Parameter | Symbol | Reference Value | Effect |
 |-----------|--------|-----------------|--------|
 | Particle size | d₅₀ | 500 nm | Smaller → Higher E |
 | Porosity | φ | 0.45 (45%) | Higher → Higher E |
-| Heating rate | β | 10 °C/min | Faster → Higher E |
+| Heating rate | HR | 10 °C/min | Faster → Higher E |
+
+**Note**: HR = Heating Rate. We use "HR" instead of "β" to avoid confusion with β (ridge parameter) in the Flash Balance equation.
 
 ## Family Constants
 
@@ -65,7 +67,7 @@ For 3YSZ at 1100 K:
 - Ea = 0.9 eV
 - d₅₀ = 100 nm (fine powder)
 - φ = 0.45 (55% dense)
-- β = 10 °C/min
+- HR = 10 °C/min
 
 σ(1100K) = 3.4×10⁴ × exp(-0.9/(8.617×10⁻⁵ × 1100)) = 5.7 S/m
 

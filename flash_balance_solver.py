@@ -158,7 +158,7 @@ class MaterialParameters:
         """
         Calculate correction factor for E_crit based on microstructure.
         
-        Formula: correction = (d₅₀/500nm)^-0.10 × (φ/0.45)^0.45 × (β/10)^0.05
+        Formula: correction = (d₅₀/500nm)^-0.10 × (φ/0.45)^0.45 × (HR/10)^0.05
         
         Based on empirical fit to 115 flash sintering experiments:
         - Smaller particles → slightly higher E-field required
@@ -168,7 +168,7 @@ class MaterialParameters:
         Reference conditions:
         - d₅₀_ref = 500 nm
         - φ_ref = 0.45 (45% porosity, i.e., 55% dense)
-        - β_ref = 10 °C/min
+        - HR_ref = 10 °C/min (HR = Heating Rate)
         
         Returns:
             Correction factor (typically 0.8 to 1.5)
@@ -1530,7 +1530,7 @@ def estimate_E_crit(
     if heating_rate_Cmin is not None and heating_rate_Cmin > 0:
         rate_factor = (heating_rate_Cmin / 10) ** 0.05
         correction *= rate_factor
-        correction_factors.append(f"β={heating_rate_Cmin:.0f}°C/min → ×{rate_factor:.3f}")
+        correction_factors.append(f"HR={heating_rate_Cmin:.0f}°C/min → ×{rate_factor:.3f}")
     
     E_crit = E_crit_base * correction
     
