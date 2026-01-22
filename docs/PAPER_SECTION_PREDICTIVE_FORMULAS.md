@@ -21,15 +21,17 @@ A key parameter in the Flash Balance Equation is the **Flash Activation Length**
 
 For **green compacts** (powder samples):
 
-$$\lambda_{flash} = A \times d_{50}^{\alpha} \times \phi^{\beta} \times \sigma_0^{\gamma} \times e^{\delta E_a} \times T^{\epsilon}$$
+$$\lambda_{flash} = A \times d_{50}^{n_1} \times \phi^{n_2} \times \sigma_0^{n_3} \times e^{n_4 \cdot E_a} \times T^{n_5}$$
 
 With fitted coefficients:
-- A = 39 µm
-- α = -0.11 (particle size)
-- β = -6.01 (porosity = 1 - ρ_rel)
-- γ = +0.32 (pre-exponential conductivity)
-- δ = -0.72 (activation energy)
-- ε = -1.18 (temperature)
+- A = 39 µm (prefactor)
+- n₁ = -0.11 (particle size exponent)
+- n₂ = -6.01 (porosity exponent, φ = 1 - ρ_rel)
+- n₃ = +0.32 (conductivity exponent)
+- n₄ = -0.72 (activation energy coefficient)
+- n₅ = -1.18 (temperature exponent)
+
+**Note:** We use n₁-n₅ for exponents to avoid confusion with the ridge parameter β in the Flash Balance equation.
 
 **Accuracy:** 56% within factor of 2, R² = 0.34
 
@@ -343,6 +345,30 @@ $$E_{crit} = \frac{173}{\sqrt{105}} = 17 \text{ V/cm}$$
 - Heating rate is in the range of 1-100°C/min
 - DC electric field is applied
 
+### Heating Rate Correction
+
+Flash onset temperature shifts with heating rate. The correction uses HR (Heating Rate) to avoid confusion with the ridge parameter β:
+
+$$E_{crit}(HR) = E_{crit}(10°C/min) \times \left(\frac{HR}{10}\right)^{0.05}$$
+
+| Heating Rate (HR) | T_onset Shift | E-field Adjustment |
+|-------------------|---------------|-------------------|
+| 1 °C/min | -70 K | × 0.93 |
+| 5 °C/min | -21 K | × 0.98 |
+| 10 °C/min | 0 K (reference) | × 1.00 |
+| 25 °C/min | +27 K | × 1.03 |
+| 100 °C/min | +69 K | × 1.08 |
+
+**Note:** HR = Heating Rate in °C/min. We use "HR" to distinguish from β (ridge parameter in the Flash Balance equation).
+
+### Microstructure Correction
+
+When particle size and green density are known:
+
+$$E_{crit} = E_{crit,base} \times \left(\frac{d_{50}}{500nm}\right)^{-0.10} \times \left(\frac{\phi}{0.45}\right)^{0.45}$$
+
+where φ = 1 - ρ_rel is the porosity (e.g., φ = 0.45 for 55% dense compact).
+
 ### The formulas may require modification for:
 - AC flash sintering (typically requires ~10-20% higher E-field)
 - Flash sinterforging (mechanical load enhances particle contacts)
@@ -352,7 +378,8 @@ $$E_{crit} = \frac{173}{\sqrt{105}} = 17 \text{ V/cm}$$
 ### Uncertainty:
 - Universal formula: ±50% typical, factor of 2 maximum
 - Family-specific formula: ±40% typical
-- Full solver with r_eff calibration: ±5% typical
+- With microstructure corrections: ±40% typical
+- Full solver with λ_flash calibration: ±5% typical
 
 ---
 
@@ -379,13 +406,17 @@ For materials not covered in the validation set, recommended starting parameters
 
 1. **Universal relationship:** Flash sintering onset follows E ∝ 1/√σ(T), corresponding to a critical power density of ~3×10⁸ W/m³.
 
-2. **Prediction accuracy:** The universal formula predicts E-field within a factor of 2 for 77% of materials. With family-specific constants and Debye temperature correction, 51% fall within ±50%.
+2. **Prediction accuracy:** The universal formula predicts E-field within a factor of 2 for 77% of materials. With family-specific constants, Debye temperature, and microstructure corrections (d₅₀, φ, HR), median error improves from 58% to ~40%.
 
-3. **Full model:** Calibration of r_eff from a single experimental datapoint enables predictions within ±5% for essentially all materials tested.
+3. **λ_flash interpolation:** For new materials, λ_flash can be interpolated from Ea and σ₀ using family-specific coefficients, achieving ~20-30% prediction error without any calibration.
 
-4. **Dense materials:** Single crystals and dense polycrystals require 2-5× higher E-fields than powder compacts.
+4. **Full model:** Calibration of λ_flash (r_eff) from a single experimental datapoint enables predictions within ±5% for essentially all materials tested.
 
-5. **Practical utility:** These formulas enable rapid estimation of flash sintering conditions for experiment planning without requiring prior flash data for the specific material.
+5. **Dense materials:** Single crystals and dense polycrystals require 2-5× higher E-fields than powder compacts (λ_flash × 0.3-0.5).
+
+6. **Heating rate:** Use HR (Heating Rate) instead of β to avoid confusion with the ridge parameter β. Higher HR requires higher E-field (exponent +0.05).
+
+7. **Practical utility:** These formulas enable rapid estimation of flash sintering conditions for experiment planning without requiring prior flash data for the specific material.
 
 ---
 
