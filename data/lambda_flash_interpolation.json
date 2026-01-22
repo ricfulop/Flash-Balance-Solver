@@ -1,0 +1,86 @@
+{
+  "description": "\u03bb_flash interpolation formulas for Flash Balance Solver",
+  "global_formula": {
+    "equation": "log10(\u03bb_flash) = a + b\u00d7Ea + c\u00d7log10(\u03c3\u2080)",
+    "coefficients": {
+      "a (intercept)": 0.5023618316906211,
+      "b (Ea coeff)": -1.0534761580293226,
+      "c (\u03c3\u2080 coeff)": 0.2988338451655108
+    },
+    "accuracy": {
+      "median_error_pct": 82.35475172016262,
+      "within_factor_2_pct": 70.58823529411765
+    }
+  },
+  "family_formulas": {
+    "oxide": {
+      "intercept": 0.44472546415005937,
+      "Ea_coeff": -1.5957745712174305,
+      "sigma0_coeff": 0.30212929064566807,
+      "n_samples": 8,
+      "mean_lambda": 1.1637230094521984
+    },
+    "fluorite": {
+      "intercept": 0.9334668633842449,
+      "Ea_coeff": -0.3799393054940195,
+      "sigma0_coeff": 0.07951200947884499,
+      "n_samples": 7,
+      "mean_lambda": 8.22518519675096
+    },
+    "carbide": {
+      "intercept": 1.8790782407635551,
+      "Ea_coeff": 0.41701785621493664,
+      "sigma0_coeff": -0.3888560767552451,
+      "n_samples": 3,
+      "mean_lambda": 9.34907702799226
+    },
+    "perovskite": {
+      "intercept": 2.060122455616577,
+      "Ea_coeff": -1.1800409325362535,
+      "sigma0_coeff": -0.21461600743783835,
+      "n_samples": 7,
+      "mean_lambda": 6.647937041852708
+    },
+    "spinel": {
+      "intercept": 0.9991717956929311,
+      "Ea_coeff": -1.8774684240756536,
+      "sigma0_coeff": 0.3593246167037421,
+      "n_samples": 5,
+      "mean_lambda": 14.45103019243706
+    },
+    "corundum": {
+      "intercept": -0.6906617431032686,
+      "Ea_coeff": 0.6515484391358598,
+      "sigma0_coeff": 0.17847185631552168,
+      "n_samples": 3,
+      "mean_lambda": 1.7449377514377524
+    },
+    "metal": {
+      "intercept": -1.7154309171770037,
+      "Ea_coeff": -0.4351314096655971,
+      "sigma0_coeff": 0.5691940680153367,
+      "n_samples": 3,
+      "mean_lambda": 3.6840314986403864
+    }
+  },
+  "family_mean_lambda": {
+    "oxide": 4.6061145833333335,
+    "pyrochlore": 0.01,
+    "high_entropy_oxide": 500.0,
+    "nitride": 48.0,
+    "fluorite": 16.20608843537415,
+    "composite": 10.0,
+    "oxide_composite": 30.0,
+    "carbide": 10.841388888888888,
+    "perovskite": 14.2175,
+    "spinel": 184.81953333333334,
+    "rutile": 41.91333333333333,
+    "wurtzite": 30.41333333333333,
+    "garnet": 4.395,
+    "corundum": 1.78,
+    "metal": 33.833333333333336,
+    "glass_ceramic": 3.9749999999999996,
+    "ferrite": 30.0,
+    "actinide-oxide": 35.0
+  }
+}

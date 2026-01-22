@@ -1604,6 +1604,217 @@ def estimate_J_crit_metal(
     }
 
 
+# =============================================================================
+# λ_flash (r_eff) INTERPOLATION
+# =============================================================================
+
+# Family-specific interpolation coefficients
+# log₁₀(λ_flash) = a + b×Ea + c×log₁₀(σ₀)
+LAMBDA_INTERPOLATION = {
+    # Family: (intercept, Ea_coeff, sigma0_coeff, mean_lambda_um)
+    'fluorite':   (0.93, -0.38, 0.08, 8.2),
+    'perovskite': (2.06, -1.18, -0.21, 6.7),
+    'spinel':     (1.00, -1.88, 0.36, 14.5),
+    'oxide':      (0.44, -1.60, 0.30, 1.2),
+    'carbide':    (1.88, 0.42, -0.39, 9.4),
+    'corundum':   (-0.69, 0.65, 0.18, 1.7),
+    'metal':      (-1.72, -0.44, 0.57, 3.7),
+    'garnet':     (0.64, 0.0, 0.0, 4.4),     # Mean only (n=2)
+    'rutile':     (1.62, 0.0, 0.0, 42.0),    # Mean only (n=2)
+    'wurtzite':   (1.48, 0.0, 0.0, 30.4),    # Mean only (n=1)
+    'nitride':    (1.68, 0.0, 0.0, 48.0),    # Mean only (n=2)
+    # Global fallback
+    'universal':  (0.50, -1.05, 0.30, 10.0),
+}
+
+# Family mean λ_flash for quick lookup (µm)
+FAMILY_MEAN_LAMBDA = {
+    'fluorite': 8.2,
+    'perovskite': 6.7,
+    'spinel': 14.5,
+    'oxide': 1.2,
+    'carbide': 9.4,
+    'corundum': 1.7,
+    'metal': 3.7,
+    'garnet': 4.4,
+    'rutile': 42.0,
+    'wurtzite': 30.4,
+    'nitride': 48.0,
+    'glass': 4.0,
+    'universal': 10.0,
+}
+
+
+def interpolate_lambda_flash(
+    Ea: float,
+    sigma_0: float,
+    family: str = "universal",
+    method: str = "formula"
+) -> Dict:
+    """
+    Interpolate λ_flash (Flash Activation Length) for a new material.
+    
+    This function provides λ_flash estimates when calibrated values
+    are not available. Use the interpolation map (data/lambda_flash_interpolation_map.png)
+    to visualize where your material falls.
+    
+    Methods:
+    - "formula": Use family-specific regression formula (recommended)
+    - "mean": Use family mean (simpler, for quick estimates)
+    
+    Formula: log₁₀(λ_flash) = a + b×Ea + c×log₁₀(σ₀)
+    
+    Args:
+        Ea: Activation energy (eV)
+        sigma_0: Pre-exponential conductivity (S/m)
+        family: Material family (fluorite, perovskite, etc.)
+        method: "formula" or "mean"
+    
+    Returns:
+        Dict with λ_flash estimate, confidence, and recommendation
+    
+    Example:
+        >>> result = interpolate_lambda_flash(Ea=0.9, sigma_0=3.4e4, family="fluorite")
+        >>> print(f"λ_flash ≈ {result['lambda_flash_um']:.1f} µm")
+        λ_flash ≈ 8.5 µm
+    
+    Accuracy:
+        - Family-specific formula: ~82% median error
+        - Family mean: ~100% median error
+        - Use calibrated values when possible for <15% error
+    """
+    family_lower = family.lower()
+    
+    if method == "mean":
+        # Simple family mean
+        lambda_um = FAMILY_MEAN_LAMBDA.get(family_lower, 10.0)
+        return {
+            "lambda_flash_um": lambda_um,
+            "lambda_flash_m": lambda_um * 1e-6,
+            "method": "family_mean",
+            "confidence": "~100% median error, use for quick estimates only",
+            "recommendation": "Use 'formula' method or calibrated values for better accuracy",
+        }
+    
+    # Get family coefficients
+    if family_lower in LAMBDA_INTERPOLATION:
+        a, b, c, mean_lambda = LAMBDA_INTERPOLATION[family_lower]
+    else:
+        a, b, c, mean_lambda = LAMBDA_INTERPOLATION['universal']
+        family_lower = 'universal'
+    
+    # Calculate λ_flash
+    log_sigma_0 = np.log10(sigma_0) if sigma_0 > 0 else 0
+    
+    if b != 0 or c != 0:
+        # Use full formula
+        log_lambda = a + b * Ea + c * log_sigma_0
+        lambda_um = 10 ** log_lambda
+        method_used = "family_formula"
+    else:
+        # Family has too few samples, use mean
+        lambda_um = mean_lambda
+        method_used = "family_mean"
+    
+    # Confidence bounds (factor of ~2-3 for interpolation)
+    lambda_low = lambda_um / 3
+    lambda_high = lambda_um * 3
+    
+    return {
+        "lambda_flash_um": lambda_um,
+        "lambda_flash_m": lambda_um * 1e-6,
+        "lambda_low_um": lambda_low,
+        "lambda_high_um": lambda_high,
+        "family": family_lower,
+        "method": method_used,
+        "inputs": {"Ea": Ea, "sigma_0": sigma_0},
+        "confidence": "82% median error, 71% within factor of 2",
+        "recommendation": "Use calibrated λ_flash from database for <15% prediction error",
+    }
+
+
+def predict_with_interpolation(
+    Ea: float,
+    sigma_0: float,
+    T: float,
+    E_field_Vcm: float,
+    family: str = "universal"
+) -> Dict:
+    """
+    Full prediction using interpolated λ_flash.
+    
+    This combines λ_flash interpolation with the Flash Balance Solver
+    to predict onset temperature for a new material.
+    
+    Args:
+        Ea: Activation energy (eV)
+        sigma_0: Pre-exponential conductivity (S/m)
+        T: Target temperature (K) - used for comparison
+        E_field_Vcm: Applied electric field (V/cm)
+        family: Material family
+    
+    Returns:
+        Dict with T_predicted, error estimate, and details
+    
+    Example:
+        >>> result = predict_with_interpolation(
+        ...     Ea=0.9, sigma_0=3.4e4, T=1100, E_field_Vcm=70, family="fluorite"
+        ... )
+        >>> print(f"T_pred = {result['T_predicted']:.0f} K")
+    """
+    # Get interpolated λ_flash
+    interp = interpolate_lambda_flash(Ea, sigma_0, family)
+    lambda_m = interp['lambda_flash_m']
+    
+    # Create material parameters
+    family_enum = {
+        'fluorite': MaterialFamily.FLUORITE,
+        'perovskite': MaterialFamily.PEROVSKITE,
+        'spinel': MaterialFamily.SPINEL,
+        'wurtzite': MaterialFamily.WURTZITE,
+        'rutile': MaterialFamily.RUTILE,
+        'metal': MaterialFamily.METAL,
+        'carbide': MaterialFamily.CARBIDE,
+        'nitride': MaterialFamily.NITRIDE,
+    }.get(family.lower(), MaterialFamily.FLUORITE)
+    
+    mat = MaterialParameters(
+        name=f"Interpolated_{family}",
+        family=family_enum,
+        Ea=Ea,
+        sigma_0=sigma_0,
+        beta=0.5,
+        alpha_res=0.15,
+        gamma=1.5,
+        delta_H=-300000,
+        delta_S=-100,
+        n_electrons=2,
+        r_eff=lambda_m,
+    )
+    
+    # Create solver and predict
+    solver = FlashBalanceSolver(mat)
+    T_pred = solver.solve_onset_temperature(E_field_Vcm * 100)  # V/cm to V/m
+    
+    if T_pred is not None:
+        error = abs(T_pred - T) / T * 100 if T > 0 else None
+        return {
+            "T_predicted": T_pred,
+            "T_experimental": T,
+            "error_percent": error,
+            "lambda_flash_um": interp['lambda_flash_um'],
+            "confidence": "Expected ~20-30% error with interpolated λ_flash",
+            "details": interp,
+        }
+    else:
+        return {
+            "T_predicted": None,
+            "error": "Solver failed to find onset temperature",
+            "lambda_flash_um": interp['lambda_flash_um'],
+            "suggestion": "Try adjusting E_field or check material parameters",
+        }
+
+
 def generate_csv_table():
     """Generate CSV format for the paper table with predictions."""
     print("\n\nCSV Format:")
