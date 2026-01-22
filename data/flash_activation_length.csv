@@ -1,0 +1,52 @@
+Material,lambda_flash_um,d50_um,rho_rel,porosity,state,family,Ea_eV,sigma_0_Sm,n_datapoints,DOI
+(La0.2Nd0.2Sm0.2Eu0.2Gd0.2)2Zr2O7,0.01,0.5,0.55,0.45,green_compact,pyrochlore,0.5,1.0,1,10.1111/jace.19505
+GDC10,0.02,0.2,0.55,0.45,green_compact,oxide,0.8,100.0,1,10.1111/jace.17847
+"(La,Ta)-TiO2",0.1,0.1,0.55,0.45,green_compact,oxide,1.5,1000.0,1,10.1007/s10854-024-12518-3
+Porous-SiO2,0.35,5.0,0.55,0.45,green_compact,oxide,0.7,1.0,4,10.1016/j.jnoncrysol.2017.09.024
+Re,0.5,30.0,0.6,0.4,green_compact,metal,0.28,500.0,1,10.1007/s11661-024-07461-1
+MgAl2O4 (High-T),0.51,0.2,0.55,0.45,green_compact,spinel,0.85,200.0,5,10.1016/j.jeurceramsoc.2019.03.005
+Ni,1.0,50.0,0.6,0.4,green_compact,metal,0.3,100000.0,1,10.1111/jace.19735
+Gd:Sm-Pr-CeO2,1.0,0.2,0.55,0.45,green_compact,oxide,0.6,200.0,1,10.3390/ma12081218
+SrTi₁₋ₓFeₓO₃₋δ,1.0,0.5,0.55,0.45,green_compact,perovskite,0.63,3000.0,1,10.1016/j.jeurceramsoc.2016.07.037
+Al2O3:TZP,1.01,0.3,0.55,0.45,green_compact,fluorite,0.9,25000.0,3,10.1016/j.jeurceramsoc.2015.02.033
+3YSZ,1.245,0.3,0.55,0.45,green_compact,fluorite,1.0,25000.0,6,10.1111/j.1551-2916.2010.04089.x
+MgO-doped Al₂O₃,1.5,0.5,0.55,0.45,green_compact,corundum,0.7,200.0,1,10.1016/j.jeurceramsoc.2011.07.004
+(ZrO₂)₀.₈(CeO₂)₀.₂,2.0,0.5,0.55,0.45,green_compact,fluorite,0.8,10000.0,1,10.1111/jace.18426
+α-Al₂O₃ (flash),2.02,0.5,0.55,0.45,green_compact,corundum,0.8,100.0,5,10.1016/j.jeurceramsoc.2016.03.021
+α-Al₂O₃,2.3,0.5,0.55,0.45,green_compact,corundum,0.82,800.0,1,10.1016/j.jeurceramsoc.2016.03.021
+SrTiO₃ (undoped),2.78,0.5,0.55,0.45,green_compact,perovskite,0.6,1000.0,6,10.1016/j.scriptamat.2016.03.001
+BaTiO3,3.205,0.5,0.55,0.45,green_compact,perovskite,0.8,1000.0,2,10.2109/jcersj2.20181
+8YSZ,3.46,0.4,0.55,0.45,green_compact,oxide,0.85,10000.0,6,10.1111/jace.18804
+LLZO,3.68,0.5,0.55,0.45,green_compact,garnet,0.45,1000.0,2,10.1007/s11581-024-06046-7
+Porcelain Stoneware,3.9,20.0,0.6,0.4,green_compact,glass_ceramic,0.84,1000.0,4,10.1111/jace.15162
+LTO (Li4Ti5O12),4.64,0.5,0.55,0.45,green_compact,spinel,0.21,500.0,3,10.1111/jace.18086
+SDC (Sm₂O₃-doped CeO₂),5.0,0.2,0.55,0.45,green_compact,oxide,0.5,20000.0,1,10.1016/j.scriptamat.2018.09.014
+Irradiated-YSZ,5.0,0.3,0.55,0.45,green_compact,fluorite,0.5,1.0,1,10.1016/j.scriptamat.2019.06.004
+α-SiC,5.0,0.5,0.55,0.45,green_compact,carbide,0.9,10000.0,1,10.1016/j.actamat.2022.118362
+ZnO,5.0,0.3,0.55,0.45,green_compact,oxide,0.3,1000.0,5,10.1016/j.actamat.2015.04.018
+B4C,5.565,1.0,0.55,0.45,green_compact,carbide,1.35,1000.0,4,10.1016/j.ceramint.2024.05.250
+NaNbO3,5.75,0.8,0.55,0.45,green_compact,perovskite,0.8,1000.0,4,10.1016/j.matlet.2018.09.167
+LLZO-RFS,5.88,0.5,0.55,0.45,green_compact,garnet,0.52,4000.0,3,10.1111/jace.16625
+KNN,6.3,1.0,0.55,0.45,green_compact,perovskite,0.5,10.0,7,10.1111/jace.18119
+BiFeO3,6.355,0.5,0.55,0.45,green_compact,perovskite,0.65,100.0,4,10.1111/jace.14990
+MgAl2O4,7.6,0.2,0.55,0.45,green_compact,spinel,0.7,10.0,3,10.1111/jace.15974
+WC,8.96,1.0,0.55,0.45,green_compact,carbide,0.45,800.0,6,10.3390/ma14247655
+SiCw/3YSZ (17.5 vol%),10.0,0.3,0.55,0.45,green_compact,composite,0.5,20000.0,1,10.1016/j.jeurceramsoc.2016.02.014
+3YSZ-Al₂O₃ (50:50),10.0,0.3,0.55,0.45,green_compact,composite,0.8,10000.0,1,10.1016/j.jeurceramsoc.2014.04.043
+TiO₂ (Single Crystal),15.0,1000.0,1.0,0.0,single_crystal,oxide,0.55,100.0,2,10.1111/jace.18798
+ZrN,20.0,0.5,0.55,0.45,green_compact,nitride,0.25,20000.0,1,10.1111/jace.19719
+GDC,21.4,0.2,0.55,0.45,green_compact,fluorite,0.91,50.0,7,10.1111/jace.17847
+Doped-ZnO,23.18,0.3,0.55,0.45,green_compact,wurtzite,0.45,10000.0,3,10.1016/j.actamat.2019.10.009
+c-ZrO₂ (Single Crystal),30.0,1000.0,1.0,0.0,single_crystal,fluorite,0.5,100000.0,1,10.1016/j.scriptamat.2016.12.006
+SrFe₁₂O₁₉,30.0,0.5,0.55,0.45,green_compact,ferrite,0.37,25000.0,1,10.1016/j.jallcom.2022.166203
+Al₂O₃-3YSZ (50:50),30.0,0.3,0.55,0.45,green_compact,oxide_composite,1.0,7000.0,1,10.1111/jace.14178
+Doped-TiO2,32.42,0.1,0.55,0.45,green_compact,rutile,0.5,500.0,3,10.1007/s10854-024-12518-3
+UO₂,35.0,0.5,0.55,0.45,green_compact,actinide-oxide,0.2,100000.0,3,10.1016/j.jnucmat.2017.06.022
+SrTiO3-Fe,44.0,0.5,0.55,0.45,green_compact,perovskite,0.0,1000.0,3,10.1016/j.actamat.2018.12.007
+Co2MnO4,44.975,0.5,0.55,0.45,green_compact,spinel,0.1,100.0,2,10.1016/j.jpowsour.2010.10.036
+3YSZ-Sinterforging (5 MPa),50.0,0.3,0.65,0.35,green_compact,fluorite,1.0,500000.0,1,10.1016/j.jeurceramsoc.2012.02.030
+SnO₂-AC (1 kHz),50.0,0.5,0.55,0.45,green_compact,rutile,0.45,5000.0,1,10.1016/j.jeurceramsoc.2013.09.017
+(Nb1/3Ta1/3Ti1/3)N,76.0,0.5,0.55,0.45,green_compact,nitride,0.2,100.0,1,10.1111/jace.17226
+W,100.0,20.0,0.6,0.4,green_compact,metal,0.3,100000.0,1,10.1111/jace.19532
+MnCo2O4,100.0,0.5,0.55,0.45,green_compact,spinel,0.2,100000.0,3,10.1016/j.jeurceramsoc.2014.02.012
+"(Mg,Co,Ni,Cu,Zn)1-xLixO",500.0,50.0,0.6,0.4,green_compact,high_entropy_oxide,0.3,10000.0,3,10.3390/ma15113836

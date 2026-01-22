@@ -5,6 +5,44 @@
 
 ---
 
+## Flash Activation Length (λ_flash)
+
+A key parameter in the Flash Balance Equation is the **Flash Activation Length** (λ_flash, previously denoted r_eff), which represents the characteristic length scale for electrical work localization during flash sintering onset.
+
+### Physical Meaning
+
+λ_flash captures:
+- The effective radius of the thermal-electrical interaction zone
+- Current concentration at particle contacts (green compacts)
+- Grain boundary activation zone (dense materials)
+- Defect localization length (single crystals)
+
+### First-Principles Formula
+
+For **green compacts** (powder samples):
+
+$$\lambda_{flash} = A \times d_{50}^{\alpha} \times \phi^{\beta} \times \sigma_0^{\gamma} \times e^{\delta E_a} \times T^{\epsilon}$$
+
+With fitted coefficients:
+- A = 39 µm
+- α = -0.11 (particle size)
+- β = -6.01 (porosity = 1 - ρ_rel)
+- γ = +0.32 (pre-exponential conductivity)
+- δ = -0.72 (activation energy)
+- ε = -1.18 (temperature)
+
+**Accuracy:** 56% within factor of 2, R² = 0.34
+
+For **dense solids**: λ_flash ≈ 0.5 × d_grain
+
+For **single crystals**: λ_flash ≈ 10-100 µm (defect-controlled)
+
+### Database
+
+A comprehensive database of λ_flash values for 51 materials is provided in `data/flash_activation_length.json`.
+
+---
+
 ## 1. Introduction to the Predictive Framework
 
 Flash sintering onset occurs when the electrical power dissipation in a ceramic exceeds the heat dissipation rate, triggering a thermal runaway. The Flash Balance Equation provides a thermodynamic framework for predicting onset conditions based on material properties:
