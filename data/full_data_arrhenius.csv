@@ -1,0 +1,14 @@
+paper_id,Ea_eV,sigma_0_S_m,Ea_confidence,sigma_0_confidence,T_range_K,digitized_file,notes
+# Arrhenius parameters from auto_extract_arrhenius.py
+# Source: Automated extraction using OpenCV + EasyOCR
+#
+# Paper 1: Al2O3:TZP Steil - AUTO-EXTRACTED
+1,0.782,4360000,D,D,586-1195,auto_extracted,R²=0.818; low confidence - may need manual verification
+# Paper 2: BiFeO3 Raj - EXTRACTION FAILED
+2,,,,,,,Auto-extraction failed; needs manual digitization
+# Paper 3: LLZO Huang - AUTO-EXTRACTED
+3,0.304,0.765,M,M,693-1319,auto_extracted,R²=0.952; good match for Li-ion conductor
+# Paper 4: LLZO RFS Raj - AUTO-EXTRACTED (SUSPECT)
+4,0.946,154000000,L,L,452-801,auto_extracted,R²=0.911; Ea too high for LLZO - likely wrong plot
+# Paper 5: SDC Jiang - AUTO-EXTRACTED
+5,0.570,212,L,L,955-1323,auto_extracted,R²=0.923; reasonable for doped ceria

@@ -1,0 +1,5 @@
+filename,doi,material,Ea_eV,sigma_0_Sm,R2,confidence,n_points,T_min_K,T_max_K,plot_page
+Al2O3:TZP Steil.pdf,10.1016/j.jeurceramsoc.2015.02.033,Al2O3:TZP,0.7822,4364778.586,0.8181,D,8,585.8,1194.8,4
+LLZO Huang.pdf,10.1007/s11581-024-06046-7,LLZO,0.3041,0.7652,0.952,M,12,693.0,1319.4,2
+LLZO RFS Raj.pdf,10.1111/jace.16625,LLZO RFS,0.9455,154105923.6763,0.9114,L,4,452.0,800.7,3
+Sm2O3 doped CeO2 Jiang.pdf,10.1016/j.scriptamat.2018.09.014,Sm2O3 doped CeO2,0.5703,211.6197,0.9229,L,14,954.5,1323.0,3

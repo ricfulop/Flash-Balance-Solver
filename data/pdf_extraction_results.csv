@@ -1,0 +1,84 @@
+filename,doi,material,paper_category,completeness_score,T_onset_C,T_confidence,E_field_Vcm,E_confidence,has_arrhenius_plot,is_applicable,needs_digitization,technique_used,extraction_notes
+3YSZ Janssen.pdf,10.1016/j.jeurceramsoc.2017.02.044,3YSZ,INSUFFICIENT,25,,,"75, 100, 2000",H,False,False,False,DC_FLASH,
+3YSZ Wang.pdf,10.1016/j.jallcom.2018.02.308,3YSZ,REVIEW,55,,,95,H,True,False,False,REVIEW,
+8Y2O3 doped ZrO2 Yamamoto.pdf,10.2109/jcersj2.22009,8Y2O3 doped,THEORY,50,870,H,50,H,False,False,False,SIMULATION,Found temps: [870]
+8YSZ TEM XRD Raman Jo.pdf,10.1111/jace.19915,8YSZ TEM,REVIEW,25,,,25,H,False,False,False,REVIEW,
+Al Kellog.pdf,10.1007/s10853-018-2207-6,Al Kellog,REVIEW,55,,,"56, 150, 205, 330, 1000",H,True,False,False,REVIEW,
+Al2O3-LaPO4 8YSZ-LaPO4 Mccartney.pdf,10.1111/jace.17786,Al2O3-LaPO4 8YSZ-LaPO4,ONSET_ONLY,50,"780, 1100, 1110, 1450",H,"250, 850, 935, 950, 980",H,False,True,False,DC_FLASH,"Found temps: [780, 1100, 1110, 1450]"
+Al2O3-Y3Al5O12-ZrO2 An.pdf,10.1016/j.scriptamat.2015.12.002,Al2O3-Y3Al5O12-ZrO2,INSUFFICIENT,25,,,"495, 1000",H,False,False,False,DC_FLASH,
+Al2O3:TZP Steil.pdf,10.1016/j.jeurceramsoc.2015.02.033,Al2O3:TZP,FULL_DATA,80,900,M,"100, 130, 200, 2250",H,True,True,True,DC_FLASH,Found temps: [900]
+Alumina Sglavo.pdf,10.1016/j.jeurceramsoc.2016.03.021,Alumina,THEORY,55,,,"250, 500, 750, 1000, 1500",H,True,False,False,SIMULATION,
+B4C Part 1 Todd.pdf,10.1016/j.ceramint.2024.05.250,B4C Part,REVIEW,25,,,"25, 350, 500",H,False,False,False,REVIEW,
+B4C Part 2 Todd.pdf,10.1016/j.ceramint.2024.11.314,B4C Part,REVIEW,25,,,"25, 200, 280, 350, 500",H,False,False,False,REVIEW,
+BaTiO3 SrTiO3 Garcia.pdf,10.1039/d4tc04433a,BaTiO3 SrTiO3,REVIEW,30,,,,,True,False,False,REVIEW,
+BaTiO3 Yamamoto.pdf,10.2109/jcersj2.20181,BaTiO3,THEORY,50,1000,H,"100, 140, 150, 200, 258",H,False,False,False,SIMULATION,Found temps: [1000]
+Badimele Thesis.pdf,,Thesis,INSUFFICIENT,0,,,,,False,False,False,DC_FLASH,
+Barium Titanate Lupascu.pdf,10.1002/adem.202300142,Barium Titanate,REVIEW,55,,,"1500, 1800",H,True,False,False,REVIEW,
+BiFeO3 RFS Perez Maqueda.pdf,10.1039/c7ta09239c,BiFeO3 RFS,THEORY,55,,,"25, 50, 100",H,True,False,False,SIMULATION,
+BiFeO3 Raj.pdf,10.1111/jace.14990,BiFeO3,FULL_DATA,80,300,M,"15, 50, 100, 150, 300",H,True,True,True,SPS,Found temps: [300]
+CaCu3Ti4O12 M'Peko.pdf,10.1016/j.jallcom.2016.05.002,CaCu3Ti4O12 M'Peko,THEORY,55,,,"10, 15, 30, 60",H,True,False,False,SIMULATION,
+Co2MnO4 spinel Raj.pdf,10.1016/j.jpowsour.2010.10.036,Co2MnO4 spinel,CONDUCTIVITY_ONLY,55,,,"10, 25, 60",H,True,False,True,OTHER,
+Debye temp Raj.pdf,10.1016/j.scriptamat.2019.05.030,Debye temp,REVIEW,25,,,"100, 500, 2000, 5000",H,False,False,False,REVIEW,
+Doped TiO2 Xu.pdf,10.1007/s10854-024-12518-3,Doped TiO2,REVIEW,50,1100,H,"300, 800",M,False,False,False,REVIEW,Found temps: [1100]
+Dopers ZnO Luo.pdf,10.1016/j.actamat.2019.10.009,Dopers ZnO,REVIEW,80,"600, 628, 680, 689, 740",H,"100, 300, 800",H,True,False,False,REVIEW,"Found temps: [600, 628, 680, 689, 740, 742, 1005]"
+Fe2Val Nishino.pdf,10.1007/s11664-019-07743-0,Fe2Val,CONDUCTIVITY_ONLY,30,,,,,True,False,True,DC_FLASH,
+GDC Bran.pdf,10.1111/jace.17847,GDC,THEORY,80,1400,H,"50, 70, 90, 100, 150",H,True,False,False,SIMULATION,Found temps: [1400]
+Gd:Sm-Pr Co-Doped Ceria Sglavo.pdf,10.3390/ma12081218,Gd:Sm-Pr Co-Doped,REVIEW,55,,,50,H,True,False,False,REVIEW,
+Glass Flash Sintering Sglavo.pdf,10.1016/j.jnoncrysol.2017.09.024,Glass Flash,REVIEW,80,"600, 690",H,"1000, 2000, 3000",H,True,False,False,REVIEW,"Found temps: [600, 690]"
+High entropy pyrochlore Raj.pdf,10.1111/jace.19505,High entropy,REVIEW,25,1050,H,,,False,False,False,REVIEW,Found temps: [1050]
+Incubation Kinetics Garcia.pdf,10.1038/s41524-020-00359-7,Incubation Kinetics,REVIEW,55,,,"60, 90, 120",H,True,False,False,REVIEW,
+Irradiated YSZ Muccillo.pdf,10.1016/j.scriptamat.2019.06.004,Irradiated YSZ,ONSET_ONLY,50,850,H,150,H,False,True,False,DC_FLASH,Found temps: [850]
+K0.5Na0.5NbO3 Akdogan.pdf,10.1111/jace.18119,K0.5Na0.5NbO3,REVIEW,50,1175,M,"18, 50, 100",H,False,False,False,REVIEW,Found temps: [1175]
+K0.5Na0.5NbO3 Raj.pdf,10.2109/jcersj2.124.P4-1,K0.5Na0.5NbO3,THEORY,50,"320, 870, 900, 1000",H,"50, 100, 150, 185, 250",H,False,False,False,SIMULATION,"Found temps: [320, 870, 900, 1000]"
+KNN 2 Senos.pdf,10.3390/ma14051321,KNN,REVIEW,55,,,300,H,True,False,False,REVIEW,
+KNN Senos.pdf,10.1039/c9tc03117k,KNN,REVIEW,25,,,"100, 250, 400",H,False,False,False,REVIEW,
+LLZO Huang.pdf,10.1007/s11581-024-06046-7,LLZO,FULL_DATA,80,700,H,90,M,True,True,True,SPS,Found temps: [700]
+LLZO RFS Raj.pdf,10.1111/jace.16625,LLZO RFS,FULL_DATA,80,682,H,"30, 40, 50",H,True,True,True,SPS,Found temps: [682]
+LLZO Raj.pdf,10.1016/j.scriptamat.2019.06.038,LLZO,THEORY,80,850,M,20,H,True,False,False,SIMULATION,Found temps: [850]
+La0.6Sr0.4CoO3 Kim.pdf,10.1021/acs.energyfuels.0c03147,La0.6Sr0.4CoO3,REVIEW,0,,,,,False,False,False,REVIEW,
+Li4Ti5O12 Xu.pdf,10.1111/jace.18086,Li4Ti5O12,REVIEW,0,,,,,False,False,False,REVIEW,
+MgAl2O4 RFS Raj.pdf,10.1111/jace.15974,MgAl2O4 RFS,REVIEW,80,"621, 820, 950, 1000",H,"100, 120, 300, 500, 600",H,True,False,False,REVIEW,"Found temps: [621, 820, 950, 1000]"
+MgAl2O4 Yoshida.pdf,10.1111/jace.14616,MgAl2O4,REVIEW,80,"400, 1300, 1350, 1408, 1410",H,"300, 750, 1000",H,True,False,False,REVIEW,"Found temps: [400, 1300, 1350, 1408, 1410]"
+MgCoNiCuZnLiO Jia.pdf,10.3390/ma15113836,MgCoNiCuZnLiO,REVIEW,55,,,"50, 278, 625, 2250",H,True,False,False,REVIEW,
+MgO-SiO2 -Al2 O3 Sglavo.pdf,10.1016/j.jeurceramsoc.2016.08.036,MgO-SiO2 -Al2,REVIEW,55,,,"500, 750, 1000, 1250, 1500",H,True,False,False,REVIEW,
+MnCo2O4 Sglavo.pdf,10.1016/j.jeurceramsoc.2014.02.012,MnCo2O4,REVIEW,80,"200, 210, 1000, 1050, 1160",H,"10, 18",H,True,False,False,REVIEW,"Found temps: [200, 210, 1000, 1050, 1160]"
+NaNbO3.pdf,10.1016/j.matlet.2018.09.167,NaNbO3,CONDUCTIVITY_ONLY,55,,,"400, 600, 700",M,True,False,True,SPS,
+Nb1:3Ta1:3Ti1:3N Cheng.pdf,10.1111/jace.17226,Nb1:3Ta1:3Ti1:3N,THEORY,55,,,"32, 1000",M,True,False,False,SIMULATION,
+Ni Badimele Raj.pdf,10.1111/jace.19735,Ni,REVIEW,30,,,,,True,False,False,REVIEW,
+Ni supplementary.pdf,10.1016/j.actamat.2020.02.036,Ni supplementary,INSUFFICIENT,0,,,,,False,False,False,DC_FLASH,
+Perovskite Wang.pdf,10.1016/j.actamat.2018.12.007,Perovskite,REVIEW,55,,,"40, 60, 140, 270",H,True,False,False,REVIEW,
+Phase syncrhonicity Raj .pdf,10.1111/JACE.16335,Phase syncrhonicity,REVIEW,0,,,,,False,False,False,REVIEW,
+Porcelain Sglavo.pdf,10.1111/jace.15162,Porcelain,REVIEW,50,"500, 1000, 1190",H,"50, 500, 1750",M,False,False,False,REVIEW,"Found temps: [500, 1000, 1190]"
+Power Density at the Onset of Flash Sintering Raj.pdf,10.1111/jace.14178,Power Density,REVIEW,80,"300, 725, 950, 1300",H,"10, 40, 50, 60, 120",H,True,False,False,REVIEW,"Found temps: [300, 725, 950, 1300]"
+RFS Jalali_Bilayer.pdf,10.1111/jace.18804,RFS Jalali_Bilayer,REVIEW,55,,,"50, 100, 700, 1000",H,True,False,False,REVIEW,
+Rhenium Raj 2.pdf,10.1007/s11661-024-07461-1,Rhenium,REVIEW,30,,,,,True,False,False,REVIEW,
+Rhenium Raj.pdf,,Rhenium,REVIEW,0,,,,,False,False,False,REVIEW,
+STRO Tsur.pdf,10.1016/j.jeurceramsoc.2016.07.037,STRO,THEORY,55,,,"100, 200, 600",H,True,False,False,SIMULATION,
+Sb2Te3 Nishino.pdf,10.1063/1.5041970,Sb2Te3,REVIEW,0,,,,,False,False,False,REVIEW,
+SiC ZrO2 Wang.pdf,10.1016/j.jeurceramsoc.2016.02.014,SiC ZrO2,REVIEW,55,,,"100, 140",H,True,False,False,REVIEW,
+SiO2 coated Barium titanate Wang.pdf,10.1016/j.scriptamat.2019.05.019,SiO2 coated,DIFFERENT_TECHNIQUE,0,,,,,False,False,False,SPS,
+SiO2 glass Sglavo.pdf,10.1016/j.jnoncrysol.2017.09.024,SiO2 glass,REVIEW,80,"600, 690",H,"1000, 2000, 3000",H,True,False,False,REVIEW,"Found temps: [600, 690]"
+Sm2O3 doped CeO2 Jiang.pdf,10.1016/j.scriptamat.2018.09.014,Sm2O3 doped,FULL_DATA,80,"578, 850",H,"30, 60, 120, 1000, 2250",H,True,True,True,DC_FLASH,"Found temps: [578, 850]"
+SrFe12O19 Perejon.pdf,10.1016/j.jallcom.2022.166203,SrFe12O19,REVIEW,25,,,40,H,False,False,False,REVIEW,
+SrTiO2 and KNbO3 Raj.pdf,10.1016/j.scriptamat.2016.03.001,SrTiO2 and,REVIEW,25,,,600,H,False,False,False,REVIEW,
+Strontium Hexaferrite Touch Free Perez-Maqueda Raj.pdf,10.1111/jace.19389,Strontium Hexaferrite,REVIEW,50,900,M,100,H,False,False,False,REVIEW,Found temps: [900]
+Technique Yamamoto.pdf,10.2320/matertrans.MT-Y2023003,Technique,REVIEW,50,778,H,"40, 50, 100",M,False,False,False,REVIEW,Found temps: [778]
+TiO2 Interface Resistance Jo.pdf,10.1111/jace.70034,TiO2 Interface,REVIEW,80,675,H,"450, 500",H,True,False,False,REVIEW,Found temps: [675]
+TiO2 Shikhar_Titania_2014.pdf,10.1111/jace.12682,TiO2 Shikhar_Titania_2014,REVIEW,80,"1700, 1710",H,"40, 50, 100, 120, 150",H,True,False,False,REVIEW,"Found temps: [1700, 1710]"
+TiO2 Yadav.pdf,10.1111/jace.18798,TiO2 Yadav,REVIEW,25,,,"50, 100, 150, 200, 250",H,False,False,False,REVIEW,
+UO2 McClellan.pdf,10.1016/j.jnucmat.2017.06.022,UO2,REVIEW,55,,,"57, 107, 125, 187",H,True,False,False,REVIEW,
+Urania McClellan.pdf,10.1016/j.jnucmat.2018.03.049,Urania,THEORY,25,,,188,H,False,False,False,SIMULATION,
+W Raj.pdf,10.1111/jace.19532,W,REVIEW,0,,,,,False,False,False,REVIEW,
+WC 3 Sglavo.pdf,10.1007/s10853-022-08109-4,WC,THEORY,0,,,,,False,False,False,SIMULATION,
+WC Grasso.pdf,10.3390/ma14247655,WC,REVIEW,25,,,120,H,False,False,False,REVIEW,
+WC Sglavo.pdf,10.1016/j.matdes.2021.110330,WC,REVIEW,30,,,,,True,False,False,REVIEW,
+WC ZrB2 Mazo.pdf,10.1016/j.ceramint.2024.05.018,WC ZrB2,REVIEW,55,,,120,M,True,False,False,REVIEW,
+WC paper 3 Sglavo.pdf,10.1016/j.jmrt.2023.02.213,WC paper,REVIEW,55,,,330,M,True,False,False,REVIEW,
+WC second paper Sglavo .pdf,10.1016/j.actamat.2023.119227,WC second,THEORY,30,,,,,True,False,False,SIMULATION,
+ZnO Wang.pdf,10.1016/j.scriptamat.2018.11.009,ZnO,THEORY,50,"700, 1100",H,"60, 120",H,False,False,False,SIMULATION,"Found temps: [700, 1100]"
+ZnO Zno-Bi2O3 Luo.pdf,10.1016/j.actamat.2015.04.018,ZnO Zno-Bi2O3,THEORY,55,,,"44, 52, 80, 100, 160",H,True,False,False,SIMULATION,
+ZrN Cheng.pdf,10.1111/jace.19719,ZrN,CONDUCTIVITY_ONLY,55,,,"20, 30, 32, 1000",H,True,False,True,DC_FLASH,
+ZrO2-CeO2 Valdez.pdf,10.1111/jace.18426,ZrO2-CeO2,REVIEW,25,,,"250, 1000, 1325",H,False,False,False,REVIEW,
+alpha SiC Todd.pdf,10.1016/j.actamat.2022.118362,alpha SiC,REVIEW,80,"700, 1500",H,"15, 20, 25, 30, 35",H,True,False,False,REVIEW,"Found temps: [700, 1500]"
+c-ZrO2 Raj.pdf,10.1007/s10832-016-,c-ZrO2,CONDUCTIVITY_ONLY,55,,,"20, 50, 210, 230, 490",H,True,False,True,DC_FLASH,
+c-ZrO2 Yoshida.pdf,10.1016/j.actamat.2022.117704,c-ZrO2,THEORY,25,"600, 1250",H,,,False,False,False,SIMULATION,"Found temps: [600, 1250]"

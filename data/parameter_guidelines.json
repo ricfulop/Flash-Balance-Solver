@@ -1,0 +1,546 @@
+{
+  "_description": "Flash Balance Parameter Guidelines by Material Family",
+  "_version": "1.0",
+  "_units": {
+    "Ea": "eV",
+    "sigma_0": "S/m",
+    "beta": "dimensionless",
+    "alpha_res": "dimensionless",
+    "gamma": "dimensionless",
+    "ksoft": "dimensionless",
+    "delta_H": "J/mol",
+    "delta_S": "J/(mol·K)",
+    "r_eff": "m",
+    "n_electrons": "electrons per reaction unit"
+  },
+  
+  "families": {
+    "fluorite": {
+      "description": "Fluorite structure oxides (e.g., YSZ, CeO2, GDC)",
+      "crystal_structure": "Cubic fluorite (Fm-3m)",
+      "conduction_type": "Oxygen ion conduction",
+      "parameters": {
+        "Ea": {
+          "typical": 0.95,
+          "range": [0.7, 1.1],
+          "notes": "Higher for tetragonal phase, lower for doped"
+        },
+        "sigma_0": {
+          "typical": 3.6e4,
+          "range": [1e4, 1e5],
+          "notes": "Depends on dopant concentration"
+        },
+        "beta": {
+          "typical": 1.69,
+          "uncertainty": 0.10,
+          "range": [1.5, 1.9],
+          "source": "Flash Balance paper Table S1"
+        },
+        "alpha_res": {
+          "typical": 0.15,
+          "uncertainty": 0.03,
+          "range": [0.12, 0.18],
+          "source": "Flash Balance paper Table S1"
+        },
+        "gamma": {
+          "typical": 2.0,
+          "uncertainty": 0.2,
+          "range": [1.8, 2.2]
+        },
+        "ksoft": {
+          "typical": 0.10,
+          "calculation": "1 - β × (0.73)²"
+        },
+        "n_electrons": {
+          "value": 4,
+          "notes": "Per O2 equivalent"
+        },
+        "r_eff": {
+          "typical": 15e-6,
+          "range": [10e-6, 30e-6],
+          "notes": "Grain/neck scale for ceramics"
+        }
+      },
+      "examples": [
+        {"name": "8YSZ", "formula": "Zr0.84Y0.16O1.92", "T_onset_typical": "850-950°C"},
+        {"name": "3YSZ", "formula": "Zr0.94Y0.06O1.97", "T_onset_typical": "900-1000°C"},
+        {"name": "GDC10", "formula": "Ce0.9Gd0.1O1.95", "T_onset_typical": "650-750°C"}
+      ],
+      "thermodynamic_notes": "Use ZrO2 or CeO2 formation values, adjust for dopant"
+    },
+    
+    "rutile": {
+      "description": "Rutile structure oxides (e.g., TiO2, SnO2)",
+      "crystal_structure": "Tetragonal rutile (P42/mnm)",
+      "conduction_type": "n-type electronic (oxygen vacancies)",
+      "parameters": {
+        "Ea": {
+          "typical": 0.50,
+          "range": [0.4, 0.6],
+          "notes": "n-type semiconductor activation"
+        },
+        "sigma_0": {
+          "typical": 1.5e3,
+          "range": [1e3, 5e3],
+          "notes": "Depends on defect concentration"
+        },
+        "beta": {
+          "typical": 1.43,
+          "uncertainty": 0.08,
+          "range": [1.3, 1.5],
+          "source": "Flash Balance paper Table S1"
+        },
+        "alpha_res": {
+          "typical": 0.22,
+          "uncertainty": 0.05,
+          "range": [0.18, 0.26],
+          "source": "Flash Balance paper Table S1"
+        },
+        "gamma": {
+          "typical": 1.8,
+          "uncertainty": 0.2,
+          "range": [1.6, 2.0]
+        },
+        "ksoft": {
+          "typical": 0.24,
+          "calculation": "1 - β × (0.73)²"
+        },
+        "n_electrons": {
+          "value": 4,
+          "notes": "Per O2 equivalent"
+        },
+        "r_eff": {
+          "typical": 18e-6,
+          "range": [12e-6, 25e-6]
+        }
+      },
+      "examples": [
+        {"name": "TiO2", "formula": "TiO2", "T_onset_typical": "600-700°C"},
+        {"name": "SnO2", "formula": "SnO2", "T_onset_typical": "700-800°C"}
+      ]
+    },
+    
+    "perovskite": {
+      "description": "Perovskite structure oxides (e.g., SrTiO3, BaTiO3, BiFeO3)",
+      "crystal_structure": "Cubic/tetragonal perovskite (Pm-3m)",
+      "conduction_type": "Mixed ionic/electronic, often polar",
+      "parameters": {
+        "Ea": {
+          "typical": 0.45,
+          "range": [0.3, 0.8],
+          "notes": "Lower for ferroelectrics, higher for mixed conductors"
+        },
+        "sigma_0": {
+          "typical": 8e2,
+          "range": [5e2, 1e4],
+          "notes": "Varies with dopant and polarization"
+        },
+        "beta": {
+          "typical": 1.50,
+          "uncertainty": 0.10,
+          "range": [1.3, 1.7],
+          "source": "Flash Balance paper Table S1"
+        },
+        "alpha_res": {
+          "typical": 0.28,
+          "uncertainty": 0.05,
+          "range": [0.20, 0.35],
+          "notes": "Higher (0.30-0.40) for multiferroics due to enhanced coupling"
+        },
+        "gamma": {
+          "typical": 1.4,
+          "uncertainty": 0.2,
+          "range": [1.2, 1.6]
+        },
+        "ksoft": {
+          "typical": 0.20,
+          "calculation": "1 - β × (0.73)²"
+        },
+        "n_electrons": {
+          "value": 4,
+          "notes": "Per O2 equivalent"
+        },
+        "r_eff": {
+          "typical": 40e-6,
+          "range": [15e-6, 55e-6],
+          "notes": "Larger due to polar nanodomains"
+        }
+      },
+      "examples": [
+        {"name": "SrTiO3", "formula": "SrTiO3", "T_onset_typical": "500-600°C"},
+        {"name": "BaTiO3", "formula": "BaTiO3", "T_onset_typical": "550-650°C"},
+        {"name": "BiFeO3", "formula": "BiFeO3", "T_onset_typical": "600-700°C", "notes": "Multiferroic"}
+      ],
+      "special_cases": {
+        "multiferroics": {
+          "description": "Materials with coupled ferroelectric and magnetic order",
+          "alpha_res_adjustment": "+0.05 to +0.10",
+          "examples": ["BiFeO3", "PbFe0.5Nb0.5O3"]
+        }
+      }
+    },
+    
+    "spinel": {
+      "description": "Spinel and corundum structure oxides (e.g., Al2O3, MgAl2O4)",
+      "crystal_structure": "Cubic spinel (Fd-3m) or trigonal corundum (R-3c)",
+      "conduction_type": "Ionic, high activation energy",
+      "parameters": {
+        "Ea": {
+          "typical": 1.2,
+          "range": [1.0, 1.4],
+          "notes": "High activation for ionic insulators"
+        },
+        "sigma_0": {
+          "typical": 1e5,
+          "range": [5e4, 2e5]
+        },
+        "beta": {
+          "typical": 1.20,
+          "uncertainty": 0.15,
+          "range": [1.0, 1.4],
+          "source": "Flash Balance paper Table S1"
+        },
+        "alpha_res": {
+          "typical": 0.20,
+          "uncertainty": 0.04,
+          "range": [0.15, 0.25],
+          "source": "Flash Balance paper Table S1"
+        },
+        "gamma": {
+          "typical": 1.8,
+          "uncertainty": 0.2,
+          "range": [1.6, 2.0]
+        },
+        "ksoft": {
+          "typical": 0.36,
+          "calculation": "1 - β × (0.73)²"
+        },
+        "n_electrons": {
+          "value": 4,
+          "notes": "Per O2 equivalent"
+        },
+        "r_eff": {
+          "typical": 25e-6,
+          "range": [20e-6, 120e-6],
+          "notes": "Can be large for spinels"
+        }
+      },
+      "examples": [
+        {"name": "Al2O3", "formula": "Al2O3", "T_onset_typical": "1100-1200°C"},
+        {"name": "MgAl2O4", "formula": "MgAl2O4", "T_onset_typical": "1000-1100°C"}
+      ]
+    },
+    
+    "wurtzite": {
+      "description": "Wurtzite structure compounds (e.g., ZnO, AlN)",
+      "crystal_structure": "Hexagonal wurtzite (P63mc)",
+      "conduction_type": "n-type electronic",
+      "parameters": {
+        "Ea": {
+          "typical": 0.40,
+          "range": [0.3, 0.5],
+          "notes": "n-type semiconductor"
+        },
+        "sigma_0": {
+          "typical": 1e4,
+          "range": [5e3, 2e4],
+          "notes": "Varies with doping (varistor vs. pure)"
+        },
+        "beta": {
+          "typical": 1.10,
+          "uncertainty": 0.10,
+          "range": [0.9, 1.3]
+        },
+        "alpha_res": {
+          "typical": 0.22,
+          "uncertainty": 0.04,
+          "range": [0.18, 0.26]
+        },
+        "gamma": {
+          "typical": 1.6,
+          "uncertainty": 0.2,
+          "range": [1.4, 1.8]
+        },
+        "ksoft": {
+          "typical": 0.41,
+          "calculation": "1 - β × (0.73)²"
+        },
+        "n_electrons": {
+          "value": 4,
+          "notes": "Per O2 equivalent for ZnO"
+        },
+        "r_eff": {
+          "typical": 15e-6,
+          "range": [10e-6, 25e-6]
+        }
+      },
+      "examples": [
+        {"name": "ZnO", "formula": "ZnO", "T_onset_typical": "550-650°C"}
+      ]
+    },
+    
+    "carbide": {
+      "description": "Carbides (e.g., SiC, WC, TiC)",
+      "crystal_structure": "Various (cubic, hexagonal)",
+      "conduction_type": "Covalent semiconductors or metallic",
+      "parameters": {
+        "Ea": {
+          "typical": 0.9,
+          "range": [0.3, 1.0],
+          "notes": "WC is metallic (~0), SiC ~0.9 eV"
+        },
+        "sigma_0": {
+          "typical": 1e4,
+          "range": [1e4, 1e6],
+          "notes": "WC much higher (metallic)"
+        },
+        "beta": {
+          "typical": 1.20,
+          "uncertainty": 0.20,
+          "range": [0.8, 1.4]
+        },
+        "alpha_res": {
+          "typical": 0.08,
+          "uncertainty": 0.03,
+          "range": [0.05, 0.12],
+          "notes": "Low due to covalent bonding"
+        },
+        "gamma": {
+          "typical": 1.8,
+          "uncertainty": 0.2,
+          "range": [1.6, 2.0]
+        },
+        "ksoft": {
+          "typical": 0.88,
+          "notes": "High - covalent bonds resist softening",
+          "override": true
+        },
+        "n_electrons": {
+          "value": 4,
+          "notes": "Per formula unit"
+        },
+        "r_eff": {
+          "typical": 4e-6,
+          "range": [4e-6, 15e-6],
+          "notes": "Small localization length"
+        }
+      },
+      "examples": [
+        {"name": "SiC", "formula": "SiC", "T_onset_typical": "1200-1300°C"},
+        {"name": "WC", "formula": "WC", "notes": "May not follow standard model (metallic)"}
+      ],
+      "warnings": [
+        "WC is effectively metallic - standard Flash Balance may not apply",
+        "Use ksoft override for covalent carbides"
+      ]
+    },
+    
+    "nitride": {
+      "description": "Nitrides (e.g., Si3N4, TiN, AlN)",
+      "crystal_structure": "Various",
+      "conduction_type": "Varies (TiN metallic, Si3N4 insulating)",
+      "parameters": {
+        "Ea": {
+          "typical": 0.4,
+          "range": [0.05, 0.9],
+          "notes": "TiN ~0.05 (metallic), Si3N4 ~0.8"
+        },
+        "sigma_0": {
+          "typical": 1e4,
+          "range": [1e3, 5e6],
+          "notes": "TiN very high (metallic)"
+        },
+        "beta": {
+          "typical": 0.40,
+          "uncertainty": 0.20,
+          "range": [0.3, 0.6],
+          "source": "Flash Balance paper Table S1"
+        },
+        "alpha_res": {
+          "typical": 0.12,
+          "uncertainty": 0.03,
+          "range": [0.08, 0.16],
+          "source": "Flash Balance paper Table S1"
+        },
+        "gamma": {
+          "typical": 1.6,
+          "uncertainty": 0.2,
+          "range": [1.4, 1.8]
+        },
+        "ksoft": {
+          "typical": 0.79,
+          "notes": "Specified override for nitrides",
+          "override": true
+        },
+        "n_electrons": {
+          "value": 6,
+          "notes": "Per N2 equivalent"
+        },
+        "r_eff": {
+          "typical": 18e-6,
+          "range": [3e-3, 20e-6],
+          "notes": "TiN uses mm scale (metallic)"
+        }
+      },
+      "examples": [
+        {"name": "Si3N4", "formula": "Si3N4", "T_onset_typical": "1000-1100°C"},
+        {"name": "TiN", "formula": "TiN", "notes": "Metallic conductor"}
+      ]
+    },
+    
+    "metal": {
+      "description": "Metals (electroplasticity regime)",
+      "crystal_structure": "FCC, BCC, HCP",
+      "conduction_type": "Metallic electronic",
+      "parameters": {
+        "Ea": {
+          "typical": 0.0,
+          "range": [0.0, 0.05],
+          "notes": "Metallic conduction - near zero activation"
+        },
+        "sigma_0": {
+          "typical": 1e7,
+          "range": [1e6, 6e7],
+          "notes": "High metallic conductivity"
+        },
+        "beta": {
+          "typical": 0.05,
+          "uncertainty": 0.05,
+          "range": [0.02, 0.08],
+          "source": "Flash Balance paper Table S1"
+        },
+        "alpha_res": {
+          "typical": 0.05,
+          "uncertainty": 0.02,
+          "range": [0.02, 0.08],
+          "source": "Flash Balance paper Table S1"
+        },
+        "gamma": {
+          "typical": 1.2,
+          "uncertainty": 0.2,
+          "range": [1.0, 1.4]
+        },
+        "ksoft": {
+          "typical": 0.98,
+          "notes": "Nearly unity for metals",
+          "override": true
+        },
+        "n_electrons": {
+          "value": 2,
+          "notes": "Per metal atom"
+        },
+        "r_eff": {
+          "typical": 5e-3,
+          "range": [1e-3, 10e-3],
+          "notes": "Gauge length scale (L/2)"
+        }
+      },
+      "examples": [
+        {"name": "Cu", "formula": "Cu"},
+        {"name": "Ni", "formula": "Ni"},
+        {"name": "W", "formula": "W"}
+      ],
+      "warnings": [
+        "Flash in metals is Joule heating dominated",
+        "Standard Flash Balance equation may need modification"
+      ]
+    },
+    
+    "hydride": {
+      "description": "Hydrides (e.g., ZrH2, TiH2)",
+      "crystal_structure": "Various",
+      "conduction_type": "Protonic/mixed",
+      "parameters": {
+        "Ea": {
+          "typical": 0.25,
+          "range": [0.2, 0.4],
+          "notes": "Protonic conduction"
+        },
+        "sigma_0": {
+          "typical": 5e4,
+          "range": [1e4, 1e5]
+        },
+        "beta": {
+          "typical": 0.55,
+          "uncertainty": 0.15,
+          "range": [0.4, 0.7]
+        },
+        "alpha_res": {
+          "typical": 0.30,
+          "uncertainty": 0.05,
+          "range": [0.25, 0.35],
+          "notes": "Enhanced due to quantum effects"
+        },
+        "gamma": {
+          "typical": 1.5,
+          "uncertainty": 0.2,
+          "range": [1.3, 1.7]
+        },
+        "ksoft": {
+          "typical": 0.71,
+          "calculation": "1 - β × (0.73)²"
+        },
+        "n_electrons": {
+          "value": 2,
+          "notes": "Per H2 equivalent"
+        },
+        "r_eff": {
+          "typical": 10e-6,
+          "range": [8e-6, 15e-6]
+        }
+      },
+      "examples": [
+        {"name": "ZrH2", "formula": "ZrH2"},
+        {"name": "TiH2", "formula": "TiH2"}
+      ]
+    }
+  },
+  
+  "thermodynamic_sources": {
+    "NIST-JANAF": {
+      "url": "https://janaf.nist.gov/",
+      "description": "NIST-JANAF Thermochemical Tables",
+      "reliability": "high",
+      "coverage": ["oxides", "carbides", "nitrides", "common compounds"]
+    },
+    "HSC_Chemistry": {
+      "url": "https://www.hsc-chemistry.com/",
+      "description": "HSC Chemistry Database",
+      "reliability": "high",
+      "coverage": ["comprehensive inorganic compounds"]
+    },
+    "FactSage": {
+      "url": "https://www.factsage.com/",
+      "description": "FactSage Thermodynamic Database",
+      "reliability": "high",
+      "coverage": ["slags", "solutions", "complex systems"]
+    },
+    "SGTE": {
+      "url": "https://www.sgte.net/",
+      "description": "SGTE Pure Substance Database",
+      "reliability": "high",
+      "coverage": ["pure substances", "alloys"]
+    }
+  },
+  
+  "validation_criteria": {
+    "excellent": {"error_percent": 5, "description": "< 5% error"},
+    "good": {"error_percent": 10, "description": "5-10% error"},
+    "acceptable": {"error_percent": 15, "description": "10-15% error"},
+    "poor": {"error_percent": 999, "description": "> 15% error"}
+  },
+  
+  "warning_flags": {
+    "r_eff_too_small": {
+      "threshold_um": 0.5,
+      "message": "r_eff hit lower bound - other parameters may need adjustment"
+    },
+    "r_eff_too_large": {
+      "threshold_um": 200,
+      "message": "r_eff unusually large - verify thermodynamic data"
+    },
+    "high_field_extrapolation": {
+      "message": "Model calibrated at one field may not extrapolate well to other fields"
+    }
+  }
+}

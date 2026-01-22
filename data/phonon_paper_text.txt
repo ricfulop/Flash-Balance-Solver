@@ -1,0 +1,1361 @@
+
+======================================== PAGE 1 ========================================
+Nature Physics
+nature physics
+https://doi.org/10.1038/s41567-025-03057-7
+Article
+Unified theory of phonon in solids with phase 
+diagram of non-Debye anomalies
+ 
+Gan Ding 
+  1, En Ma 
+  2, Feng Jiang2, Jun Duan1,3, Songlin Cai 
+  1,3, Ning Xu 
+  4, 
+Bingyu Cui 
+  5, Lanhong Dai 
+  1,3 & Minqiang Jiang 
+  1,3 
+The classical Debye model successfully predicts phononic contribution to 
+the specific heat of solids in the continuum limit. However, as the phonon 
+wavenumber increases, their vibrational density of states gradually deviates 
+from the Debye prediction and eventually manifests as Van Hove singularities 
+for crystals and a boson peak for glasses. So far, there is still much 
+controversy over whether these two non-Debye anomalies are equivalent 
+or not. Here we propose a unified model and demonstrate that it describes 
+the vibrational density of states in both crystals and glasses. We achieve 
+this by treating the vibrational excitation of solids as the elastic phonons 
+resonating with local modes. Our modelling enables the construction of 
+a phase diagram of non-Debye phonon anomalies. We clarify that the Van 
+Hove singularity and boson peak can evolve as two variants of the same entity 
+when the dispersion displays continuous softening; otherwise, they emerge 
+separately due to resonance-induced extra acoustic softening, further 
+proving by their coexistence. The model is supported by a comparison with 
+experimental heat capacity data over a wide range of real solids, including 
+143 crystalline and glassy substances. These findings provide a unified picture 
+of the Van Hove singularity and boson peak, and deepen our fundamental 
+understanding of the continuum elasticity of real solids.
+In 1912, Peter J. W. Debye developed a model to explain the low- 
+temperature heat capacity of crystals. He treats low-frequency phon-
+ons as continuum elastic waves and gives the vibrational density of 
+states (VDOS) g(ω) as proportional to the squared frequency ω2. How-
+ever, the continuum hypothesis fails when decreasing the wavelength 
+to the scale of the crystal lattice parameter. Its long-range periodicity 
+results in some analytic singularities in g(ω), which is known as the Van 
+Hove singularity (VHS)1. When the lattices lose periodicity, a similar 
+phonon anomaly, that is, the so-called boson peak (BP), occurs usually 
+at lower frequencies, which is widely identified as a rather smooth peak 
+if we plot the Debye-normalized g(ω)/ω2 versus ω for glasses and amor-
+phous matter2–4 or even high-entropy alloys (HEAs) with chemical 
+disorder5. These low-frequency anomalies have a profound influence 
+on the low-temperature properties of solids, such as specific heat, 
+thermal conductivity and superconductivity. Although the VHS is 
+relatively clear, the BP poses a great challenge to the classical Debye 
+theory, forcing us to rethink what breaks the continuum limit of pho-
+nons in disordered (or real) solids.
+Considerable efforts have been spent in the past decades to 
+demystify the BP anomaly, generally forming two distinct viewpoints 
+in explaining its physical origin. The first school of thought believes 
+that the BP in glasses is a variant of the VHS in crystals. Owing to the 
+disordered lattices or fluctuating force constants6, the originally sharp 
+VHS becomes smoother and moves to lower frequencies. The direct 
+evidence is that VHS and BP can be interchangeable by simply tai-
+loring the disorder7 or even density8,9. The second viewpoint argues 
+Received: 2 December 2024
+Accepted: 2 September 2025
+Published online: xx xx xxxx
+ Check for updates
+1State Key Laboratory of Nonlinear Mechanics, Institute of Mechanics, Chinese Academy of Sciences, Beijing, China. 2State Key Laboratory for Mechanical 
+Behavior of Materials, Xi’an Jiaotong University, Xi’an, China. 3School of Engineering Science, University of Chinese Academy of Sciences, Beijing, China. 
+4Department of Physics, University of Science and Technology of China, Hefei, China. 5School of Science and Engineering, The Chinese University of 
+Hong Kong, Shenzhen, China. 
+ e-mail: mqjiang@imech.ac.cn
+
+
+======================================== PAGE 2 ========================================
+Nature Physics
+Article
+https://doi.org/10.1038/s41567-025-03057-7
+G(q, ω) =
+1
+Ω2(q) −ω2 + iωΓ(q)
+(4)
+where Ω(q) and Γ(q) are related to the real and imaginary parts, respec-
+tively, of the self-energy function that takes the phonon–phonon inter-
+actions into account19,28. Considerable efforts have been spent in the 
+past decades to obtain the exact expression for the self-energy function 
+by resorting to various methods such as the self-consistent Born 
+approximation19,20 and the Taylor expansion29,30,35.
+Here we revisit Γ(q) from the perspective of phonon scattering. 
+When an extended phonon (elastic wave) interacts with scatterers, its 
+propagation becomes damped. This scattering process involves the 
+absorption and re-radiation of phonons, mathematically correspond-
+ing to the second-order derivative of uλ(t) with respect to t. We, thus, 
+obtain the response of the λth scattering wave, ̈uλ(t) = −ω2Gλ(ω)e−iωt, 
+with its amplitude
+As = ω2|Gλ(ω)| =
+ω2
+√(Ω2
+λ −ω2)
+2 + Γ 2
+λ ω2
+(5)
+According to the acoustics principles36, the scattering intensity 
+Wλ is proportional to the scattering cross-section and the square of 
+amplitude, that is,
+Wλ ∝πξ2A2
+s = πξ2
+ω4
+(Ω2
+λ −ω2)
+2 + Γ 2
+λ ω2
+(6)
+Interestingly, equation (6) resembles that for the scattering of 
+electromagnetic waves by bound electrons37 or sound waves by bub-
+bles38. By summing Wλ over all phonons (Extended Data Fig. 1), we can 
+obtain the total scattering intensity of the system as
+Wt =
+3N
+∑
+λ=1
+Wλ ≈απξ2
+ω4
+(Ω2
+0 −ω2)
+2 +
+̄Γ
+2ω2
+(7)
+where α is a coefficient and Ω0 and ̄Γ  are the system-averaged eigen-
+frequency and damping, respectively. For scatterers, ω donates the 
+frequency before scattering, so the scattering-free phonons can be 
+regarded as ‘external’ linear excitations (ω = cq, where c is the wave 
+velocity). Therefore, equation (7) transforms into
+Wt = απξ2
+q4
+(q2
+0 −q2)
+2 + q2θ2
+(8)
+where q0 = Ω0/c and θ =
+̄Γ/c. In reciprocal space, q0 is related to the 
+typical scatterer size by q0 = 2π/ξ, and θ is related to the characteris-
+tic mean free path of scattering by θ = 2π/ℓ. Obviously, a smaller q0 
+corresponds to a larger ξ, whereas a smaller θ indicates a longer ℓ. 
+Given that phonon damping directly results from scattering, Γ(q)  
+of the system can be approximately proportional to the scattering 
+intensity Wt:
+Γ(q) ∝Wt = Γ0
+q4
+(q2
+0 −q2)
+2 + q2θ2
+(9)
+where Γ0 = απξ2. In the following, q0, q and θ are each normalized by 
+the Debye wavenumber qD = 2π/a, with a being the average atomic 
+spacing. We, thus, obtain the dimensionless q0 = a/ξ and θ = a/ℓ. Usu-
+ally, both ξ and ℓ are about 1–5 average atomic spacing14,39,40; thus, the 
+range of q0 and θ is preliminarily set as 0.2 to 1.
+that the BP, completely different from the VHS, originates from some 
+local ‘structures’ beyond the lattice, such as soft spots10, orientational 
+orders11 and string-like defects12. These defective structures hybrid-
+ize with elastic phonons, which produces the quasi-localized modes 
+(QLMs) that contribute to the BP13,14. This viewpoint is supported by 
+the coexistence of both BP and VHS in strain glasses15, jammed model 
+glasses16,17 and two-dimensional triangular lattices18.
+These contradictory viewpoints are accompanied by the two dif-
+ferent paths of theoretical description of the VDOS of amorphous 
+solids. One is the fully harmonic model, for example, the fluctuating 
+elasticity theory proposed in refs. 6,19. The solids are treated as elastic 
+continua with fluctuating force constants, and the VDOS is obtained 
+by solving the fluctuation-corrected Green’s function. The other 
+model20, on the contrary, modifies the Green’s function by introducing 
+some local modes into extended phonons. Both models numerically 
+predict the Rayleigh law of damping coefficient Γ(q) in the low- 
+wavenumber (q) region. Considering the power-law decay of local 
+stress in space, ref. 21 reveals that Γ(q) instead scales with q as −q4lnq. 
+However, the fact is that the BP usually emerges in the high-q region 
+where the quadratic damping law holds, which is supported by both 
+experiments22–24 and simulations25–27. Furthermore, there is much 
+evidence21–23 that the increase in Γ(q) is accompanied by the softening 
+of the eigenfrequency Ω(q) of phonons. Recently, refs. 28,29 have 
+adopted quadratic Γ(q) damping to predict global softening near the 
+(pseudo-)Brillouin zone (PBZ). Using Taylor expansion to higher orders, 
+both global and local softening of transverse phonons is successfully 
+captured to reproduce the BP and VHS15,30. So far, how to link the pho-
+non softening—global or local—to the damping law has not been acces-
+sible theoretically, which holds the key to clarify the relationship 
+between the BP and VHS. A grand challenge is, therefore, to come up 
+with a unifying theory that can weave together the disparate threads 
+of observations and findings reported across various materials.
+A unified VDOS model
+We begin by abstracting an isotropic real solid as a homogeneous con-
+tinuum model embedded with some scatterers. The system’s vibrations 
+can be treated as the elastic phonons resonating with local modes. There 
+are two system-averaged length scales: the typical size ξ of scatterers and 
+the characteristic mean free path ℓ (or mobility distance) of the scatter-
+ing, jointly modulating the degree of resonance. In terms of the displace-
+ment field u, the full dynamics of the system can be described by
+M ̈u + H ̇u + Ku = 0
+(1)
+where M, H and K are the mass matrix, viscous damping matrix and 
+stiffness matrix, respectively. Owing to the complexity, equation (1) is 
+impossible to solve analytically. Usually in underdamped states, H is 
+often assumed to be a linear combination of M and K. If ignoring pho-
+non–phonon interactions, these matrices become positive-definite and 
+diagonal. Thus, equation (1) can be decomposed into a set of damped 
+harmonic phonons:
+mλ ̈uλ + ηλ ̇uλ + kλuλ = 0
+(2)
+where mλ, ηλ and kλ are the mass, viscosity and stiffness, respectively; 
+the subscript λ = 1…3N denotes the numbering of phonons. Then, we 
+assume that equation (2) has a solution of the form uλ(t) = Gλ(ω)e−iωt, 
+where Gλ(ω) is the ω-dependent Green’s (response) function
+Gλ(ω) =
+1
+Ω2
+λ −ω2 + iωΓλ
+(3)
+where Ωλ = √kλ/mλ  and Γλ = ηλ/mλ. This single-degree-of-freedom 
+Green’s function can be formally generalized to a three-dimensional 
+q-dependent version31–34 as
+
+
+======================================== PAGE 3 ========================================
+Nature Physics
+Article
+https://doi.org/10.1038/s41567-025-03057-7
+At the long-wavelength limit (q →0), Γ(q) described by 
+equation (9) follows the famous Rayleigh damping law; increasing q 
+to q0, equation (9) becomes Γ(q) ∼q2, that is, Mie damping law. This 
+theoretical prediction is consistent with experiments22,23,41 and numeri-
+cal calculations19. To the best of our knowledge, this is the first time 
+that such a transition of phonon damping has been theoretically pre-
+dicted. It is noted that the present Γ(q) ∼q2 law in the high-q region is 
+different from diffusive q2 damping, as recently revealed35, and the 
+latter results from non-affine motions and occurs far below the Ray-
+leigh region. We also compare our model with Γ(q) ∼−q4 ln q reported 
+in ref. 21 by fitting the damping data of atomistic-simulated binary 
+soft-sphere glasses42. Figure 1a shows that in the low-q region, both 
+longitudinal and transverse Γ(q) data can be well fitted by equation (9) 
+(red solid lines) and −q4 ln q (blue solid lines). However, in the high-q 
+region, the −q4 ln q scaling breaks down, but our model still works. It 
+must be pointed out that the deviation of the transverse data from the 
+theoretical prediction is due to the sample’s finite-size effects21. This 
+deviation disappears for a three-dimensional inverse power-law glass 
+of up to 4,000,000 particles43 (Extended Data Fig. 2). Again, our model 
+shows better prediction than −q4 ln q scaling, which is further tested 
+by fitting the Γ(q) data of NiZr crystalline alloy44 and densified SiO2 
+glass45 (Supplementary Fig. 1). These results prove the robustness and 
+universality of equation (9).
+We next discuss the eigenfrequency Ω(q) under damping Γ(q). 
+For a damped-elastic solid, the phonon kinetic energy is propor-
+tional to the square of eigenfrequency, that is, Ek(q) ∝Ω2(q). Accord-
+ing to the displacement of a damped plane wave46, we can write 
+Ek(q) ≈E0(q) exp(−Γ(q)/cqD), where E0(q) ∝Ω2
+lattice(q) is the phonon 
+kinetic energy of a damping-free crystal. Generally, Ωlattice(q) has a 
+sinusoidal form47
+Ωlattice(q) = 2cqD
+π
+sin ( πq
+2qD
+)
+(10)
+This formula is derived from the standard result of one-dimensional 
+chains, but still works as an approximation for three-dimensional lat-
+tices9. Inserting equation (10) into Ek(q), we can derive the expression 
+of Ω(q) as
+Ω(q)
+2cqD/π = sin ( πq
+2qD
+) exp (−Γ(q)
+2cqD
+)
+(11)
+where the sinusoidal term on the right-hand side describes the inher-
+ent softening near qD, which is further damped by the exponential term 
+(Γ(q) is given by equation (9)). Equation (11) highlights the theoretical 
+relationship between the softening and damping of phonons, which 
+is supported by existing experimental and numerical evidences21–23. 
+Figure 1b presents the perfect agreement between the predicted TA 
+dispersion (red solid lines) and the experimental data of Zr46Cu46Al8 
+metallic glass measured by using inelastic neutron scattering48, and 
+the simulated data of Zr95.5Ni4.5 strain glasses15. Both the sinusoidal-type 
+inherent global softening and the local softening can be captured by 
+our theoretical model. Previously, only the Taylor expansion to higher 
+orders could achieve this prediction30.
+On the basis of equation (11), we can further evaluate the phonon 
+propagation and damping by calculating the velocity autocorrelation 
+function as
+C(t) = kBT ∑
+q
+∫δ(ω −Ω(q)) cos(ωt)dω
+(12)
+0.04
+0.1
+0.6
+0
+50
+100
+150
+Γ/q4
+q
+Equation (9)
+ L
+ T
+0
+50
+100
+150
+–1.0
+–0.5
+0
+0.5
+1.0
+q = 0.1 
+q = 0.3 
+q = 0.5
+C(t) 
+t
+a
+b
+c
+d
+2
+4
+6
+0
+10
+20
+30
+40
+50
+60
+0
+8
+Ambient silica glass
+FeCoCrNi HEA
+ω (THz)
+VDOS (%)
+Debye model
+0.2
+0.4
+0.6
+0.8
+1.0
+0
+0.2
+0.4
+0.6
+0.8
+1.0
+Metallic glass
+q/qD
+ΩT/(2cTqD/π)
+Strain glass
+Fig. 1 | Theoretical model of VDOS. a, Comparison between the damping data of 
+atomistic-simulated binary soft-sphere glasses21 with equation (9) (red solid 
+lines) and the –q4lnq law (blue solid lines). b, Comparison between the calculated 
+TA dispersion (equation (11)) with the experiments of Zr46Cu46Al8 metallic glass 
+measured by using inelastic neutron scattering48 and the simulations of Zr95.5Ni4.5 
+strain glass15; the fitting parameters are listed in Supplementary Table 1.  
+c, Velocity autocorrelation function C(t) (equation (12)) at q = 0.1, q = 0.3 and 
+q = 0.5, which is well fitted by exp(−Γ (q)t/2) cos(Ω(q)t). d, Comparison between 
+the theoretical VDOS (equation (13)) with the experimental data of an ambient 
+silica glass7 and FeCoCrNi HEA49, and the fitting parameters are listed in 
+Supplementary Table 2. The dashed lines indicate the Debye model.
+
+
+======================================== PAGE 4 ========================================
+Nature Physics
+Article
+https://doi.org/10.1038/s41567-025-03057-7
+where kB is the Boltzmann constant and T  is the temperature (here 
+T = 300 K, and the choice of T does not influence the analysis as kBT 
+normalization is carried out on C(t)). Figure 1c shows the normalized 
+C(t) of the transverse excitation with q = 0.1, q = 0.3 and q = 0.5 when 
+q0 = 0.5 and θ = 0.8. Clearly, the long-wavelength phonon (q = 0.1) 
+retains its rigid propagation characteristic. Increasing q to 0.5 
+(the wavelength is the same size as the scatterer), a noticeable oscilla-
+tory decay can be observed. In essence, the shorter the wavelength 
+(relative to the scatterer size) of the phonon, the more severe the 
+damping and scattering. Besides, all C(t) values can be well fitted by 
+exp(−Γ(q)t/2) cos(Ω(q)t)  (solid lines), which is proposed in ref. 21  
+and formally consistent with equation (11). It further supports that 
+equation (12) effectively describes the propagation and damping of 
+phonons with different wavelengths.
+The known Γ(q) and Ω(q) allow for a quantitative calculation of 
+the VDOS. The VDOS can be extracted from the imaginary part of the 
+Green’s function (equation (4)) as
+g(ω) = −2ω
+πq3
+D
+∫
+qD
+0
+Im[2GT(q, ω) + GL(q, ω)]q2dq
+(13)
+where the subscripts T and L represent the transverse and longitudinal 
+branches, respectively. As shown in Fig. 1d, the experimental VDOS 
+data of almost the entire frequency spectrum (red solid lines), includ-
+ing ambient silica glass7 and FeCoCrNi HEA49, can be well described by 
+equation (13). It is noted that the two (transverse and longitudinal) 
+peaks in the VDOS of HEA are also captured by our model. For com-
+parison, the dashed lines indicate the Debye model that only satisfies 
+the low-ω limit. With increasing ω, the Debye model shows an obvious 
+deviation from experimental data, but our model does not.
+VHS and BP
+With the model, we now proceed to reproduce the non-Debye behav-
+iours, namely, the BP and VHS. Considering the overwhelmingly dom-
+inant contribution of the transverse phonon22,29,50, here we neglect the 
+longitudinal one. Besides, ω and Ω(q) are normalized by 2cTqD/π, and 
+assume Γ0 = 0.2θ/q2
+0  in the calculations. Figure 2a,b illustrates the 
+evolution of phonon damping Γ(q), dispersion Ω(q) and the 
+Debye-normalized VDOS g(ω)/ω2 by varying q0 for a fixed θ = 0.9. It 
+is evident that as q increases, Γ(q) increases monotonically. A smaller 
+q0 (larger scatterer) leads to more pronounced damping and softening 
+of phonons, which shifts the PBZ boundary towards lower frequencies. 
+Additionally, we find that the phonon softening in Ω(q) is always accom-
+panied by the deviation in Γ(q) from the Rayleigh law (Extended 
+Data Fig. 3). Meanwhile, all the g(ω)/ω2 curves only exhibit a single 
+non-Debye excess peak (Fig. 2b). For comparison, the grey dotted line 
+shows sinusoidal dispersion without damping (Fig. 2a), corresponding 
+to a very sharp VHS peak (Fig. 2b).
+Phenomenologically, the BP evolution exhibits a common 
+feature8,18,30,50–52: a stronger BP always shifts to a lower frequency, 
+whereas the evolution of VHS is exactly the opposite. In Fig. 2b, as q0 
+decreases, the peak position monotonically shifts to lower frequencies, 
+but the peak height first decreases and then increases. The turning 
+point occurs at q0 = 0.5, and the corresponding frequency is near 0.6. 
+On the basis of this non-monotonic evolution of peak height, we believe 
+that the peaks below ω = 0.6 are more like the BP, and the ones above 
+a
+b
+c
+d
+0
+0.2
+0.4
+0.6
+0.8
+1.0
+1
+2
+3
+4
+5
+VHS
+BP
+0
+0.2
+0.4
+0.6
+0.8
+1.0
+0.3
+0.6
+0.9
+0
+0.3
+0.6
+0.9
+ q0 = 0.35 
+ 
+q0 = 0.4
+ q0 = 0.5   
+ 
+q0 = 0.8
+ 
+q0 = 1
+ 
+VHS
+q
+ω
+Ω
+Γ
+0
+1
+2
+3
+0.3
+0.6
+0.9
+0
+0.2
+0.4
+0.6
+0.8
+1.0
+q
+BP
+0
+1
+2
+3
+0.3
+0.6
+0.9
+0
+0.2
+0.4
+0.6
+0.8
+1.0
+VHS
+g(ω)/ω2
+g(ω)/ω2
+g(ω)/ω2
+q
+Ω or ω
+Ω or ω
+Fig. 2 | The single non-Debye excess peak and its origin. a, Evolution of  
+phonon damping Γ (q) and dispersion Ω(q) by varying q0 for a fixed θ = 0.9.  
+b, Corresponding Debye-normalized VDOS g(ω)/ω2. The grey dotted lines in a 
+and b indicate the sinusoidal dispersion and VHS, respectively. c, VHS (q0 = 1) and 
+the corresponding phonon softening. d, BP (q0 = 0.4) and the corresponding 
+phonon softening. The coloured dotted lines in c and d indicate the respective 
+contribution from the corresponding dispersion. The red and blue arrows mark 
+the VHS and BP positions, respectively.
+
+
+======================================== PAGE 5 ========================================
+Nature Physics
+Article
+https://doi.org/10.1038/s41567-025-03057-7
+ω = 0.6 are more like the VHS. This VHS-to-BP transformation is also 
+observed in model glasses by modulating the force-constant 
+disorder6,18. When q0 decreases below 0.3, the severe damping causes 
+the BP to diverge (the non-Debye excess peak is undefined), implying 
+a precursor of the phonon instability3. Our model also captures that 
+the Debye levels increase monotonically with decreasing q0 (or disor-
+der), which agrees well with experiments and simulations6,8,9,50.
+At first glance, the BP anomaly appears to be a relic of the VHS, as 
+both exhibit flattening in the dispersion near the PBZ boundary 
+(Fig. 2a). To investigate their origins, Fig. 2c,d illustrates the representa-
+tive cases of VHS (q0 = 1) and BP (q0 = 0.4) from Fig. 2b, where the 
+dispersion is artificially divided into three different segments, namely, 
+linear dispersion (orange line), early softening (blue line) and inherent 
+softening near the PBZ boundary (purple line). The dotted lines indicate 
+their respective contributions to the total VDOS. Figure 2c shows that 
+linear dispersion contributes to the Debye level, whereas the inherent 
+softening mainly contributes to the VHS (red arrow). Correspondingly, 
+phonons are increasingly damped and eventually ill-defined as q 
+approaches the PBZ boundary (Extended Data Fig. 4a), indicating the 
+Ioffe–Regel limit53.
+Figure 2d shows that the situation becomes more complicated for 
+the BP case. We find that the peak position is far below the PBZ bound-
+ary instead near the early softening segment, but the peak height is 
+not solely contributed by the early softening (blue dashed line). The 
+smoothed VHS that moves to lower frequencies also provides consider-
+able contribution to the peak height. Since the nonlinear softening of 
+phonons is continuous and smooth, it is actually impossible to exactly 
+distinguish the early softening from the inherent one. In this sense, the 
+BP shown in Fig. 2b can be regarded as a broadened VHS that shifts to 
+lower frequencies due to early softening. The onset of early softening 
+also corresponds to the absence of the propagation characteristic of 
+phonons (Extended Data Fig. 4b). On the other hand, it can be also 
+understood as follows: a pure BP originates from the early softening, 
+but it always receives great contribution from the inherent softening 
+(VHS), both together constructing a real BP. It is this dual source of 
+origin that gives rise to much controversy about the physics of BP34,54,55. 
+Moreover, the Debye level combines contributions not only from the 
+linear dispersion but also from the subsequent softening. The notable 
+gap between the real Debye level and the ideal one from pure elasticity 
+was also observed in an ambient silica glass56.
+Our model, in contrast, predicts a different type of vibrational 
+behaviour by varying θ and keeping q0 fixed at 0.5 (Fig. 3a). As θ 
+decreases (ℓ increases), a scattering resonance peak gradually emerges 
+in Γ(q). This type of resonance peak has also been observed in complex 
+proteins owing to localized excitations57. All previous models cannot 
+explain this phenomenon. Interestingly, this resonance consistently 
+induces local softening, even resulting in a ‘negative’ sound velocity—
+similar to that in strain glasses15. Such local softening ultimately leads 
+to the coexistence of BP and VHS in g(ω)/ω2 (Fig. 3b). We find that the 
+stronger the scattering/damping resonance, the more pronounced 
+the local softening is and, thus, the coexistence of both BP and VHS is 
+more evident. In Fig. 3b, the peak does not monotonically shift from 
+the left, because these curves include both continuous and 
+non-continuous softening. The real situation is that the VHS peak 
+gradually becomes weaker as a shoulder; meanwhile, the BP emerges 
+at lower frequencies, which is further clarified in Extended Data Fig. 5.
+Figure 3c illustrates a typical case in which both BP and VHS 
+coexist. By analysing the contribution of dispersion to the reduced 
+VDOS, we find that the positions of BP (blue arrow) and VHS (red 
+arrow) are close to peaks of the blue and red dotted curves, respec-
+tively. In other words, the BP originates from the first instance of 
+local softening (blue solid segment), whereas the VHS arises from the 
+global softening near the PBZ boundary (red solid segment). They are 
+separated by the secondary hardening (purple solid segment). In this 
+0
+0.2
+0.4
+0.6
+0.8
+1.0
+0.3
+0.6
+0.9
+0
+0.3
+0.6
+Local softening
+θ = 0.3
+θ = 0.4
+θ = 0.5
+θ = 0.7
+θ = 1.0
+q
+a
+b
+0
+0.2
+0.4
+0.6
+0.8
+1.0
+1
+2
+3
+0
+1
+2
+3
+0.3
+0.6
+0.9
+0
+0.2
+0.4
+0.6
+0.8
+1.0
+q
+BP
+VHS
+c
+Ω or ω
+ ω
+g(ω)/ω2
+g(ω)/ω2
+Ω
+Γ
+Fig. 3 | Coexisting BP–VHS and its origin. a, Evolution of phonon damping Γ (q) 
+and dispersion Ω(q) by varying θ for a fixed q0 = 0.5. b, Corresponding Debye- 
+normalized VDOS g(ω)/ω2. c, Coexistence of BP and VHS (θ = 0.3) and the 
+corresponding phonon softening. The coloured dotted lines indicate the 
+respective contribution from the corresponding dispersion. The blue and red 
+arrows mark the positions of BP and VHS, respectively.
+
+
+======================================== PAGE 6 ========================================
+Nature Physics
+Article
+https://doi.org/10.1038/s41567-025-03057-7
+case, they belong to two different identities, with very weak interac-
+tion between them. Near the BP position, the propagation feature 
+of phonons is gradually lost (Extended Data Fig. 4c). However, fur-
+ther increasing q to the range between the BP and VHS, phonon-like 
+excitations begin to partially recover. In this case, the Ioffe–Regel 
+limit occurs near the VHS rather than the BP, which contradicts the 
+model that predicts a close relationship between the BP frequency 
+and Ioffe–Regel limit58. It suggests that their non-coincidence is 
+possible, a finding that has been experimentally validated44. The 
+BP–VHS coexistence demonstrates that the phonon Green’s function 
+framework that successfully explains the BP24,25,27,42 can be extended 
+to describe both BP and VHS simultaneously.
+Phase diagram of non-Debye phonon anomalies
+Here we systematically analyse the evolution of non-Debye phonon 
+anomalies by varying q0 and θ. The two physical quantities, represent-
+ing the average size of scatterers and their characteristic mean free 
+path of scattering, together constitute the parameter space over 
+which different anomaly scenarios take control in different regions 
+of the ‘phase diagram’. By defining the excess peak IND as the maximum 
+of Debye-normalized VDOS and plotting their two-dimensional con-
+tour surface in the q0–θ space, we obtain the phase diagram of 
+non-Debye vibrational anomalies (Fig. 4a). This diagram reveals three 
+distinct regions: single VHS, single BP and their coexistence. The 
+orange solid line, corresponding to the valley of the contour, marks 
+the BP–VHS boundary. In the BP region, IND increases as q0 decreases 
+(indicating increased scattering), whereas the opposite trend is 
+observed in the VHS region.
+The coexistence region is represented by a small area at the bottom 
+left, surrounded by black squares. As mentioned above, the coexistence 
+of BP and VHS is always accompanied by the appearance of a resonance 
+peak. According to the necessary condition for a peak in equation (9) 
+(Methods), we obtain the non-zero real root as
+q∗=
+√2q2
+0
+√2q2
+0 −θ2
+(14)
+It is interesting to find that the boundary data (black squares) of 
+the coexistence region can be accurately fitted by equation (14), only 
+when q∗= 0.73 (pink dashed line). When the value of q∗ is either too 
+large or too small, the predicted coexistence region will be either 
+overestimated or underestimated (Extended Data Fig. 6a). If the peak 
+position is greater than 0.73 (Extended Data Fig. 6b), the local softening 
+is close to the boundary of PBZ (Extended Data Fig. 6c). Therefore, two 
+phonon anomalies overlap, resulting in the only one peak in g(ω)/ω2 
+(Extended Data Fig. 6d).
+The results above indicate that two necessary conditions must be 
+met for the coexistence of BP and VHS. The first is the presence of a 
+resonant peak, and the second is that the peak position must be well 
+below a threshold. To satisfy these criteria, the solid system requires 
+q0 ≤0.67 and θ ≤0.4 (or ξ ≥1.5a and ℓ≥2.5a). In other words, both 
+large scatterer size and relatively long mean free path of scattering are 
+necessary. These two inequalities are seemingly contradictory. This is 
+why such coexistence has rarely been observed in experiments16. So 
+far, it has primarily been observed in specific situations, such as strain 
+glasses with glass/nanodomains15, defective HEAs with interstitials/
+lattice distortions5 and some model glasses59. In these solids, the 
+extended phonons resonate strongly with local modes in a frequency 
+range far below the PBZ boundary.
+Furthermore, our predicted VDOS can be used to gauge the heat 
+capacity Cp. In general, the total Cp of solids comes from the electronic 
+γT and phononic Cph contributions, that is,
+Cp = γT + Cph
+(15)
+where the Sommerfeld coefficient γ is determined using a standard 
+procedure40,52,60. According to the phonon heat capacity theory, the 
+Cph value can be calculated from the VDOS as
+Cph = 3R∫
+ωD
+0
+( ℏω
+kBT)
+2
+eℏω/kBT
+(eℏω/kBT −1)
+2 g(ω)dω
+(16)
+where R is the gas constant, ωD denotes the maximum (Debye) fre-
+quency and ℏ is the reduced Planck constant. In general, an excess 
+non-Debye peak is also present in the Cph/T3 plot, with its height defined 
+as HND = [Cph/T3]TND, where TND denotes the peak position.
+Figure 4b presents the phase diagram of non-Debye heat capacity 
+anomalies corresponding to the data in Fig. 4a. In the calculations, the 
+q0-dependent cut-off frequency is set to ωD = 21.23 + 20.03q0 THz. 
+Compared with Fig. 4a, the heat capacity phase diagram shows two key 
+differences. First, the two-phase region disappears. Second, HND 
+increases monotonically as q0 decreases but is less influenced by θ 
+(Extended Data Fig. 7). This suggests that the integration process in 
+equation (16) obscures some of the finer details of the excess vibra-
+tional peaks, which aligns with data from strain glasses15 and HEAs5. 
+This explains why only a single excess peak is observed in the experi-
+mental Cph/T3 plots of real solids40,54,61. In addition to the excess peak 
+of low-temperature Cph, the present theory can capture the anomalous 
+plateau of thermal conductivity in glasses62,63 (Supplementary Text 
+and Supplementary Fig. 2).
+0.4
+0.6
+0.8
+1.0
+0.2
+0.4
+0.6
+0.8
+1.0
+20.00
+56.00
+92.00
+128.0
+164.0
+200.0
+236.0
+272.0
+308.0
+HND (µJ mol–1  K–4)
+0.4
+0.6
+0.8
+1.0
+0.2
+0.4
+0.6
+0.8
+1.0
+θ
+θ
+1.920
+2.231
+2.542
+2.854
+3.165
+3.476
+3.788
+4.099
+4.410
+IND
+q0
+q0
+BP
+VHS
+BP + VHS
+a
+b
+Fig. 4 | Phase diagram of non-Debye phonon anomalies. a, Two-dimensional 
+contour plots of the calculated IND in the q0–θ space. The orange solid line marks 
+the BP–VHS boundary, and the black squares mark the coexistence region 
+boundary, which can be well fitted by equation (14) with q∗= 0.73 (pink dashed 
+line). b, Calculated HND based on the VDOS data from a.
+
+
+======================================== PAGE 7 ========================================
+Nature Physics
+Article
+https://doi.org/10.1038/s41567-025-03057-7
+Low-temperature heat capacity of real solids
+To unravel such universality of HND, we measured the heat capacity of 
+a wide variety of solids. Details of the sample preparation, characteri-
+zation and measurement are provided in the Methods and Extended 
+Data Fig. 8. Extended Data Fig. 9 displays the heat capacity Cp and Cph/T3 
+of eight representative solids after subtracting the electronic contribu-
+tion (Extended Data Fig. 10). As expected, Cp and Cph/T3 can be 
+described satisfactorily by our present theory (black dashed lines), 
+with the fitting parameters listed in Supplementary Table 3.
+Figure 5 displays the experimental HND values and their reciprocal 
+positions 1/TND, including 55 data points measured in this study, along 
+with 88 data points from other solids found in the literature 
+(Supplementary Table 4). These solids span a wide range of chemical 
+components, structures and bondings, leading to large variations in 
+both HND and TND in the plot of Cph/T3. Remarkably, most of the data 
+points collapse well onto a master curve, which cannot be explained by 
+any previous theory. Interestingly, our model offers a reliable mechanism 
+to account for this universality (red solid curve). In the fitting, we selected 
+the optimal θ = 0.628 and varied q0 from 0.31 to 1. In particular, any value 
+of θ between 0.4 and 0.8 would not make much of a difference as the 
+evolution of HND is insensitive to θ (Fig. 4b and Extended Data Fig. 7). 
+However, the data points of ambient (un-densified) silica glasses do not 
+conform to this general trend, although their VDOS and boson heat 
+capacity peak can be described by our model (Fig. 1d and Supplemen-
+tary Fig. 3). We believe that this discrepancy results from the unique 
+rotation of corner-sharing SiO4 tetrahedra in ambient silica glasses2. 
+Such motions contribute to the floppy modes that are crucial for 
+describing the BP anomaly in silica glasses64,65. Note that on densification, 
+the silica glass data become normal, with the peak height being weaker 
+and the position moving to a higher temperature. The reason is that 
+densification can effectively reduce the corner-sharing tetrahedra, as 
+revealed in a recent simulation study66. The data point for silica crystal 
+is close to the model-predicted trend as well.
+Near the top right corner, where q0 is approximately 0.31, the 
+associated solids are typically polymer glasses, which exhibit the high-
+est peak of HND = 309.6 μJ mol−1 K−4. Correspondingly, the calculated 
+average size of scatterers approaches 3–4 atomic spacings (approxi-
+mately 1 nm), possibly referring to the molecular chains of polymers. 
+In the bottom-left corner, where q0 approaches 1, the scatterer size 
+aligns with atomic spacing. In particular, many ordered crystals, such 
+as Al3Sc intermetallics, single-crystal Si and HEAs, are situated in this 
+place. These solids demonstrate the highest TND ≈50 K, but with very 
+weak HND ≈20 μJ mol−1 K−4.
+Solids with complex structures, such as metallic glasses and their 
+composites, occupy the intermediate portion of the plot. The calcu-
+lated average size of scatterers is 2–3 atomic spacings, which indicates 
+short- to medium-range orders39 or interphase interfaces. Nevertheless, 
+the phonon scattering is rather complex, not only dependent on topo-
+logical defects but also on the surrounding elastic matrix and the 
+defect–matrix interaction. It must be pointed out that both q0 and θ 
+are defined from the perspective of atomic vibrations instead of static 
+structures. Our model does not specify the structural origin for phonon 
+scattering. As such, 143 real solids, regardless of chemical components 
+and topological structures, can be modelled as the scatterer–contin-
+uum system but with different damping effects. The universal evolution 
+of non-Debye phonon anomalies is quantitatively described by our 
+theory. For a given solid, the exact correlation between phonon scat-
+tering and structural features is an interesting topic, which would 
+require in-depth atomistic understanding but is beyond the scope of 
+this study.
+Conclusions
+We developed a VDOS model universal for solids, either amorphous 
+materials or ordered crystals, to settle the long-standing controversy 
+about the BP and VHS. Our model derives a phonon damping func-
+tion that not only describes the low-q Rayleigh scattering but also 
+captures the deviation at higher q. This damping directly contributes 
+to an extra softening of phonons in dispersion beyond the inherent 
+softening near the PBZ boundary. In competition between phonon 
+propagation and damping, the model predicts a panoramic ‘phase 
+diagram’ of non-Debye phonon anomalies: BP and VHS. We demonstrate 
+that the continuous softening of phonons induces either single BP or 
+single VHS. The VHS mainly arises from phonon softening near the 
+Brillouin zone boundary, leading to a piling-up of the VDOS. The BP 
+comes from a combined contribution from both extra and inherent 
+softening. Accompanied by the occurrence of BP or VHS, the damping 
+deviates from Rayleigh scattering, and the acoustic behaviour is lost. 
+In this sense, the BP can be regarded as a broadened version of the 
+VHS that moves to low frequencies owing to extra softening. When 
+the phonon damping/scattering exhibits a resonance peak, the extra 
+softening in dispersion becomes highly localized and, thus, separates 
+from the inherently global softening. In this scenario, the coexistence 
+of BP and VHS emerges, demonstrating that they are fundamentally 
+distinct phenomena. Our model is validated by experimental data on 
+low-temperature heat capacity of 143 real solids.
+Online content
+Any methods, additional references, Nature Portfolio reporting sum-
+maries, source data, extended data, supplementary information, 
+acknowledgements, peer review information; details of author con-
+tributions and competing interests; and statements of data and code 
+availability are available at https://doi.org/10.1038/s41567-025-03057-7.
+0
+0.05
+0.10
+0.15
+0.20
+0.25
+0.30
+0.35
+0
+50
+100
+150
+200
+250
+300
+350
+HND (µJ mol–1 K–4)
+309.6 µJ mol–1 K–4
+48.3 K
+Metallic glasses
+Crystallized metallic glasses
+Metallic glass composite
+FCC HEAs
+BCC HEAs
+Two-phase HEA
+High-entropy metallic glass composite
+High-entropy metallic glass
+FCC Al
+Al3Sc 
+Mg2Sn
+Mg2Sn0.65Si0.12Ge0.13Bi0.1
+GeO2 glass
+Alcohol glass
+B2O3 glass
+Alkali borate glass
+CKN
+Polystyrene
+Amber glass
+2-BrBP 
+Butanol glass
+Amorphous Si
+Single-crystal Si
+SiO2 glass
+SiO2 crystal
+Ambient SiO2
+Densified SiO2
+1/TND (K–1)
+This work
+Fig. 5 | Experimental data of HND and their reciprocal positions 1/TND over a 
+wide variety of glassy and crystalline solids. HND is the peak height of the excess 
+non-Debye heat capacity and TND denotes the peak position. The red solid line is 
+theoretically predicted by the present model. In the calculations, we set 
+Γ0 = 0.2θ/q2
+0, ωD = 21.23 + 20.03q0 and θ = 0.628; here the only variable is q0, 
+varying from 0.31 to 1. The data for ambient silica glass are compared with the 
+densified one. BCC, body-centred cubic; FCC, face-centred cubic.
+
+
+======================================== PAGE 8 ========================================
+Nature Physics
+Article
+https://doi.org/10.1038/s41567-025-03057-7
+References
+1.	
+Van Hove, L. The occurrence of singularities in the elastic 
+frequency distribution of a crystal. Phys. Rev. 89, 1189–1193 (1953).
+2.	
+Buchenau, U., Nücker, N. & Dianoux, A. J. Neutron scattering study 
+of the low-frequency vibrations in vitreous silica. Phys. Rev. Lett. 
+53, 2316–2319 (1984).
+3.	
+Grigera, T. S., Martín-Mayor, V., Parisi, G. & Verrocchio, P. Phonon 
+interpretation of the ‘boson peak’ in supercooled liquids. Nature 
+422, 289–292 (2003).
+4.	
+Xu, N., Wyart, M., Liu, A. J. & Nagel, S. R. Excess vibrational modes 
+and the boson peak in model glasses. Phys. Rev. Lett. 98, 175502 
+(2007).
+5.	
+Brink, T., Koch, L. & Albe, K. Structural origins of the boson peak in 
+metals: from high-entropy alloys to metallic glasses. Phys. Rev. B 
+94, 224203 (2016).
+6.	
+Schirmacher, W., Diezemann, G. & Ganter, C. Harmonic vibrational 
+excitations in disordered solids and the ‘boson peak’. Phys. Rev. 
+Lett. 81, 136–139 (1998).
+7.	
+Chumakov, A. I. et al. Role of disorder in the thermodynamics  
+and atomic dynamics of glasses. Phys. Rev. Lett. 112, 025502 
+(2014).
+8.	
+Monaco, A. et al. Effect of densification on the density of 
+vibrational states of glasses. Phys. Rev. Lett. 97, 135501 (2006).
+9.	
+Chumakov, A. I. et al. Equivalence of the boson peak in glasses to 
+the transverse acoustic Van Hove singularity in crystals. Phys. Rev. 
+Lett. 106, 225501 (2011).
+10.	 Ding, J. et al. Soft spots and their structural signature in a metallic 
+glass. Proc. Natl Acad. Sci. USA 111, 14052–14056 (2014).
+11.	
+Yang, J. et al. Structural parameter of orientational order to 
+predict the boson vibrational anomaly in glasses. Phys. Rev. Lett. 
+122, 015501 (2019).
+12.	 Hu, Y.-C. & Tanaka, H. Origin of the boson peak in amorphous 
+solids. Nat. Phys. 18, 669–677 (2022).
+13.	 Mizuno, H., Shiba, H. & Ikeda, A. Continuum limit of the vibrational 
+properties of amorphous solids. Proc. Natl Acad. Sci. USA 114, 
+E9767–E9774 (2017).
+14.	 Duan, J. et al. Coupling of quasi-localized and phonon modes in 
+glasses at low frequency. Chin. Phys. B. 33, 056502 (2024).
+15.	 Ren, S. et al. Boson-peak-like anomaly caused by transverse 
+phonon softening in strain glass. Nat. Commun. 12, 5755 (2021).
+16.	 Wang, Y. et al. Disentangling boson peaks and Van Hove 
+singularities in a model glass. Phys. Rev. B 98, 174207 (2018).
+17.	 Zhang, L. et al. Disorder-induced vibrational anomalies from 
+crystalline to amorphous solids. Phys. Rev. Res. 3, L032067 (2021).
+18.	 Nie, Y. et al. Role of disorder in determining the vibrational 
+properties of mass-spring networks. Front. Phys. 12, 126301 (2017).
+19.	 Schirmacher, W., Ruocco, G. & Scopigno, T. Acoustic attenuation 
+in glasses and its relation with the boson peak. Phys. Rev. Lett. 98, 
+025501 (2007).
+20.	 Maurer, E. & Schirmacher, W. Local oscillators vs. elastic disorder: 
+a comparison of two models for the boson peak. J. Low. Temp. 
+Phys. 137, 453–470 (2004).
+21.	 Gelin, S., Tanaka, H. & Lemaître, A. Anomalous phonon scattering 
+and elastic correlations in amorphous solids. Nat. Mater. 15, 
+1177–1181 (2016).
+22.	 Monaco, G. & Giordano, V. M. Breakdown of the Debye 
+approximation for the acoustic modes with nanometric 
+wavelengths in glasses. Proc. Natl Acad. Sci. USA 106, 3659–3663 
+(2009).
+23.	 Baldi, G., Giordano, V. M., Monaco, G. & Ruta, B. Sound attenuation 
+at terahertz frequencies and the boson peak of vitreous silica. 
+Phys. Rev. Lett. 104, 195501 (2010).
+24.	 Ruta, B., et al. Acoustic excitations in glassy sorbitol and their 
+relation with the fragility and the boson peak. J. Chem. Phys. 137, 
+054510 (2012).
+25.	 Monaco, G. & Mossa, S. Anomalous properties of the acoustic 
+excitations in glasses on the mesoscopic length scale. Proc. Natl 
+Acad. Sci. USA 106, 16907–16912 (2009).
+26.	 Mizuno, H., Ruocco, G. & Mossa, S. Sound damping in glasses: 
+interplay between anharmonicities and elastic heterogeneities. 
+Phys. Rev. B 101, 174206 (2020).
+27.	 Mizuno, H. & Ikeda, A. Phonon transport and vibrational 
+excitations in amorphous solids. Phys. Rev. E 98, 062612  
+(2018).
+28.	 Baggioli, M. & Zaccone, A. Universal origin of boson peak 
+vibrational anomalies in ordered crystals and in amorphous 
+materials. Phys. Rev. Lett. 122, 145501 (2019).
+29.	 Baggioli, M. & Zaccone, A. Unified theory of vibrational spectra in 
+hard amorphous materials. Phys. Rev. Res. 2, 013267 (2020).
+30.	 Baggioli, M. & Zaccone, A. Unified theory of vibrational spectra 
+in hard amorphous materials. Phys. Rev. Res. 2, 013267 (2020); 
+erratum 4, 029001(E) (2022).
+31.	 Schirmacher, W., Scopigno, T. & Ruocco, G. Theory of vibrational 
+anomalies in glasses. J. Non-Cryst. Solids 407, 133–140 (2015).
+32.	 Böttger, H. Principles of the Theory of Lattice Dynamics 
+(Physik-Verlag, 1983).
+33.	 Chaikin, P. M. & Lubensky, T. C. Principles of Condensed Matter 
+Physics (Cambridge Univ. Press, 1995).
+34.	 Zaccone, A. Theory of Disordered Solids (Springer International 
+Publishing, 2023).
+35.	 Baggioli, M. & Zaccone, A. Theory of sound attenuation in 
+amorphous solids from nonaffine motions. J. Phys.: Condens. 
+Matter 34, 215401 (2022).
+36.	 Adam, J. A. Rays, Waves, and Scattering (Princeton Univ. Press, 
+2017).
+37.	 Landau, L. D. & Lifshitz, E. M. Mechanics and Electrodynamics 
+(Pergamon, 1972).
+38.	 Bjørnø, L. Applied Underwater Acoustics (Elsevier, 2017).
+39.	 Sheng, H. W. et al. Atomic packing and short-to-medium-range 
+order in metallic glasses. Nature 439, 419–425 (2006).
+40.	 Ding, G. et al. Ultrafast extreme rejuvenation of metallic glasses 
+by shock compression. Sci. Adv. 5, eaaw6249 (2019).
+41.	 Wang, P.-J. et al. Quartic scaling of sound attenuation with 
+frequency in vitreous silica. Phys. Rev. Lett. 134, 196101 (2025).
+42.	 Marruzzo, A., Schirmacher, W., Fratalocchi, A. & Ruocco, G. 
+Heterogeneous shear elasticity of glasses: the origin of the boson 
+peak. Sci. Rep. 3, 1407 (2013).
+43.	 Moriel, A. et al. Wave attenuation in glasses: Rayleigh and 
+generalized-Rayleigh scattering scaling. J. Chem. Phys. 151, 
+104503 (2019).
+44.	 Scopigno, T. et al. High-frequency dynamics in metallic glasses. 
+Phys. Rev. Lett. 96, 135501 (2006).
+45.	 Baldi, G. et al. Emergence of crystal-like atomic dynamics in 
+glasses at the nanometer scale. Phys. Rev. Lett. 110, 185503 
+(2013).
+46.	 Kosevich, A. M. The Crystal Lattice (Wiley-VCH, 2005).
+47.	 Mamontov, E. et al. Acoustic phonons in chrysotile asbestos 
+probed by high-resolution inelastic X-ray scattering. Solid State 
+Commun. 149, 589–592 (2009).
+48.	 Li, X. Y. et al. Observation of high-frequency transverse phonons 
+in metallic glasses. Phys. Rev. Lett. 124, 225902 (2020).
+49.	 Lucas, M. S. et al. Absence of long-range chemical ordering in 
+equimolar FeCoCrNi. Appl. Phys. Lett. 100, 251907 (2012).
+50.	 Shintani, H. & Tanaka, H. Universal link between the boson peak 
+and transverse phonons in glass. Nat. Mater. 7, 870–877 (2008).
+51.	 Bünz, J. et al. Low temperature heat capacity of a severely 
+deformed metallic glass. Phys. Rev. Lett. 112, 135501 (2014).
+52.	 Jiang, M. Q. et al. Universal structural softening in metallic glasses 
+indicated by boson heat capacity peak. Appl. Phys. Lett. 111, 
+261901 (2017).
+
+
+======================================== PAGE 9 ========================================
+Nature Physics
+Article
+https://doi.org/10.1038/s41567-025-03057-7
+53.	 Conyuh, D. A. & Beltukov, Y. M. Ioffe-Regel criterion and 
+viscoelastic properties of amorphous solids. Phys. Rev. E 103, 
+042608 (2021).
+54.	 Zorn, R. The boson peak demystified? Physics 4, 44 (2011).
+55.	 Schirmacher, W. Some comments on fluctuating-elasticity and 
+local oscillator models for anomalous vibrational excitations in 
+glasses. J. Non-Cryst. Solids 357, 518–523 (2011).
+56.	 Chumakov, A. I. et al. Relation between the boson peak in glasses 
+and Van Hove singularity in crystals. Philos. Mag. 96, 743–753 (2015).
+57.	 Shrestha, U. R. et al. Experimental mapping of short-wavelength 
+phonons in proteins. Innovation 3, 100199 (2022).
+58.	 Rufflé, B. et al. Glass-specific behavior in the damping of 
+acousticlike vibrations. Phys. Rev. Lett. 96, 045502 (2006).
+59.	 Tong, H., Tan, P. & Xu, N. From crystals to disordered crystals:  
+a hidden order-disorder transition. Sci. Rep. 5, 15378 (2015).
+60.	 Zink, B. L., Pietri, R. & Hellman, F. Thermal conductivity and 
+specific heat of thin-film amorphous silicon. Phys. Rev. Lett. 96, 
+055902 (2006).
+61.	 Yang, C. et al. Splitting of fast relaxation in a metallic glass by 
+laser shocks. Phys. Rev. B 109, 024201 (2024).
+62.	 Baldi, G. et al. Thermal conductivity and terahertz vibrational 
+dynamics of vitreous silica. Phys. Rev. B 77, 214309 (2008).
+63.	 Lubchenko, V. & Wolynes, P. G. The origin of the boson peak and 
+thermal conductivity plateau in low-temperature glasses. Proc. 
+Natl Acad. Sci. USA 100, 1515–1518 (2003).
+64.	 Wyart, M. On the rigidity of amorphous solids. Ann. Phys. 30, 1–96 
+(2005).
+65.	 Baldi, G., Giordano, V. M. & Monaco, G. Elastic anomalies at 
+terahertz frequencies and excess density of vibrational states 
+in silica glass. Phys. Rev. B 83, 174203 (2011).
+66.	 El Hamdaoui, A. et al. The impact of densification on the boson 
+peak and structure in vitreous silica. J. Am. Ceram. Soc. 108, 
+e20631 (2025).
+Publisher’s note Springer Nature remains neutral with regard to 
+jurisdictional claims in published maps and institutional affiliations.
+Open Access This article is licensed under a Creative Commons 
+Attribution-NonCommercial-NoDerivatives 4.0 International License, 
+which permits any non-commercial use, sharing, distribution and 
+reproduction in any medium or format, as long as you give appropriate 
+credit to the original author(s) and the source, provide a link to the 
+Creative Commons licence, and indicate if you modified the licensed 
+material. You do not have permission under this licence to share 
+adapted material derived from this article or parts of it. The images 
+or other third party material in this article are included in the article’s 
+Creative Commons licence, unless indicated otherwise in a credit 
+line to the material. If material is not included in the article’s Creative 
+Commons licence and your intended use is not permitted by statutory 
+regulation or exceeds the permitted use, you will need to obtain 
+permission directly from the copyright holder. To view a copy of this 
+licence, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
+© The Author(s) 2025
+
+
+======================================== PAGE 10 ========================================
+Nature Physics
+Article
+https://doi.org/10.1038/s41567-025-03057-7
+Methods
+Sample preparation
+Various types of material that cover metallic glasses and their poly-
+crystalline products, metallic glass composites, single-phase 
+face-centred-cubic or body-centred-cubic HEA, two-phase (face- 
+centred-cubic + body-centred-cubic) HEA, high-entropy metallic 
+glasses and high-entropy metallic glass composites are prepared. All 
+metallic glasses, metallic glass composites ((Zr75Ti15Nb10)100–y(Be50 
+Cu27.5Ni22.5)y with y = 0, 8, 14, 20, 25, 28, 29, 30 and 32), single-phase 
+face-centred-cubic HEAs ((Fe25Co25Cr25Ni25)100–xAlx with x = 0, 1, 2, 3, 5 
+and 7) and body-centred-cubic HEAs (Nb25Ti25V25Mo25 and Nb20Ti20V20 
+Mo20Ta20), and a high-entropy metallic glass (Zr20Ti20Hf20Cu20Be20) are 
+prepared by arc melting and suctioned into water-cooled copper moulds 
+under an argon atmosphere. A two-phase HEA and a high-entropy metal-
+lic glass composite can be obtained by annealing the as-cast high-entropy 
+metallic glass at 670 K and 880 K for 60 min, respectively.
+Property characterization
+The structure of the prepared samples was confirmed by XRD with Cu 
+Kα radiation and high-resolution transmission electron microscopy 
+(JEM-2100F, JEOL, operated at 200 keV), and the detailed information 
+of some solids is provided in Extended Data Fig. 8. The specific heat 
+capacity was measured under high-vacuum conditions with a Quantum 
+Design physical property measurement system, which allows cooling 
+down to 1.9 K with a liquid-helium system.
+Solving the boundary condition of BP–VHS coexistence
+The coexistence of BP and VHS is accompanied by the appearance of a 
+resonant peak of phonon damping Γ (q) with its slope being zero. Math-
+ematically, this corresponds to the first-order derivative of Γ (q) with 
+respect to q being zero:
+Γ ′(q) =
+2Γ0q3 [2q2q2
+0 −2q4
+0 −q2θ2]
+[(q2
+0 −q2)
+2
++ q2θ2]
+2
+= 0
+(17)
+The non-zero real root of equation (17) is easily solved as 
+equation (14).
+Data availability
+The data supporting the findings of this study are available from the 
+corresponding author upon reasonable request. Source data are pro-
+vided with this paper.
+Acknowledgements
+We thank A. Lemaître, Y. J. Wang, A. Zaccone and M. Baggioli  
+for helpful discussions. This work was supported by the  
+National Outstanding Youth Science Fund Project (number 
+12125206), Basic Science Center for ‘Multiscale Problems  
+in Nonlinear Mechanics’ (number 12588201), Major International  
+Joint Research Projects (number W2411003) and General  
+Project (numbers 12302497 and 12072327) of the National  
+Natural Science Foundation of China, the China Postdoctoral 
+Science Foundation (number 2023M743603), and the  
+CAS Project for Young Scientists in Basic Research (number  
+YSBR-096).
+Author contributions
+M.J. designed and supervised the project. G.D.  
+prepared the materials and performed the physical  
+property measurement system measurements. M.J.,  
+G.D., F.J. and B.C. analysed the data. M.J. and G.D.  
+proposed the theoretical model. M.J., G.D., N.X. and  
+E.M. wrote the paper. All authors discussed the results  
+and commented on the manuscript.
+Competing interests
+The authors declare no competing interests.
+Additional information
+Extended data is available for this paper at  
+https://doi.org/10.1038/s41567-025-03057-7.
+Supplementary information The online version  
+contains supplementary material available at  
+https://doi.org/10.1038/s41567-025-03057-7.
+Correspondence and requests for materials should be addressed to 
+Minqiang Jiang.
+Peer review information Nature Physics thanks  
+Jie Zhang, Hideyuki Mizuno and the other, anonymous,  
+reviewer(s) for their contribution to the peer review of  
+this work.
+Reprints and permissions information is available at  
+www.nature.com/reprints.
+
+
+======================================== PAGE 11 ========================================
+Nature Physics
+Article
+https://doi.org/10.1038/s41567-025-03057-7
+Extended Data Fig. 1 | Phonon scattering intensity. a, The colored solid curves are scattering intensities of 1032 phonons. b, The black square is the averaged 
+scattering intensity of such 1032 phonons, which can be well-fitted by the Eq. 9 (red solid line).
+
+
+======================================== PAGE 12 ========================================
+Nature Physics
+Article
+https://doi.org/10.1038/s41567-025-03057-7
+Extended Data Fig. 2 | Fitting the MD simulated transverse damping data of a 3D inverse power-law (IPL) glass of up to 4,000,000 particles. The red-solid line is 
+our model (Eq. 9), and the green-dashed line is the Γ (q) ∼−q4 ln q law.
+
+
+======================================== PAGE 13 ========================================
+Nature Physics
+Article
+https://doi.org/10.1038/s41567-025-03057-7
+Extended Data Fig. 3 | Phonon softening and damping. a, Single VHS and 
+global softening with θ=0.9, q0=1. b, Single BP and global softening with θ=0.9, 
+q0=0.4. c, Separated VHS and BP and coexisting local and global softening with 
+θ=0.3, q0=0.5. The red solid circles mark the BP or VHS position, which is close to 
+the position where Rayleigh scattering (red solid lines) becomes gradually invalid 
+(gray thick lines).
+
+
+======================================== PAGE 14 ========================================
+Nature Physics
+Article
+https://doi.org/10.1038/s41567-025-03057-7
+Extended Data Fig. 4 | Velocity autocorrelation function of phonons with different wavenumbers q. a, θ=0.9, q0=1. b, θ=0.9, q0=0.4. c, θ=0.3, q0=0.5. In a and b, 
+the oscillatory attenuation increases monotonously with increasing q. In c, the sound wave can’t propagate with increasing q to 0.5, but becomes propagative further 
+increasing q to 0.9 (dashed boxs).
+
+
+======================================== PAGE 15 ========================================
+Nature Physics
+Article
+https://doi.org/10.1038/s41567-025-03057-7
+Extended Data Fig. 5 | Theoretically calculated normalized-VDOS g(ω)/ω2 by varying q0 at a fixed θ=0.4. As q0 decreases, the sharp VHS peak gradually becomes 
+weaker as a shoulder; meanwhile, the BP emerges and shifts to lower frequencies.
+
+
+======================================== PAGE 16 ========================================
+Nature Physics
+Article
+https://doi.org/10.1038/s41567-025-03057-7
+Extended Data Fig. 6 | Necessary condition of the BP-VHS coexistence. a, The 
+calculated curves based on Eq. 14 with different q∗, where the black squares are 
+the boundary data. b, The calculated phonon damping Γ (q) by varying q0 for a 
+fixed θ=0.3, where the positions of resonant peaks are marked. c, The 
+corresponding dispersion Ω(q), where the colored dots denote the position of 
+non-Debye peak and the gray region denotes the PBZ boundary. d, The 
+corresponding Debye-normalized VDOS g(ω)/ω2.
+
+
+======================================== PAGE 17 ========================================
+Nature Physics
+Article
+https://doi.org/10.1038/s41567-025-03057-7
+Extended Data Fig. 7 | Calculation of Debye-normalized low-temperature heat capacity. a, Varying q0 for a fixed θ=0.9. b, Varying θ for a fixed q0 = 0.5, indicating 
+that the peak is insensitive to θ.
+
+
+======================================== PAGE 18 ========================================
+Nature Physics
+Article
+https://doi.org/10.1038/s41567-025-03057-7
+Extended Data Fig. 8 | Structural characterizations of prepared materials.  
+a, X-ray diffraction profiles of metallic glass composites ((Zr75Ti15Nb10)100-y(Be50 
+Cu27.5Ni22.5)y) with in situ BCC dendritic phases. The increasing intensity of 
+crystalline peaks indicates the increasing volume fraction of dendritic β-Zr solid 
+solution. b, Single-phase FCC ((Fe25Co25Cr25Ni25)100-xAlx) and BCC high entropy 
+alloys (Nb25Ti25V25Mo25 and Nb20Ti20V20Mo20Ta20). c, X-ray diffraction profiles of 
+the Zr20Ti20Hf20Cu20Be20 (at.%) alloys with glassy, glass-crystal composite states 
+(HEMGC) and fully crystalline (BCC+FCC), respectively. d, High-resolution 
+transmission electron microscopy (HRTEM) image of the HEMG. In the inset, the 
+typical speckle pattern and featureless halo detected by selected area electron 
+diffraction (SAED) clearly presents its long-range topological and chemical 
+disorder. e, TEM bright-field image of this 2-phase HEA, where the bright phases 
+are FCC and the dark phases are BCC, and the insets are their respective SAED 
+patterns. f, TEM bright-field image and the corresponding SAED pattern (in the 
+inset) confirms the composite structures of HEMGC.
+
+
+======================================== PAGE 19 ========================================
+Nature Physics
+Article
+https://doi.org/10.1038/s41567-025-03057-7
+Extended Data Fig. 9 | Validity of the present model in predicting the 
+non-Debye heat capacity peak. a, Low-temperature heat capacity Cp and 
+b, Non-Debye Cph/T3 for eight representative solids. These solids include the 
+Zr41.2Ti13.8Cu12.5Ni10Be22.5 (Vit 1) MG and its polycrystalline product, the (Zr75T
+i15Nb10)80(Be50Cu27.5Ni22.5)20 MGC, the single-phase BCC Nb25Ti25V25Mo25 HEA, 
+the single-phase FCC Fe25Co25Cr25Ni25 HEA, and three structurally-complex 
+Zr20Ti20Hf20Cu20Be20 alloys (HEMG, HEMGC and 2 phase HEA). The black dashed 
+lines are the prediction by the present model with the fitting parameters listed in 
+Supplementary Table S3.
+
+
+======================================== PAGE 20 ========================================
+Nature Physics
+Article
+https://doi.org/10.1038/s41567-025-03057-7
+Extended Data Fig. 10 | Determination of Sommerfeld coefficient. 
+Low-temperature Cp/T vs T2 below 8 K for the eight representative solids in 
+Extended Data Fig. 9. The data are fitted with the standard formula 
+Cp/T = βT2 + γ (solid line), with the Sommerfeld coefficient γ [mJmol−1K−2]: 2.47 
+for MGC, 2.74 for Vit 1 MG, 3.69 for HEMG, 3.51 for HEMGC, 7.86 for FCC HEA, 2.02 
+for 2-phase HEA, 3.59 for BCC HEA, and 3.25 for Vit 1 polycrystal.

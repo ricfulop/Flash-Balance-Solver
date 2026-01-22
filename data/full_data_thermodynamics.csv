@@ -1,0 +1,18 @@
+paper_id,delta_H_J_mol,delta_S_J_mol_K,n_electrons,thermo_source,notes
+# Thermodynamic data - use NIST-JANAF or literature values
+# Standard formation values per O2 (for oxides, n_electrons = 4)
+#
+# Paper 1: Al2O3:TZP (Al2O3-ZrO2 composite)
+# Use weighted average or dominant phase
+1,-1676000,-210,4,NIST-JANAF,Al2O3 dominant; ZrO2 ΔH=-1085kJ/mol
+# Paper 2: BiFeO3 (Perovskite)
+# Bi2O3 + Fe2O3 → 2 BiFeO3 reaction
+2,-945000,-175,4,Literature,From BiFeO3 formation studies
+# Paper 3: LLZO (Garnet)
+# Complex garnet - use approximation
+3,-1750000,-200,4,Estimated,Li7La3Zr2O12 garnet approximation
+# Paper 4: LLZO RFS (same as Paper 3)
+4,-1750000,-200,4,Estimated,Same as Paper 3
+# Paper 5: SDC (Fluorite - CeO2 based)
+# Ce0.8Sm0.2O1.9 ≈ CeO2
+5,-1024000,-195,4,NIST-JANAF,CeO2 values; Sm doping minor effect

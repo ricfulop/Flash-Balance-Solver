@@ -1,0 +1,11 @@
+filename,material,doi,missing_data,has_arrhenius,priority
+Al2O3:TZP Steil.pdf,Al2O3:TZP,10.1016/j.jeurceramsoc.2015.02.033,Ea_from_plot,YES,1
+BiFeO3 Raj.pdf,BiFeO3,10.1111/jace.14990,Ea_from_plot,YES,1
+Co2MnO4 spinel Raj.pdf,Co2MnO4 spinel,10.1016/j.jpowsour.2010.10.036,"T_onset, Ea_from_plot",YES,3
+Fe2Val Nishino.pdf,Fe2Val,10.1007/s11664-019-07743-0,"T_onset, E_field, Ea_from_plot",YES,3
+LLZO Huang.pdf,LLZO,10.1007/s11581-024-06046-7,Ea_from_plot,YES,1
+LLZO RFS Raj.pdf,LLZO RFS,10.1111/jace.16625,Ea_from_plot,YES,1
+NaNbO3.pdf,NaNbO3,10.1016/j.matlet.2018.09.167,"T_onset, Ea_from_plot",YES,3
+Sm2O3 doped CeO2 Jiang.pdf,Sm2O3 doped,10.1016/j.scriptamat.2018.09.014,Ea_from_plot,YES,1
+ZrN Cheng.pdf,ZrN,10.1111/jace.19719,"T_onset, Ea_from_plot",YES,3
+c-ZrO2 Raj.pdf,c-ZrO2,10.1007/s10832-016-,"T_onset, Ea_from_plot",YES,3

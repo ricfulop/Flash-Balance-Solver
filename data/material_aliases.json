@@ -1,0 +1,218 @@
+{
+  "version": "1.0",
+  "description": "Canonical material names and aliases for consistent naming in Flash Balance Solver",
+  "materials": [
+    {
+      "canonical": "8YSZ",
+      "aliases": ["8 mol% Y2O3-ZrO2", "8mol% yttria-stabilized zirconia", "YSZ-8", "ZrO2-8Y2O3", "8Y-ZrO2", "8YSZ", "8 mol% YSZ"],
+      "formula": "Zr0.84Y0.16O1.92",
+      "family": "fluorite"
+    },
+    {
+      "canonical": "3YSZ",
+      "aliases": ["3 mol% Y2O3-ZrO2", "3mol% yttria-stabilized zirconia", "YSZ-3", "3Y-TZP", "3YSZ", "3 mol% YSZ"],
+      "formula": "Zr0.94Y0.06O1.97",
+      "family": "fluorite"
+    },
+    {
+      "canonical": "GDC",
+      "aliases": ["Gd-doped ceria", "gadolinia-doped ceria", "Ce0.9Gd0.1O1.95", "GDC10", "10GDC", "CGO"],
+      "formula": "Ce0.9Gd0.1O1.95",
+      "family": "fluorite"
+    },
+    {
+      "canonical": "TiO2",
+      "aliases": ["titania", "titanium dioxide", "rutile", "anatase"],
+      "formula": "TiO2",
+      "family": "rutile"
+    },
+    {
+      "canonical": "SnO2",
+      "aliases": ["tin oxide", "tin dioxide", "stannic oxide", "cassiterite"],
+      "formula": "SnO2",
+      "family": "rutile"
+    },
+    {
+      "canonical": "SrTiO3",
+      "aliases": ["strontium titanate", "STO"],
+      "formula": "SrTiO3",
+      "family": "perovskite"
+    },
+    {
+      "canonical": "BaTiO3",
+      "aliases": ["barium titanate", "BTO", "BT"],
+      "formula": "BaTiO3",
+      "family": "perovskite"
+    },
+    {
+      "canonical": "BiFeO3",
+      "aliases": ["bismuth ferrite", "BFO"],
+      "formula": "BiFeO3",
+      "family": "perovskite"
+    },
+    {
+      "canonical": "KNN",
+      "aliases": ["K0.5Na0.5NbO3", "potassium sodium niobate", "KNaNbO3"],
+      "formula": "K0.5Na0.5NbO3",
+      "family": "perovskite"
+    },
+    {
+      "canonical": "Al2O3",
+      "aliases": ["alumina", "aluminum oxide", "corundum", "alpha-Al2O3"],
+      "formula": "Al2O3",
+      "family": "spinel"
+    },
+    {
+      "canonical": "MgAl2O4",
+      "aliases": ["magnesium aluminate", "spinel", "MgO·Al2O3"],
+      "formula": "MgAl2O4",
+      "family": "spinel"
+    },
+    {
+      "canonical": "SiC",
+      "aliases": ["silicon carbide", "carborundum", "alpha-SiC", "beta-SiC"],
+      "formula": "SiC",
+      "family": "carbide"
+    },
+    {
+      "canonical": "WC",
+      "aliases": ["tungsten carbide"],
+      "formula": "WC",
+      "family": "carbide"
+    },
+    {
+      "canonical": "B4C",
+      "aliases": ["boron carbide"],
+      "formula": "B4C",
+      "family": "carbide"
+    },
+    {
+      "canonical": "TiN",
+      "aliases": ["titanium nitride"],
+      "formula": "TiN",
+      "family": "nitride"
+    },
+    {
+      "canonical": "ZrN",
+      "aliases": ["zirconium nitride"],
+      "formula": "ZrN",
+      "family": "nitride"
+    },
+    {
+      "canonical": "Si3N4",
+      "aliases": ["silicon nitride"],
+      "formula": "Si3N4",
+      "family": "nitride"
+    },
+    {
+      "canonical": "LLZO",
+      "aliases": ["Li7La3Zr2O12", "lithium lanthanum zirconium oxide", "garnet electrolyte"],
+      "formula": "Li7La3Zr2O12",
+      "family": "garnet"
+    },
+    {
+      "canonical": "ZnO",
+      "aliases": ["zinc oxide", "zincite"],
+      "formula": "ZnO",
+      "family": "wurtzite"
+    },
+    {
+      "canonical": "UO2",
+      "aliases": ["uranium dioxide", "urania", "uraninite"],
+      "formula": "UO2",
+      "family": "fluorite"
+    },
+    {
+      "canonical": "CeO2",
+      "aliases": ["ceria", "cerium dioxide", "cerium oxide"],
+      "formula": "CeO2",
+      "family": "fluorite"
+    },
+    {
+      "canonical": "W",
+      "aliases": ["tungsten", "wolfram"],
+      "formula": "W",
+      "family": "metal"
+    },
+    {
+      "canonical": "Ni",
+      "aliases": ["nickel"],
+      "formula": "Ni",
+      "family": "metal"
+    },
+    {
+      "canonical": "Re",
+      "aliases": ["rhenium"],
+      "formula": "Re",
+      "family": "metal"
+    },
+    {
+      "canonical": "Al",
+      "aliases": ["aluminum", "aluminium"],
+      "formula": "Al",
+      "family": "metal"
+    }
+  ],
+  "families": {
+    "fluorite": {
+      "description": "Cubic fluorite structure (CaF2-type)",
+      "typical_materials": ["8YSZ", "3YSZ", "GDC", "CeO2", "UO2"],
+      "typical_ksoft": 0.10,
+      "typical_Ea_range": [0.7, 1.2]
+    },
+    "rutile": {
+      "description": "Tetragonal rutile structure",
+      "typical_materials": ["TiO2", "SnO2"],
+      "typical_ksoft": 0.24,
+      "typical_Ea_range": [0.3, 0.6]
+    },
+    "perovskite": {
+      "description": "Cubic/tetragonal perovskite structure (ABO3)",
+      "typical_materials": ["SrTiO3", "BaTiO3", "BiFeO3", "KNN"],
+      "typical_ksoft": 0.20,
+      "typical_Ea_range": [0.3, 0.6]
+    },
+    "spinel": {
+      "description": "Cubic spinel or corundum structure",
+      "typical_materials": ["Al2O3", "MgAl2O4"],
+      "typical_ksoft": 0.36,
+      "typical_Ea_range": [1.0, 1.5]
+    },
+    "carbide": {
+      "description": "Covalent carbide compounds",
+      "typical_materials": ["SiC", "WC", "B4C"],
+      "typical_ksoft": 0.35,
+      "typical_Ea_range": [0.8, 1.5]
+    },
+    "nitride": {
+      "description": "Covalent nitride compounds",
+      "typical_materials": ["TiN", "ZrN", "Si3N4"],
+      "typical_ksoft": 0.79,
+      "typical_Ea_range": [0.05, 1.0]
+    },
+    "garnet": {
+      "description": "Cubic garnet structure",
+      "typical_materials": ["LLZO"],
+      "typical_ksoft": 0.15,
+      "typical_Ea_range": [0.3, 0.5]
+    },
+    "wurtzite": {
+      "description": "Hexagonal wurtzite structure",
+      "typical_materials": ["ZnO"],
+      "typical_ksoft": 0.25,
+      "typical_Ea_range": [0.3, 0.5]
+    },
+    "metal": {
+      "description": "Metallic conductors",
+      "typical_materials": ["W", "Ni", "Re", "Al"],
+      "typical_ksoft": 0.98,
+      "typical_Ea_range": [0.0, 0.1]
+    },
+    "composite_oxide": {
+      "description": "Multi-phase oxide composites",
+      "typical_materials": [],
+      "typical_ksoft": null,
+      "typical_Ea_range": null
+    }
+  }
+}

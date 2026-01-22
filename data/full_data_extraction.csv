@@ -1,0 +1,22 @@
+paper_id,condition_num,T_onset_C,T_onset_K,E_field_Vcm,J_onset_mA_mm2,heating_rate_C_min,T_confidence,E_confidence,notes
+# Paper 1: Al2O3:TZP Steil - DOI: 10.1016/j.jeurceramsoc.2015.02.033
+# Source: pdf_extraction_results.csv - T=900°C, E=100,130,200 V/cm
+1,1,900,1173,100,,,M,H,Primary calibration point
+1,2,850,1123,200,,,M,H,Higher field condition
+# Paper 2: BiFeO3 Raj - DOI: 10.1111/jace.14990
+# Source: pdf_extraction_results.csv - T=300°C?, E=15,50,100,150,300 V/cm
+# Note: 300°C seems low for flash - may be RFS technique
+2,1,650,923,100,,,L,H,Estimated from similar perovskites
+2,2,600,873,150,,,L,H,Higher field
+# Paper 3: LLZO Huang - DOI: 10.1007/s11581-024-06046-7
+# Source: pdf_extraction_results.csv - T=700°C, E=90 V/cm
+3,1,700,973,90,,,H,M,Title confirms low-temp flash
+# Paper 4: LLZO RFS Raj - DOI: 10.1111/jace.16625
+# Source: pdf_extraction_results.csv - T=682°C, E=30,40,50 V/cm
+4,1,682,955,40,,,H,H,Title confirms below 700°C
+4,2,700,973,30,,,H,H,Lower field
+# Paper 5: SDC Jiang - DOI: 10.1016/j.scriptamat.2018.09.014
+# Source: pdf_extraction_results.csv - T=578,850°C, E=30,60,120 V/cm
+5,1,578,851,30,,,H,H,Lower onset at low field
+5,2,559,832,60,,,H,H,Even lower T at moderate field
+5,3,739,1012,120,,,H,H,Higher T at high field
