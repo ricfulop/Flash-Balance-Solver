@@ -166,9 +166,89 @@ where T_D is the Debye temperature of the material. This reduces median error fr
 
 ---
 
-## 5. Physical Interpretation
+## 5. λ_flash Interpolation for Green Compacts
 
-### 5.1 Power Density Threshold
+The validation dataset is **96% green compacts** (powder samples with 50-65% relative density), so the λ_flash values and interpolation formulas apply specifically to **flash sintering of powder compacts**, not dense solids.
+
+### 5.1 Family-Specific λ_flash Values
+
+**Table 3: Mean λ_flash by Material Family (Green Compacts)**
+
+| Family | λ_flash (µm) | n | Notes |
+|--------|-------------|---|-------|
+| Corundum | 1.7 | 3 | α-Al₂O₃ |
+| Metal | 3.7 | 3 | Ni, W, Re (current-rate) |
+| Glass | 4.0 | 1 | Porous SiO₂ |
+| Garnet | 4.4 | 2 | LLZO |
+| Perovskite | 6.7 | 7 | SrTiO₃, BaTiO₃, KNN |
+| **Fluorite** | **8.2** | 7 | 3YSZ, 8YSZ, GDC |
+| Carbide | 9.4 | 3 | SiC, WC, B₄C |
+| Spinel | 14.5 | 5 | MgAl₂O₄ |
+| Wurtzite | 30.4 | 1 | ZnO |
+| Rutile | 42.0 | 2 | TiO₂ |
+| Nitride | 48.0 | 2 | ZrN, (Nb,Ta,Ti)N |
+
+### 5.2 Interpolation Formula
+
+For new materials, λ_flash can be estimated using:
+
+$$\log_{10}(\lambda_{flash}) = a + b \cdot E_a + c \cdot \log_{10}(\sigma_0)$$
+
+where λ_flash is in µm, Ea in eV, and σ₀ in S/m.
+
+**Table 4: Interpolation Coefficients by Family**
+
+| Family | a (intercept) | b (Ea coeff) | c (σ₀ coeff) | n |
+|--------|--------------|--------------|--------------|---|
+| Fluorite | 0.93 | -0.38 | +0.08 | 7 |
+| Perovskite | 2.06 | -1.18 | -0.21 | 7 |
+| Spinel | 1.00 | -1.88 | +0.36 | 5 |
+| Oxide | 0.44 | -1.60 | +0.30 | 8 |
+| Carbide | 1.88 | +0.42 | -0.39 | 3 |
+| Corundum | -0.69 | +0.65 | +0.18 | 3 |
+| Metal | -1.72 | -0.44 | +0.57 | 3 |
+| **Universal** | **0.50** | **-1.05** | **+0.30** | 51 |
+
+**Example:** For a fluorite material with Ea = 0.9 eV, σ₀ = 3.4×10⁴ S/m:
+
+$$\log_{10}(\lambda_{flash}) = 0.93 + (-0.38)(0.9) + (0.08)\log_{10}(34000) = 0.95$$
+$$\lambda_{flash} = 10^{0.95} = 8.9 \text{ µm}$$
+
+(Actual 3YSZ λ_flash: ~10 µm — 11% error on λ)
+
+### 5.3 Interpolation Accuracy
+
+| Approach | λ_flash Error | T_pred Error |
+|----------|---------------|--------------|
+| Family mean | ~100% | ~30-40% |
+| Interpolation formula | ~82% | ~20-30% |
+| Calibrated (from database) | 0% | ~5% |
+
+The interpolation provides reasonable estimates for experiment planning, but calibrated values from a single experimental datapoint are needed for high-accuracy predictions.
+
+### 5.4 Visual Interpolation Map
+
+A visual interpolation map is provided in `data/lambda_flash_interpolation_map.png`, showing λ_flash as a function of Ea (x-axis) and log₁₀(σ₀) (y-axis), with color indicating log₁₀(λ_flash).
+
+![λ_flash Interpolation Map](../data/lambda_flash_interpolation_map.png)
+
+**How to use:** Locate your material's Ea and σ₀ on the map, then read the color (yellow = large λ, purple = small λ).
+
+### 5.5 Adjustments for Dense Materials
+
+The interpolation values apply to **green compacts**. For other material states:
+
+| Material State | λ_flash Adjustment | E_crit Adjustment |
+|---------------|-------------------|-------------------|
+| Green compact (50-65% dense) | Use table/formula as-is | — |
+| Dense polycrystal (>95% dense) | λ × 0.3-0.5 | E × 2× |
+| Single crystal | λ × 0.2-0.5 | E × 3-5× |
+
+---
+
+## 6. Physical Interpretation
+
+### 6.1 Power Density Threshold
 
 The relationship E ∝ 1/√σ implies that the flash onset occurs at a critical **power density**:
 
@@ -176,7 +256,7 @@ $$P_{crit} = \sigma(T) \cdot E^2 \approx 3 \times 10^8 \text{ W/m}^3$$
 
 This universal power density threshold (~300 MW/m³) represents the Joule heating rate required to overcome heat dissipation and initiate thermal runaway.
 
-### 5.2 Current Density Perspective
+### 6.2 Current Density Perspective
 
 The critical current density at flash onset:
 
@@ -191,9 +271,9 @@ $$J_{crit} = \sigma(T) \cdot E_{crit}$$
 
 ---
 
-## 6. Special Cases
+## 7. Special Cases
 
-### 6.1 Dense Polycrystalline Materials
+### 7.1 Dense Polycrystalline Materials
 
 For pre-sintered dense ceramics (as opposed to green compacts):
 
@@ -201,7 +281,7 @@ $$E_{crit}^{dense} \approx 2 \times E_{crit}^{powder}$$
 
 The higher field requirement results from fewer current concentration points at grain boundaries compared to particle-particle contacts in powder compacts.
 
-### 6.2 Single Crystals
+### 7.2 Single Crystals
 
 For single crystal materials:
 
@@ -214,7 +294,7 @@ $$E_{crit}^{crystal} \approx 3-5 \times E_{crit}^{powder}$$
 
 Single crystals require significantly higher fields due to the absence of grain boundaries and the likely involvement of dielectric breakdown mechanisms rather than thermal runaway.
 
-### 6.3 Activation Energy Regimes
+### 7.3 Activation Energy Regimes
 
 Materials with different conduction mechanisms show distinct behavior:
 
@@ -227,7 +307,7 @@ For high-Ea materials (ionic conductors), the simplified formula achieves **45% 
 
 ---
 
-## 7. Practical Application Examples
+## 8. Practical Application Examples
 
 ### Example 1: 3YSZ at 900°C
 
@@ -255,7 +335,7 @@ $$E_{crit} = \frac{173}{\sqrt{105}} = 17 \text{ V/cm}$$
 
 ---
 
-## 8. Limitations and Applicability
+## 9. Limitations and Applicability
 
 ### The formulas are applicable when:
 - Material exhibits thermally-activated electrical conductivity
@@ -276,9 +356,9 @@ $$E_{crit} = \frac{173}{\sqrt{105}} = 17 \text{ V/cm}$$
 
 ---
 
-## 9. Supplementary Tables
+## 10. Supplementary Tables
 
-### Table 3: Complete Validation Dataset Summary
+### Table 5: Complete Validation Dataset Summary
 
 The full validation dataset of 135 datapoints with material parameters, experimental conditions, and model predictions is provided in the supplementary material (`complete_validation_table.csv`).
 
@@ -289,13 +369,13 @@ Columns include:
 - T_pred (K), Error (%)
 - DOI reference
 
-### Table 4: Material Parameter Database
+### Table 6: Material Parameter Database
 
 For materials not covered in the validation set, recommended starting parameters based on crystal structure family are provided in the supplementary material (`calibrated_materials.json`).
 
 ---
 
-## 10. Conclusions
+## 11. Conclusions
 
 1. **Universal relationship:** Flash sintering onset follows E ∝ 1/√σ(T), corresponding to a critical power density of ~3×10⁸ W/m³.
 
