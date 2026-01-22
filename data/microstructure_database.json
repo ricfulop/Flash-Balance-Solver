@@ -1,0 +1,180 @@
+{
+  "description": "Typical Microstructure Parameters for Flash Sintering Materials",
+  "version": "1.0",
+  "sources": "Literature review of flash sintering papers and powder specifications",
+  "parameters": {
+    "d50_nm": "Median particle size [nm]",
+    "green_density_pct": "Green compact relative density [%]"
+  },
+  "heating_rate_correction": {
+    "description": "Temperature correction for heating rate deviation from 10 \u00b0C/min",
+    "formula": "T_corrected = T_onset + \u0394T(rate)",
+    "values": {
+      "1": -50,
+      "2": -35,
+      "5": -20,
+      "10": 0,
+      "20": 15,
+      "50": 35,
+      "100": 50
+    },
+    "reference_rate_Cmin": 10
+  },
+  "materials": {
+    "3YSZ": {
+      "d50_nm": 100,
+      "green_density_pct": 55,
+      "notes": "Tosoh TZ-3Y typical"
+    },
+    "8YSZ": {
+      "d50_nm": 200,
+      "green_density_pct": 55,
+      "notes": "Standard YSZ powder"
+    },
+    "GDC": {
+      "d50_nm": 50,
+      "green_density_pct": 50,
+      "notes": "Fine ceria powder"
+    },
+    "GDC10": {
+      "d50_nm": 50,
+      "green_density_pct": 50,
+      "notes": "Gd-doped ceria"
+    },
+    "SDC": {
+      "d50_nm": 50,
+      "green_density_pct": 50,
+      "notes": "Sm-doped ceria"
+    },
+    "SrTiO3": {
+      "d50_nm": 500,
+      "green_density_pct": 55,
+      "notes": "Standard perovskite"
+    },
+    "BaTiO3": {
+      "d50_nm": 500,
+      "green_density_pct": 55,
+      "notes": "Piezoelectric ceramic"
+    },
+    "KNN": {
+      "d50_nm": 800,
+      "green_density_pct": 55,
+      "notes": "Lead-free piezo"
+    },
+    "NaNbO3": {
+      "d50_nm": 700,
+      "green_density_pct": 55,
+      "notes": "Niobate perovskite"
+    },
+    "BiFeO3": {
+      "d50_nm": 300,
+      "green_density_pct": 50,
+      "notes": "Multiferroic"
+    },
+    "MgAl2O4": {
+      "d50_nm": 200,
+      "green_density_pct": 55,
+      "notes": "Spinel powder"
+    },
+    "MnCo2O4": {
+      "d50_nm": 500,
+      "green_density_pct": 55,
+      "notes": "Conductive spinel"
+    },
+    "Al2O3": {
+      "d50_nm": 300,
+      "green_density_pct": 55,
+      "notes": "Alpha alumina"
+    },
+    "\u03b1-Al\u2082O\u2083": {
+      "d50_nm": 300,
+      "green_density_pct": 55,
+      "notes": "Alpha alumina"
+    },
+    "SiC": {
+      "d50_nm": 500,
+      "green_density_pct": 55,
+      "notes": "Beta-SiC powder"
+    },
+    "\u03b1-SiC": {
+      "d50_nm": 1000,
+      "green_density_pct": 55,
+      "notes": "Alpha-SiC, coarser"
+    },
+    "WC": {
+      "d50_nm": 800,
+      "green_density_pct": 60,
+      "notes": "Tungsten carbide"
+    },
+    "B4C": {
+      "d50_nm": 600,
+      "green_density_pct": 55,
+      "notes": "Boron carbide"
+    },
+    "ZnO": {
+      "d50_nm": 200,
+      "green_density_pct": 55,
+      "notes": "Zinc oxide nano"
+    },
+    "ZrN": {
+      "d50_nm": 500,
+      "green_density_pct": 55,
+      "notes": "Zirconium nitride"
+    },
+    "TiO2": {
+      "d50_nm": 100,
+      "green_density_pct": 50,
+      "notes": "Anatase/rutile nano"
+    },
+    "SnO2": {
+      "d50_nm": 200,
+      "green_density_pct": 50,
+      "notes": "Tin oxide"
+    },
+    "LLZO": {
+      "d50_nm": 400,
+      "green_density_pct": 50,
+      "notes": "Li-garnet"
+    },
+    "Ni": {
+      "d50_nm": 50000,
+      "green_density_pct": 60,
+      "notes": "Nickel powder"
+    },
+    "W": {
+      "d50_nm": 20000,
+      "green_density_pct": 55,
+      "notes": "Tungsten powder"
+    },
+    "Re": {
+      "d50_nm": 30000,
+      "green_density_pct": 55,
+      "notes": "Rhenium powder"
+    },
+    "TiO\u2082 (Single Crystal)": {
+      "d50_nm": 1000000000.0,
+      "green_density_pct": 100,
+      "notes": "Single crystal"
+    },
+    "c-ZrO\u2082 (Single Crystal)": {
+      "d50_nm": 1000000000.0,
+      "green_density_pct": 100,
+      "notes": "Single crystal"
+    },
+    "UO\u2082": {
+      "d50_nm": 10000,
+      "green_density_pct": 90,
+      "notes": "Nuclear fuel pellet"
+    },
+    "Porous-SiO2": {
+      "d50_nm": 5000,
+      "green_density_pct": 40,
+      "notes": "Porous glass"
+    },
+    "Porcelain Stoneware": {
+      "d50_nm": 20000,
+      "green_density_pct": 60,
+      "notes": "Glass-ceramic"
+    }
+  }
+}

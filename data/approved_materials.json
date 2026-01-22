@@ -205,7 +205,8 @@
         }
       ],
       "extraction_date": "2026-01-19 18:19:03",
-      "approved": true
+      "approved": true,
+      "d50_nm": 80.0
     },
     {
       "paper_num": 9,
@@ -794,7 +795,8 @@
         }
       ],
       "extraction_date": "2026-01-19 20:45:33",
-      "approved": true
+      "approved": true,
+      "d50_nm": 300.0
     },
     {
       "paper_num": 10,
@@ -933,7 +935,9 @@
         }
       ],
       "extraction_date": "2026-01-19 20:48:54",
-      "approved": true
+      "approved": true,
+      "d50_nm": 1120.0,
+      "green_density_pct": 50.0
     },
     {
       "paper_num": 11,
@@ -1282,7 +1286,8 @@
         }
       ],
       "extraction_date": "2026-01-19 20:50:05",
-      "approved": true
+      "approved": true,
+      "d50_nm": 632.8
     },
     {
       "paper_num": 13,
@@ -1721,7 +1726,8 @@
         }
       ],
       "extraction_date": "2026-01-19 20:51:54",
-      "approved": true
+      "approved": true,
+      "d50_nm": 10.0
     },
     {
       "paper_num": 15,
@@ -1767,7 +1773,9 @@
           "J_crit": null
         }
       ],
-      "approved_at": "2026-01-19"
+      "approved_at": "2026-01-19",
+      "d50_nm": 700.0,
+      "green_density_pct": 85.0
     },
     {
       "paper_num": 17,
@@ -2266,7 +2274,8 @@
         }
       ],
       "extraction_date": "2026-01-19 21:18:31",
-      "approved": true
+      "approved": true,
+      "d50_nm": 20.0
     },
     {
       "paper_num": 19,
@@ -2389,7 +2398,8 @@
           "J_limit": 200
         }
       ],
-      "approved_at": "2026-01-19"
+      "approved_at": "2026-01-19",
+      "d50_nm": 130.0
     },
     {
       "paper_num": 20,
@@ -2435,7 +2445,8 @@
           "J_limit": 40
         }
       ],
-      "approved_at": "2026-01-19"
+      "approved_at": "2026-01-19",
+      "d50_nm": 130.0
     },
     {
       "paper_num": 20,
@@ -2481,7 +2492,8 @@
           "J_limit": 40
         }
       ],
-      "approved_at": "2026-01-19"
+      "approved_at": "2026-01-19",
+      "d50_nm": 130.0
     },
     {
       "paper_num": 20,
@@ -2523,7 +2535,8 @@
           "J_crit": null
         }
       ],
-      "approved_at": "2026-01-19"
+      "approved_at": "2026-01-19",
+      "d50_nm": 130.0
     },
     {
       "paper_num": 21,
@@ -2561,7 +2574,8 @@
         "delta_H": 50000,
         "delta_S": 20,
         "n_electrons": 2
-      }
+      },
+      "d50_nm": 1000.0
     },
     {
       "paper_num": 22,
@@ -2663,7 +2677,9 @@
           "J_crit": null
         }
       ],
-      "approved_at": "2026-01-19"
+      "approved_at": "2026-01-19",
+      "d50_nm": 210.0,
+      "heating_rate_Cmin": 5.0
     },
     {
       "paper_num": 24,
@@ -2701,7 +2717,8 @@
         "delta_H": 50000,
         "delta_S": 20,
         "n_electrons": 2
-      }
+      },
+      "d50_nm": 70.0
     },
     {
       "paper_num": 25,
@@ -2738,7 +2755,8 @@
         "delta_H": 50000,
         "delta_S": 20,
         "n_electrons": 2
-      }
+      },
+      "d50_nm": 10000.0
     },
     {
       "paper_num": 26,
@@ -2776,7 +2794,8 @@
         "delta_H": 50000,
         "delta_S": 20,
         "n_electrons": 2
-      }
+      },
+      "d50_nm": 100.0
     },
     {
       "paper_num": 27,
@@ -2813,7 +2832,8 @@
         "delta_H": 50000,
         "delta_S": 20,
         "n_electrons": 2
-      }
+      },
+      "d50_nm": 684.0
     },
     {
       "paper_num": 29,
@@ -2886,7 +2906,9 @@
         "delta_H": 50000,
         "delta_S": 20,
         "n_electrons": 2
-      }
+      },
+      "d50_nm": 5000.0,
+      "green_density_pct": 94.0
     },
     {
       "paper_num": 31,
@@ -3119,7 +3141,8 @@
           "J_limit": 50
         }
       ],
-      "approved_at": "2026-01-19"
+      "approved_at": "2026-01-19",
+      "green_density_pct": 95.0
     },
     {
       "paper_num": 34,
@@ -3192,7 +3215,8 @@
           "J_crit": null
         }
       ],
-      "approved_at": "2026-01-19"
+      "approved_at": "2026-01-19",
+      "d50_nm": 532.0
     },
     {
       "paper_num": 35,
@@ -3238,7 +3262,8 @@
           "J_crit": null
         }
       ],
-      "approved_at": "2026-01-19"
+      "approved_at": "2026-01-19",
+      "d50_nm": 5.0
     },
     {
       "paper_num": 38,
@@ -3261,7 +3286,8 @@
           "J_crit": null
         }
       ],
-      "approved_at": "2026-01-19"
+      "approved_at": "2026-01-19",
+      "d50_nm": 400.0
     },
     {
       "paper_num": 39,
@@ -3298,7 +3324,9 @@
         "delta_H": 50000,
         "delta_S": 20,
         "n_electrons": 2
-      }
+      },
+      "d50_nm": 25.0,
+      "heating_rate_Cmin": 10.0
     },
     {
       "paper_id": 40,
@@ -3435,7 +3463,10 @@
         }
       ],
       "notes": "Conventional FS. Flash-effective Ea=0.5eV justified by non-equilibrium effects.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "d50_nm": 250.0,
+      "green_density_pct": 68.6,
+      "heating_rate_Cmin": 3.0
     },
     {
       "paper_id": 41,
@@ -3577,7 +3608,9 @@
       ],
       "notes": "SOFC cathode material. Ea=0.20eV from first-principles (small polaron hopping). Very conductive - low fields (2-18 V/cm). 3/4 calibrated.",
       "first_principles_note": "Ea lowered from 0.25 to 0.20 eV based on high-T small polaron hopping in mixed-valence spinel.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "d50_nm": 30.0,
+      "green_density_pct": 67.0
     },
     {
       "paper_id": 44,
@@ -3652,7 +3685,8 @@
         }
       ],
       "notes": "Ferroelectric perovskite. Explicit T-E data from paper. 4/4 calibrated with 0% error. Ea=0.80eV (oxygen vacancy migration).",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "d50_nm": 65.0
     },
     {
       "paper_id": 45,
@@ -3689,7 +3723,8 @@
       ],
       "notes": "High entropy TM nitride. Green compact \u03c3\u2080=100 S/m (particle contacts limit conduction). Ea=0.20eV (grain boundary hopping). Bulk nitride is metallic but green compact is semiconducting.",
       "first_principles_note": "Flash Balance applies to green compact state, not dense metallic nitride. Particle-particle contact resistance gives effective \u03c3\u2080~100 S/m.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "d50_nm": 10000.0
     },
     {
       "paper_id": 46,
@@ -3728,7 +3763,9 @@
       ],
       "notes": "Current-rate flash sintering at ambient temperature. E_eff = J_crit \u00d7 \u03c1_green. NiO oxide layer dominates green compact resistivity. Ea=0.05eV (metallic with oxide tunneling barriers).",
       "current_rate_workflow": "E_effective = J_critical \u00d7 \u03c1_green_compact. For Ni: J_crit=20 A/mm\u00b2, \u03c1_green~10\u207b\u00b3 \u03a9\u00b7m \u2192 E_eff=200 V/cm",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "d50_nm": 44.0,
+      "green_density_pct": 86.0
     },
     {
       "paper_id": 48,
@@ -3793,7 +3830,9 @@
         }
       ],
       "notes": "SrTiO3 with Fe doping at constant 140 V/cm. Ea decreases with Fe doping (0.85\u21920.75 eV). 3/3 calibrated with <1% error. Fe creates oxygen vacancies, lowering onset T.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "d50_nm": 20.0,
+      "green_density_pct": 87.6
     },
     {
       "paper_id": 50,
@@ -3872,7 +3911,8 @@
         }
       ],
       "notes": "Porcelain stoneware (mullite + glassy matrix). First-principles Ea = 0.84 eV accounts for grain boundary + glass conduction. Perfect calibration 4/4.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "heating_rate_Cmin": 20.0
     },
     {
       "paper_id": 51,
@@ -3909,7 +3949,8 @@
         }
       ],
       "notes": "Al\u2082O\u2083-3YSZ (50:50) composite from theoretical paper. Ea same as 3YSZ (percolating YSZ network). Large r_eff=30\u03bcm due to composite grain structure.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "heating_rate_Cmin": 10.0
     },
     {
       "paper_id": 52,
@@ -3946,7 +3987,8 @@
         }
       ],
       "notes": "8YSZ (8 mol% Y\u2082O\u2083) - fully stabilized cubic phase. Lower Ea (0.85 vs 1.0 eV) and higher \u03c3\u2080 (10000 vs 4000 S/m) vs 3YSZ due to ~2.7\u00d7 more oxygen vacancies.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "d50_nm": 50.0
     },
     {
       "paper_id": 53,
@@ -4021,7 +4063,8 @@
         }
       ],
       "notes": "Fe-doped SrTiO\u2083 (MIEC). Ea=0.63eV is between pure electronic (0.3-0.5eV) and ionic (1.0eV) due to Fe\u00b3\u207a/Fe\u00b2\u207a polaron hopping + O\u00b2\u207b ionic conduction.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "d50_nm": 400.0
     },
     {
       "paper_id": 57,
@@ -4058,7 +4101,8 @@
         }
       ],
       "notes": "SiC whisker reinforced 3YSZ (17.5 vol%). Percolating SiC network reduces Ea from 1.0 to 0.50 eV. Flash at 80 V/cm at 1000\u00b0C.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "d50_nm": 50.0
     },
     {
       "paper_id": 60,
@@ -4095,7 +4139,8 @@
         }
       ],
       "notes": "Samarium-doped ceria (SDC) - SOFC electrolyte. Paper also reports graphite-assisted flash at 25\u00b0C (different mechanism). Standard flash onset at 850\u00b0C/120V/cm.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "d50_nm": 540.0
     },
     {
       "paper_id": 61,
@@ -4132,7 +4177,9 @@
         }
       ],
       "notes": "Strontium hexaferrite (M-type hard ferrite). Permanent magnet material with Fe\u00b3\u207a polaron hopping (Ea=0.37eV). Reactive flash synthesis + densification.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "d50_nm": 1000.0,
+      "heating_rate_Cmin": 5.0
     },
     {
       "paper_id": 62,
@@ -4169,7 +4216,8 @@
         }
       ],
       "notes": "Undoped SrTiO\u2083 flash sintering. Paper also studies SrTiO\u2083-KNbO\u2083 composites which show flash (conductivity spike) but NO sintering. \u03c3\u2080 lower than Fe-doped due to no dopant carriers.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "d50_nm": 150.0
     },
     {
       "paper_id": 67,
@@ -4220,7 +4268,8 @@
         }
       ],
       "notes": "Single crystal rutile TiO2. First principles calibration shows lower \u03c3\u2080 (100 S/m vs 1200 for polycrystalline) due to fewer defects. Model successfully predicts threshold behavior at 400-450 V/cm boundary.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "d50_nm": 900.0
     },
     {
       "paper_id": 68,
@@ -4285,7 +4334,8 @@
         }
       ],
       "notes": "UO\u2082 (Uranium Dioxide) nuclear fuel from Los Alamos National Lab. Studied UO2.00, UO2.08, UO2.16 stoichiometries. Low Ea (0.20 eV) indicates electronic polaron hopping, not ionic O migration. High \u03c3\u2080 due to hyperstoichiometry creating electron carriers.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "green_density_pct": 55.0
     },
     {
       "paper_id": 70,
@@ -4323,7 +4373,8 @@
         }
       ],
       "notes": "Tungsten metal current-rate flash sintering at room temperature (no furnace). Highest melting point metal (3422\u00b0C) sintered in <1 min. J_crit = 7.5 A/mm\u00b2 converted to E_eff = 75 V/cm via green compact resistivity.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "d50_nm": 12.0
     },
     {
       "paper_id": 72,
@@ -4360,7 +4411,8 @@
         }
       ],
       "notes": "Binder-less tungsten carbide flash sintered in <6 seconds. Parameters represent GREEN COMPACT properties (not dense WC). Ea=0.45eV reflects barrier at WO3 oxide interfaces between particles. \u03c3\u2080=800 S/m much lower than bulk WC due to contact resistance and porosity.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "d50_nm": 600.0
     },
     {
       "paper_id": 78,
@@ -4397,7 +4449,9 @@
         }
       ],
       "notes": "Pure ZnO flash sintering. Paper also studies 0.5 mol% Bi\u2082O\u2083-doped ZnO. Ea=0.30eV indicates electronic polaron hopping dominates at flash temperatures. Wide bandgap semiconductor (Eg=3.37eV) with n-type conductivity from O vacancies.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "d50_nm": 210.0,
+      "green_density_pct": 90.8
     },
     {
       "paper_id": 79,
@@ -4434,7 +4488,8 @@
         }
       ],
       "notes": "Zirconium Nitride (ZrN) - metallic conductor similar to TiN. Bulk resistivity ~18 \u03bc\u03a9\u00b7cm. Very low field required (32 V/cm) due to high conductivity. Flash Balance applies to green compact properties, not dense material.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "d50_nm": 24.0
     },
     {
       "paper_id": 80,
@@ -4471,7 +4526,9 @@
         }
       ],
       "notes": "ZrO\u2082-CeO\u2082 (80-20 mol%) reactive flash sintering from Los Alamos. CeO\u2082 enhances ionic conductivity, resulting in lower Ea (0.80 eV) compared to pure ZrO\u2082. Solid solution forms during RFS process.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "d50_nm": 74000.0,
+      "green_density_pct": 87.0
     },
     {
       "paper_id": 81,
@@ -4508,7 +4565,9 @@
         }
       ],
       "notes": "Alpha-SiC (6H polytype) pressureless flash sintering from Oxford. Requires very low fields (15-40 V/cm) due to high conductivity at elevated temps. Same parameters as database SiC work well, validating model at low-field/high-temp regime.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "d50_nm": 5900.0,
+      "green_density_pct": 94.0
     },
     {
       "paper_id": 82,
@@ -4582,7 +4641,8 @@
         }
       ],
       "notes": "50 vol% 3YSZ-Al\u2082O\u2083 composite. Conductivity dominated by 3YSZ percolation network. Flash Balance valid for high-field conditions where flash is instantaneous.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "d50_nm": 600.0
     },
     {
       "paper_id": "OS-2",
@@ -4656,7 +4716,9 @@
         }
       ],
       "notes": "Seminal flash sintering paper by Cologna, Rashkova & Raj (2010). Demonstrated flash sintering of 3YSZ in <5s at 850\u00b0C. Established the field.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "d50_nm": 60.0,
+      "green_density_pct": 50.4
     },
     {
       "paper_id": "OS-4",
@@ -4693,7 +4755,8 @@
         }
       ],
       "notes": "Flash sintering of alumina. High E-field required (1500 V/cm vs ~100 for 3YSZ) due to insulating nature. Effective Ea (~0.82 eV) much lower than bulk (~3-4 eV), indicating GB-dominated transport.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "d50_nm": 300.0
     },
     {
       "paper_id": "OS-6",
@@ -4730,7 +4793,8 @@
         }
       ],
       "notes": "MgO-doped alumina. MgO doping enhances conductivity and lowers required E-field (1000 vs 1500 V/cm for pure Al2O3). Lower effective Ea (0.70 vs 0.82 eV) due to doping.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "d50_nm": 300.0
     },
     {
       "paper_id": "OS-10",
@@ -4767,7 +4831,9 @@
         }
       ],
       "notes": "SnO\u2082 AC flash sintering (1 kHz). AC fields require ~400\u00b0C higher onset than DC due to reduced net Joule heating per cycle. Separate from DC SnO\u2082 parameters.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "d50_nm": 373.0,
+      "green_density_pct": 44.5
     },
     {
       "paper_id": "OS-11",
@@ -4804,7 +4870,10 @@
         }
       ],
       "notes": "Undoped SrTiO\u2083 flash sintering. Paper notes \"relatively high resistivity\". Higher Ea (0.60 eV) and lower \u03c3\u2080 (200 S/m) than previously assumed. FAST region (150 V/cm) excluded - not pure flash.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "d50_nm": 266.0,
+      "green_density_pct": 50.0,
+      "heating_rate_Cmin": 10.0
     }
   ],
   "rejected": [

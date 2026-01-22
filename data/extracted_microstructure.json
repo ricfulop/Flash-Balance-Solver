@@ -1,0 +1,2913 @@
+{
+  "description": "Microstructure data extracted from flash sintering papers",
+  "total_papers": 95,
+  "papers_with_d50": 75,
+  "papers_with_density": 27,
+  "papers_with_heating_rate": 12,
+  "data": [
+    {
+      "filename": "3YSZ Janssen.pdf",
+      "d50_nm": null,
+      "green_density_pct": 94.0,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "3YSZ Wang.pdf",
+      "d50_nm": 28.0,
+      "green_density_pct": 49.5,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "8YSZ TEM XRD Raman Jo.pdf",
+      "d50_nm": 30.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "Al Kellog.pdf",
+      "d50_nm": null,
+      "green_density_pct": 81.0,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "Al2O3-LaPO4 8YSZ-LaPO4 Mccartney.pdf",
+      "d50_nm": 100.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "Al2O3-Y3Al5O12-ZrO2 An.pdf",
+      "d50_nm": 1500.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": 10.0
+    },
+    {
+      "filename": "Al2O3:TZP Steil.pdf",
+      "d50_nm": 80.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "Alumina Sglavo.pdf",
+      "d50_nm": 300.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "B4C Part 1 Todd.pdf",
+      "d50_nm": 1120.0,
+      "green_density_pct": 50.0,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "B4C Part 2 Todd.pdf",
+      "d50_nm": 632.8,
+      "green_density_pct": null,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "BaTiO3 Yamamoto.pdf",
+      "d50_nm": 10.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "Badimele Thesis.pdf",
+      "d50_nm": 450.0,
+      "green_density_pct": 80.0,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "Barium Titanate Lupascu.pdf",
+      "d50_nm": 700.0,
+      "green_density_pct": 85.0,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "BiFeO3 RFS Perez Maqueda.pdf",
+      "d50_nm": 29.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "BiFeO3 Raj.pdf",
+      "d50_nm": 20.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "CaCu3Ti4O12 M'Peko.pdf",
+      "d50_nm": 10.0,
+      "green_density_pct": 95.0,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "Debye temp Raj.pdf",
+      "d50_nm": 130.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "Doped TiO2 Xu.pdf",
+      "d50_nm": 1000.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "Dopers ZnO Luo.pdf",
+      "d50_nm": 210.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": 5.0
+    },
+    {
+      "filename": "Fe2Val Nishino.pdf",
+      "d50_nm": 20000.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "GDC Bran.pdf",
+      "d50_nm": 70.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "Gd:Sm-Pr Co-Doped Ceria Sglavo.pdf",
+      "d50_nm": 10000.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "Glass Flash Sintering Sglavo.pdf",
+      "d50_nm": 100.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "High entropy pyrochlore Raj.pdf",
+      "d50_nm": 684.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "Incubation Kinetics Garcia.pdf",
+      "d50_nm": 3.3,
+      "green_density_pct": null,
+      "heating_rate_Cmin": 10.0
+    },
+    {
+      "filename": "K0.5Na0.5NbO3 Akdogan.pdf",
+      "d50_nm": 5000.0,
+      "green_density_pct": 94.0,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "K0.5Na0.5NbO3 Raj.pdf",
+      "d50_nm": null,
+      "green_density_pct": 95.0,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "KNN 2 Senos.pdf",
+      "d50_nm": 300.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "KNN Senos.pdf",
+      "d50_nm": 200.0,
+      "green_density_pct": 94.0,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "LLZO Huang.pdf",
+      "d50_nm": 532.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "LLZO RFS Raj.pdf",
+      "d50_nm": 5.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "LLZO Raj.pdf",
+      "d50_nm": 1.0,
+      "green_density_pct": 92.0,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "La0.6Sr0.4CoO3 Kim.pdf",
+      "d50_nm": 750.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "Li4Ti5O12 Xu.pdf",
+      "d50_nm": 400.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "MgAl2O4 RFS Raj.pdf",
+      "d50_nm": 25.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": 10.0
+    },
+    {
+      "filename": "MgAl2O4 Yoshida.pdf",
+      "d50_nm": 250.0,
+      "green_density_pct": 68.6,
+      "heating_rate_Cmin": 3.0
+    },
+    {
+      "filename": "MgO-SiO2 -Al2 O3 Sglavo.pdf",
+      "d50_nm": 1000.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "MnCo2O4 Sglavo.pdf",
+      "d50_nm": 30.0,
+      "green_density_pct": 67.0,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "NaNbO3.pdf",
+      "d50_nm": 65.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "Nb1:3Ta1:3Ti1:3N Cheng.pdf",
+      "d50_nm": 10000.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "Ni Badimele Raj.pdf",
+      "d50_nm": 44.0,
+      "green_density_pct": 86.0,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "Perovskite Wang.pdf",
+      "d50_nm": 20.0,
+      "green_density_pct": 87.6,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "Phase syncrhonicity Raj .pdf",
+      "d50_nm": 25.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "Porcelain Sglavo.pdf",
+      "d50_nm": null,
+      "green_density_pct": null,
+      "heating_rate_Cmin": 20.0
+    },
+    {
+      "filename": "Power Density at the Onset of Flash Sintering Raj.pdf",
+      "d50_nm": null,
+      "green_density_pct": null,
+      "heating_rate_Cmin": 10.0
+    },
+    {
+      "filename": "RFS Jalali_Bilayer.pdf",
+      "d50_nm": 50.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "Rhenium Raj.pdf",
+      "d50_nm": 1500.0,
+      "green_density_pct": 74.0,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "STRO Tsur.pdf",
+      "d50_nm": 400.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "SiC ZrO2 Wang.pdf",
+      "d50_nm": 50.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "SiO2 coated Barium titanate Wang.pdf",
+      "d50_nm": 100.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "SiO2 glass Sglavo.pdf",
+      "d50_nm": 100.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "Sm2O3 doped CeO2 Jiang.pdf",
+      "d50_nm": 540.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "SrFe12O19 Perejon.pdf",
+      "d50_nm": 1000.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": 5.0
+    },
+    {
+      "filename": "SrTiO2 and KNbO3 Raj.pdf",
+      "d50_nm": 150.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "Strontium Hexaferrite Touch Free Perez-Maqueda Raj.pdf",
+      "d50_nm": 1000.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "Technique Yamamoto.pdf",
+      "d50_nm": 50.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "TiO2 Shikhar_Titania_2014.pdf",
+      "d50_nm": 20.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": 10.0
+    },
+    {
+      "filename": "TiO2 Yadav.pdf",
+      "d50_nm": 900.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "UO2 McClellan.pdf",
+      "d50_nm": null,
+      "green_density_pct": 55.0,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "Urania McClellan.pdf",
+      "d50_nm": null,
+      "green_density_pct": 81.0,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "W Raj.pdf",
+      "d50_nm": 12.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "WC 3 Sglavo.pdf",
+      "d50_nm": 4.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "WC Grasso.pdf",
+      "d50_nm": 600.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "WC Sglavo.pdf",
+      "d50_nm": 240.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "WC ZrB2 Mazo.pdf",
+      "d50_nm": 240.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "WC paper 3 Sglavo.pdf",
+      "d50_nm": 240.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "WC second paper Sglavo .pdf",
+      "d50_nm": 6.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "ZnO Wang.pdf",
+      "d50_nm": 100.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": 10.0
+    },
+    {
+      "filename": "ZnO Zno-Bi2O3 Luo.pdf",
+      "d50_nm": 210.0,
+      "green_density_pct": 90.8,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "ZrN Cheng.pdf",
+      "d50_nm": 24.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "ZrO2-CeO2 Valdez.pdf",
+      "d50_nm": 74000.0,
+      "green_density_pct": 87.0,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "alpha SiC Todd.pdf",
+      "d50_nm": 5900.0,
+      "green_density_pct": 94.0,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "c-ZrO2 Yoshida.pdf",
+      "d50_nm": 1.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "3YSZ Naik.pdf",
+      "d50_nm": 600.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "3YSZ Raj.pdf",
+      "d50_nm": 60.0,
+      "green_density_pct": 50.4,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "Al2O3 Sglavo.pdf",
+      "d50_nm": 300.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "Flash Review Yu.pdf",
+      "d50_nm": 400.0,
+      "green_density_pct": 75.0,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "MgO doped Al2O3 Raj.pdf",
+      "d50_nm": 300.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "Review Yu.pdf",
+      "d50_nm": 400.0,
+      "green_density_pct": 75.0,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "SiC Grasso.pdf",
+      "d50_nm": null,
+      "green_density_pct": 82.2,
+      "heating_rate_Cmin": 200.0
+    },
+    {
+      "filename": "SnO2 Muccillo.pdf",
+      "d50_nm": 373.0,
+      "green_density_pct": 44.5,
+      "heating_rate_Cmin": null
+    },
+    {
+      "filename": "SrTiO2 Karakuscu.pdf",
+      "d50_nm": 266.0,
+      "green_density_pct": 50.0,
+      "heating_rate_Cmin": 10.0
+    },
+    {
+      "filename": "ZrO2 Benthem.pdf",
+      "d50_nm": 40.0,
+      "green_density_pct": null,
+      "heating_rate_Cmin": null
+    }
+  ],
+  "all_results": [
+    {
+      "filename": "3YSZ Janssen.pdf",
+      "d50_nm": [],
+      "d50_um": [],
+      "green_density_pct": [
+        94.0
+      ],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          " green",
+          " green",
+          " green"
+        ],
+        "heating": [
+          "heating",
+          " heating",
+          " heating"
+        ]
+      }
+    },
+    {
+      "filename": "3YSZ Wang.pdf",
+      "d50_nm": [
+        28.0,
+        31.14
+      ],
+      "d50_um": [],
+      "green_density_pct": [
+        49.5
+      ],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "wherein a ceramic green-body is sintered to near full density for",
+          "Green bodies were consolidated from the 3YSZ powder int",
+          "isostatic pressing at 200MPa. The green bodies were subsequently"
+        ],
+        "heating": [
+          "mental and numerical investigations, joule heating may play a",
+          "ally estimated based on Joule heating using a black body radiation",
+          "ion of abundant vacancies combined with the joule heating"
+        ]
+      }
+    },
+    {
+      "filename": "8Y2O3 doped ZrO2 Yamamoto.pdf",
+      "d50_nm": [],
+      "d50_um": [],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "green compacts up to high density, which controls elect",
+          "of mainly oxide ceramic green compacts by using electric",
+          "at threshold furnace temperature during heating green"
+        ],
+        "heating": [
+          "at threshold furnace temperature during heating green"
+        ]
+      }
+    },
+    {
+      "filename": "8YSZ TEM XRD Raman Jo.pdf",
+      "d50_nm": [
+        30.0,
+        532.0,
+        30.0,
+        50.0,
+        50.0,
+        30.0,
+        30.0,
+        30.0
+      ],
+      "d50_um": [
+        50.0,
+        1.0,
+        1.0,
+        80.0,
+        40.0,
+        50.0,
+        50.0,
+        50.0
+      ],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "heating": [
+          "to suggestions that flash results from Joule heating.30\u201333",
+          "heating at grain boundaries,42\u201346 and electrochemical",
+          "33. Raj R. Joule heating during flash-sintering. J Eur Ceram Soc."
+        ]
+      }
+    },
+    {
+      "filename": "Al Kellog.pdf",
+      "d50_nm": [],
+      "d50_um": [],
+      "green_density_pct": [
+        81.0
+      ],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "physical properties of the green body being sintered",
+          "pressure of 140 MPa to form a master green compact.",
+          "The morphology of the powder and the green com-"
+        ],
+        "heating": [
+          "(Tambient = 24 \u0003C) with no externally applied heating.",
+          "local thermal gradients and to quantify Joule heating",
+          "temperature and heating rate histories at the location"
+        ]
+      }
+    },
+    {
+      "filename": "Al2O3-LaPO4 8YSZ-LaPO4 Mccartney.pdf",
+      "d50_nm": [
+        100.0,
+        100.0
+      ],
+      "d50_um": [
+        3.0,
+        75.0,
+        100.0
+      ],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "an electrical field across a ceramic green body, while heating ",
+          "To prepare green bodies for flash sintering, powders ",
+          "ative green body density was 50\u00a0\u00b1\u00a02%. Dog-\u00adbone samples "
+        ],
+        "heating": [
+          "ectrical field across a ceramic green body, while heating ",
+          "joule heating, which assists in fast densification or enhanced ",
+          "heating with constant voltage applied, then voltage incre"
+        ]
+      }
+    },
+    {
+      "filename": "Al2O3-Y3Al5O12-ZrO2 An.pdf",
+      "d50_nm": [],
+      "d50_um": [
+        1.5,
+        1.0
+      ],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [
+        10.0
+      ],
+      "context": {
+        "green": [
+          "shaped green body at a uniaxial pressure of 10 MPa. The green ",
+          "the green body density is 3.09 g/cm3. The dc (direct curren"
+        ],
+        "heating": [
+          "was increased at a heating rate of 10 \u00b0C/min until the occurrence of"
+        ]
+      }
+    },
+    {
+      "filename": "Al2O3:TZP Steil.pdf",
+      "d50_nm": [
+        80.0,
+        100.0
+      ],
+      "d50_um": [],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          " a  green",
+          " green",
+          " green"
+        ],
+        "heating": [
+          " pre-heating",
+          " heating",
+          " heating"
+        ]
+      }
+    },
+    {
+      "filename": "Alumina Sglavo.pdf",
+      "d50_nm": [
+        300.0
+      ],
+      "d50_um": [],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "d50": [
+          " d50 =",
+          " (d50 ="
+        ],
+        "green": [
+          " green"
+        ],
+        "heating": [
+          " heating",
+          " heating",
+          " heating"
+        ]
+      }
+    },
+    {
+      "filename": "B4C Part 1 Todd.pdf",
+      "d50_nm": [
+        1120.0,
+        900.0,
+        1100.0,
+        770.0,
+        820.0,
+        820.0,
+        820.0,
+        1.0
+      ],
+      "d50_um": [
+        0.6,
+        3.0,
+        3.0,
+        0.6,
+        1.0
+      ],
+      "green_density_pct": [
+        50.0
+      ],
+      "heating_rate_Cmin": [],
+      "context": {
+        "d50": [
+          "Boron carbide (B4C) powder (HD20, D50 = 0.3\u20130.6 \u03bcm, H\u00a8ogan\u00a8as) ",
+          "body (powder d50 = 0.3\u20130.6 \u03bcm), which suggests that sustaining the"
+        ],
+        "green": [
+          "es. Alumina, boron carbide and silicon carbide in green or sintered form were used as the ",
+          "conductivity of a boron or silicon carbide green body. Plasma formation did not lead to extensive ",
+          "the plasma was able to infiltrate the green body and cause transfer of matter from the interi"
+        ],
+        "heating": [
+          "ble for the fast densification during FS is rapid heating [2\u20135], ",
+          "s known that plasmas can be used to achieve rapid heating (103 K/ ",
+          "densified using Joule heating of the compact by a current supplied using "
+        ]
+      }
+    },
+    {
+      "filename": "B4C Part 2 Todd.pdf",
+      "d50_nm": [
+        632.8
+      ],
+      "d50_um": [
+        10.0,
+        0.6,
+        25.0,
+        0.6,
+        8.0,
+        10.3,
+        17.0,
+        10.0
+      ],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "d50": [
+          "Boron Carbide (B4C) powder (HD20, D50 = 0.3\u20130.6 \u03bcm, H\u00a8ogan\u00a8as)"
+        ],
+        "green": [
+          "lasmas in the atmosphere around a powder compact (green",
+          "the green body was demonstrated by the transport of materia",
+          "estigation [21]. The production of the bar-shaped green bodies"
+        ],
+        "heating": [
+          "niques, such as Flash Sintering (FS), allow rapid heating and densification of ceramics",
+          "this \u201cplasma pre-treatment\u201d stage, sample heating was limited, and no",
+          "passed through the sample and the resulting Joule heating raised"
+        ]
+      }
+    },
+    {
+      "filename": "BaTiO3 SrTiO3 Garcia.pdf",
+      "d50_nm": [],
+      "d50_um": [],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "the Ba0.6Sr0.4TiO3 composition. Green samples (GS) are formed"
+        ]
+      }
+    },
+    {
+      "filename": "BaTiO3 Yamamoto.pdf",
+      "d50_nm": [
+        10.0
+      ],
+      "d50_um": [],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "he shrinkage behavior of barium titanate (BaTiO3) green compacts during \ufb02ash sintering with a square",
+          "e wave is e\ufb00ective for the densi\ufb01cation of BaTiO3 green compacts without reduction and dis-",
+          "electric \ufb01eld to enhance the shrinkage rate of green com-"
+        ],
+        "heating": [
+          "during the heating of green compacts, which is called a",
+          "d to apply an electric \ufb01eld under which the Joule heating",
+          "heating rate of 300 \u00b0C/h in air. The limiting value of"
+        ]
+      }
+    },
+    {
+      "filename": "Badimele Thesis.pdf",
+      "d50_nm": [
+        450.0,
+        60.0,
+        60.0,
+        700.0,
+        60.0,
+        60.0
+      ],
+      "d50_um": [
+        45.0,
+        3.0,
+        0.88,
+        10.0,
+        10.0
+      ],
+      "green_density_pct": [
+        80.0
+      ],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "Green Sample (~80% Density)"
+        ],
+        "heating": [
+          "temperature, time, pressure, atmosphere, heating rate, and cooling rate. Thermodynamically, ",
+          "s. Unlike conventional sintering where convection heating is followed by thermal energy ",
+          "microwave sintering heating takes place through absorption of microwave field"
+        ]
+      }
+    },
+    {
+      "filename": "Barium Titanate Lupascu.pdf",
+      "d50_nm": [],
+      "d50_um": [
+        0.7
+      ],
+      "green_density_pct": [
+        85.0
+      ],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "passing exclusively through the green body at all times.[3,4] In",
+          "the dog-bone-shaped green body has estab-",
+          "green bodies typically have a length of 20\u201330 mm betwee"
+        ],
+        "heating": [
+          "heating rates cause a bigger temperature difference on th",
+          "h is the thermal runaway causing an inhomogeneous heating",
+          "were conducted at a heating rate of 10 K min\u00011 for various electric \ufb01elds up"
+        ]
+      }
+    },
+    {
+      "filename": "BiFeO3 RFS Perez Maqueda.pdf",
+      "d50_nm": [
+        29.0,
+        150.0,
+        10.0
+      ],
+      "d50_um": [],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          " was applied into the holes of the handles of the green-",
+          "green and Fe \u00bc red."
+        ],
+        "heating": [
+          "The experiments were performed at a constant heating rate",
+          "pans and the DSC curves were recorded on heating and cooling",
+          "tric \ue103eld to the specimen and heating the furnace at a constant"
+        ]
+      }
+    },
+    {
+      "filename": "BiFeO3 Raj.pdf",
+      "d50_nm": [
+        20.0,
+        6.0
+      ],
+      "d50_um": [],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "heating": [
+          " as a function of furnace temperature at constant heating rate of 10\u00b0C\u0001min\u00031 for",
+          "der specimen during the constant heating rate flash-sinter-",
+          "29. Raj R. Joule heating during flash-sintering. J Eur Ceram Soc."
+        ]
+      }
+    },
+    {
+      "filename": "CaCu3Ti4O12 M'Peko.pdf",
+      "d50_nm": [
+        10.0
+      ],
+      "d50_um": [],
+      "green_density_pct": [
+        95.0
+      ],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "shaped die. Green density of the samples was about 55% of CCTO"
+        ],
+        "heating": [
+          "(Joule heating), is also discussed. Finally, a correlation was f",
+          "ture was raised at a constant heating rate of 10 \u0001C/min, and the",
+          "ter the onset of the \ufb02ash. Because of rapid Joule heating during"
+        ]
+      }
+    },
+    {
+      "filename": "Co2MnO4 spinel Raj.pdf",
+      "d50_nm": [],
+      "d50_um": [],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "These specimens had a green density of 55.6 \u00b1 1.2%. The gage"
+        ],
+        "heating": [
+          "by Joule heating at grain boundaries from the electrical current",
+          "Constant Heating Rate",
+          " furnace temperature. All experiments at constant heating rate of 10 \u25e6C min\u22121."
+        ]
+      }
+    },
+    {
+      "filename": "Debye temp Raj.pdf",
+      "d50_nm": [],
+      "d50_um": [
+        0.13,
+        0.07,
+        1.97
+      ],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "d50": [
+          "d50 = 0.13 \u03bcm (d10 = 0.07 \u03bcm, d90 = 1.97 \u03bcm), measure"
+        ],
+        "green": [
+          "red by conventional sintering, and powder-pressed green samples",
+          "pellets were 20 mm in diameter and 5 mm tall. The green pel-",
+          "300 MPa. The green density of these samples was 55%. The CIPed"
+        ],
+        "heating": [
+          "est temperature for initiating \ufb02ash?\u201d. Constant heating rate experiments at increasing electric \ufb01elds rev",
+          "heating the furnace at a constant rate, at a constant app",
+          "(Nabertherm, Germany) at 1500 \u00b0C, 4 h dwell, heating and cooling"
+        ]
+      }
+    },
+    {
+      "filename": "Doped TiO2 Xu.pdf",
+      "d50_nm": [],
+      "d50_um": [
+        1.0,
+        1.0
+      ],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "the green disc with a thickness of about 2.0\u00a0mm and a ",
+          "The green disc was heated at a rate of 2\u00a0\u00b0C/min to ",
+          "between the sample and the electrode. The green disc "
+        ],
+        "heating": [
+          "density is 96.9%. Joule heating runaway and oxygen vacancy defect lead to rapid ",
+          "power supply types [10, 14\u201316], heating equipment ",
+          "grain boundary overheating effect [23], Frenkel nucle-"
+        ]
+      }
+    },
+    {
+      "filename": "Dopers ZnO Luo.pdf",
+      "d50_nm": [
+        210.0,
+        15.0,
+        28.0,
+        16.0,
+        15.0,
+        15.0,
+        2.0
+      ],
+      "d50_um": [
+        54.5,
+        54.5
+      ],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [
+        5.0
+      ],
+      "context": {
+        "green": [
+          "ness. Platinum was sputtered on both sides of the green specimens ",
+          "ductivity of a ZnO + 0.5 mol% Bi 2 O 3 green specimen was measured ",
+          "undoped, Bi 2 O 3 -doped, and Al 2 O 3 -doped ZnO green specimens "
+        ],
+        "heating": [
+          "a constant heating rate of 5 \u00b0C per minute until a \ufb02ash occurred, at",
+          "generation from Ohmic (Joule) heating and heat dissipation from ",
+          "shown in Fig. 6 (a). During the heating, a conductivity transition "
+        ]
+      }
+    },
+    {
+      "filename": "Fe2Val Nishino.pdf",
+      "d50_nm": [],
+      "d50_um": [
+        20.0,
+        20.0,
+        20.0,
+        20.0
+      ],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "heating": [
+          "rapid heating and cooling. The magnitude of electrical and ther",
+          "heating rate on the temperature distribution of the",
+          "mold and punch. In this case, the heating and"
+        ]
+      }
+    },
+    {
+      "filename": "GDC Bran.pdf",
+      "d50_nm": [],
+      "d50_um": [
+        0.07,
+        0.13,
+        1.97,
+        1.1,
+        0.35,
+        0.23,
+        0.3
+      ],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "d50": [
+          "d50\u00a0=\u00a00.13\u00a0\u03bcm, and d90\u00a0=\u00a01.97\u00a0\u03bcm. This means that the"
+        ],
+        "green": [
+          "n electric field is applied to a powder-\u00adpressed \u201cgreen speci-",
+          "for these specimens was 1.0\u00a0\u00b1\u00a00.1\u00a0g. The green body sam-"
+        ],
+        "heating": [
+          "materials. The use of high heating rates and shorter dwell-",
+          "known as isothermal flash sintering and constant heating rate ",
+          "then pre-\u00adsintered at 1000\u00b0C for 30\u00a0min with a heating and "
+        ]
+      }
+    },
+    {
+      "filename": "Gd:Sm-Pr Co-Doped Ceria Sglavo.pdf",
+      "d50_nm": [],
+      "d50_um": [
+        10.0
+      ],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "The green density of the SPDC-AC and GPDC-AC samples ranged",
+          "higher green density (around 50%) was measured for SPDC-NH3. W",
+          "in green density had negligible consequences on the sinter"
+        ],
+        "heating": [
+          "Selb, Germany), with a heating rate of 10 \u25e6C/min up to 1200 \u25e6C and \u03b1-Al2O3 as a ",
+          "heating rate of 20 \u25e6C/min, from room temperature and up t",
+          "sintering: Thermal runaway of Joule heating. J. Eur. Ceram. Soc. 2015, 35, 1865\u20131877. [CrossR"
+        ]
+      }
+    },
+    {
+      "filename": "Glass Flash Sintering Sglavo.pdf",
+      "d50_nm": [],
+      "d50_um": [
+        0.1
+      ],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "applied to a green ceramic specimen subjected to isothermal or const",
+          "Fig. 2 reports the dilatometric curves of the green glass samples"
+        ],
+        "heating": [
+          "heating rate treatment. Since ceramic materials are chara",
+          "heating",
+          "The power input is the energy dissipated by Joule heating (Win = V"
+        ]
+      }
+    },
+    {
+      "filename": "High entropy pyrochlore Raj.pdf",
+      "d50_nm": [
+        684.0,
+        514.5,
+        348.0,
+        398.0,
+        669.0,
+        945.0,
+        1165.0,
+        1997.0
+      ],
+      "d50_um": [
+        1.24
+      ],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "The green compacts were calcined at 800\u25e6C for 2 h in a"
+        ],
+        "heating": [
+          "of flash sintering with a heating rate of 5\u25e6C/min, and the",
+          "furnace temperature due to Joule heating,14,15 which can",
+          "umetric heating caused by flash sintering makes sample"
+        ]
+      }
+    },
+    {
+      "filename": "Incubation Kinetics Garcia.pdf",
+      "d50_nm": [
+        3.3,
+        3.1
+      ],
+      "d50_um": [],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "context": {
+        "green": [
+          "of particle-particle contacts and surfaces of the green body de\ufb01ne",
+          "tural evolution and charge transport on a ceramic green body during \ufb02ash sintering.",
+          "an ionic ceramic green body for three distinct microstructural"
+        ],
+        "heating": [
+          "controls the heating of the sintered sample, and a small subset of par",
+          "Joule heating takes over externally-driven radiation heating. F",
+          "generating large amounts of Joule heating, resulting in the onset of a \ufb02ash event. The vali"
+        ]
+      }
+    },
+    {
+      "filename": "Irradiated YSZ Muccillo.pdf",
+      "d50_nm": [],
+      "d50_um": [],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "by heating green specimens for a certain time at a temperature bel",
+          "electric \ufb01eld-assisted sintering the green 8YSZ pellet was positioned in",
+          "mary, gamma irradiation of zirconia-8 mol% yttria green"
+        ],
+        "heating": [
+          "lline ceramics exposed to gamma radiation. During heating to",
+          "by heating green specimens for a certain time at a temperatu",
+          "grammed to 1000 \u00b0C/5 min with 10 \u00b0C min\u22121 heating and cooling"
+        ]
+      }
+    },
+    {
+      "filename": "K0.5Na0.5NbO3 Akdogan.pdf",
+      "d50_nm": [],
+      "d50_um": [
+        5.0,
+        4.0
+      ],
+      "green_density_pct": [
+        94.0
+      ],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "sinter a ceramic preform (a.k.a. green body) at tempera-",
+          "lator or semiconductor) in the green state (as-pressed pow-",
+          "mon in green bodies, and (ii) vacancy clustering during FS."
+        ],
+        "heating": [
+          "cut-off) with 10\u25e6C/min heating rate in air. Precipitous densification occurred",
+          "to Joule heating is predicted. At 25\u25e6C and 1 kHz, relative permitt",
+          "GBs, which is a remnant of flash sintering. Joule heating"
+        ]
+      }
+    },
+    {
+      "filename": "K0.5Na0.5NbO3 Raj.pdf",
+      "d50_nm": [],
+      "d50_um": [],
+      "green_density_pct": [
+        95.0,
+        94.0
+      ],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "was 20 mm \u00a9 3.5 mm \u00a9 1.2 mm. The green density of the sample",
+          "dent gauge lenght, \u00b5g is green density. Density is calculated with",
+          "were presented with green color. Therefore the orange color corre-"
+        ],
+        "heating": [
+          "\ufb02ash\u201d event. One of these mechanisms is (1) Joule heating, (an",
+          "ivity through the boundaries. The effect of Joule heating",
+          "sintering could not be achieved by Joule heating only. Therefore"
+        ]
+      }
+    },
+    {
+      "filename": "KNN 2 Senos.pdf",
+      "d50_nm": [
+        300.0,
+        350.0,
+        210.0,
+        150.0,
+        150.0,
+        68.0,
+        230.0,
+        100.0,
+        100.0
+      ],
+      "d50_um": [],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "d50": [
+          "D50. The speci\ufb01c surface area (SSA) of the powders wa",
+          "r (SF) for cubes of 7.4. The mean particle sizes (D50) determined by PSD",
+          "(D50-laser) and SEM (D50-SEM) are shown in Table 2, for comparison. The pa"
+        ],
+        "green": [
+          "green compact. An increase in the specimen temperature ",
+          "relevance [6], was used to study the effect of green compact conductivity. Some studies",
+          "conductivity of the green pellets, as for the case of YSZ (yttria stabilize"
+        ],
+        "heating": [
+          "umina crucibles at 900 \u25e6C for 3 h, with 10 \u25e6C/min heating and cooling rates.",
+          "as used as previously reported [7], at a constant heating rate (C.H.R.)",
+          "of the produced powders (10 \u25e6C/min heating, 300 V/cm, 20 mA/mm2 current limit, 60 s holding"
+        ]
+      }
+    },
+    {
+      "filename": "KNN Senos.pdf",
+      "d50_nm": [
+        200.0,
+        445.0,
+        25.0,
+        50.0
+      ],
+      "d50_um": [],
+      "green_density_pct": [
+        94.0
+      ],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "shape specimens on samples with 65 \u0003 3% green density,",
+          "ig. 3a shows a uniaxial and isostatically pressed green pellet",
+          "sintered KNN. The green pellet (Fig. 3a) is composed of"
+        ],
+        "heating": [
+          "Joule heating were also influenced by the geometry of contact b",
+          "FLASH: (i) Joule heating, (ii) field induced defects and (iii) changes",
+          "heating. At low temperature, the amount of heat is neglig"
+        ]
+      }
+    },
+    {
+      "filename": "LLZO Huang.pdf",
+      "d50_nm": [
+        532.0
+      ],
+      "d50_um": [
+        5.0,
+        18.0,
+        3.0,
+        8.0
+      ],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "use of this green powder results in higher processing costs. "
+        ],
+        "heating": [
+          "supply, the power was disconnected, and the heating was ",
+          "heating, and thermal runaway, accordingly, the surroundin",
+          "due to Joule heating. It could be estimated according to the "
+        ]
+      }
+    },
+    {
+      "filename": "LLZO RFS Raj.pdf",
+      "d50_nm": [
+        5.0
+      ],
+      "d50_um": [
+        5.0,
+        10.0,
+        0.2,
+        5.0,
+        5.0,
+        50.0,
+        1.0,
+        1.0,
+        5.0
+      ],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "atmosphere. The specimens had a green density between 50% "
+        ],
+        "heating": [
+          "runaway from Joule heating, the power supply connected to ",
+          "step function.13 Usually the constant heating rate experiments ",
+          "stant heating rate (10\u00b0C\u00a0min\u20131) experiments were attempted "
+        ]
+      }
+    },
+    {
+      "filename": "LLZO Raj.pdf",
+      "d50_nm": [
+        1.0
+      ],
+      "d50_um": [
+        1.0
+      ],
+      "green_density_pct": [
+        92.0,
+        89.6
+      ],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "in a die to a green density of ~50%. The electrical \ufb01eld and current ",
+          "where \u03c1g is the green density. Software, built on the MATLAB platform"
+        ],
+        "heating": [
+          "The heating rate for these experiments was 1 \u00b0C min\u22121, which "
+        ]
+      }
+    },
+    {
+      "filename": "La0.6Sr0.4CoO3 Kim.pdf",
+      "d50_nm": [
+        750.0,
+        750.0,
+        34.62
+      ],
+      "d50_um": [],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "ective electrocatalyst for lithium\u2212air batteries. Green Energy",
+          "Hadermann, J.; Greenblatt, M.; Rojas, S. La1.5Sr0.5NiMn0.5Ru0.5O6"
+        ],
+        "heating": [
+          "hours to days that includes heating ramp and cooling time. By"
+        ]
+      }
+    },
+    {
+      "filename": "Li4Ti5O12 Xu.pdf",
+      "d50_nm": [
+        400.0,
+        200.0
+      ],
+      "d50_um": [],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "heating": [
+          "stage driven by the \u201cI2R\u201d Joule heating (Stage III) which is ",
+          "be much higher due to Joule heating.24\u2013 26\u00a0Therefore, sam-",
+          "study the influence of Joule heating on LTO synthesis. "
+        ]
+      }
+    },
+    {
+      "filename": "MgAl2O4 RFS Raj.pdf",
+      "d50_nm": [
+        25.0,
+        250.0,
+        250.0
+      ],
+      "d50_um": [
+        0.5,
+        1.0,
+        0.63,
+        5.0,
+        80.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        0.63,
+        0.47,
+        0.37
+      ],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [
+        10.0,
+        2.0
+      ],
+      "context": {
+        "green": [
+          "there for 1 hour to burn out the binder. The green densities",
+          "using 3\u025b = \u2113n(\u03c1g/\u03c1), where \u03c1g is the green density. Relative"
+        ],
+        "heating": [
+          "and heating the specimen at a constant heating rate until",
+          "The laboratory experiments were carried out by heating",
+          "heating rate of 10\u00b0C/min. Four levels of electrical field"
+        ]
+      }
+    },
+    {
+      "filename": "MgAl2O4 Yoshida.pdf",
+      "d50_nm": [
+        250.0,
+        200.0,
+        250.0
+      ],
+      "d50_um": [],
+      "green_density_pct": [
+        68.6
+      ],
+      "heating_rate_Cmin": [
+        3.0
+      ],
+      "context": {
+        "green": [
+          "green compact of MgAl2O4 (theoretical density of 3.58 g",
+          "many). Further the green compacts were conventionally",
+          "dog bone-shaped die, to a green density of 0.45 \u0003 0.005"
+        ],
+        "heating": [
+          "eld-assisted sintering (FAST) regime led to Joule heating",
+          "ment of current and Joule heating, resulting in the immediate densi\ufb01cation.",
+          "ing rate of 2\u00b0C/min followed by heating to the peak tem-"
+        ]
+      }
+    },
+    {
+      "filename": "MgCoNiCuZnLiO Jia.pdf",
+      "d50_nm": [],
+      "d50_um": [],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "dvantage over conventional sintering methods: the green",
+          "one-shaped specimens under a pressure of 800 MPa. Green samples were",
+          "65% for the 0.1Li and 0.3Li green bodies, respectively. The length of each of the d"
+        ],
+        "heating": [
+          "Raj, R. Joule heating during \ufb02ash-sintering. J. Eur. Ceram. Soc. 2012, "
+        ]
+      }
+    },
+    {
+      "filename": "MgO-SiO2 -Al2 O3 Sglavo.pdf",
+      "d50_nm": [
+        1000.0
+      ],
+      "d50_um": [],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "d50": [
+          " d50 = 0.6"
+        ],
+        "green": [
+          "green",
+          " green"
+        ],
+        "heating": [
+          " heating",
+          " heating",
+          "heating"
+        ]
+      }
+    },
+    {
+      "filename": "MnCo2O4 Sglavo.pdf",
+      "d50_nm": [
+        30.0
+      ],
+      "d50_um": [],
+      "green_density_pct": [
+        67.0
+      ],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          " (Green-60%,",
+          " (green:",
+          " green"
+        ],
+        "heating": [
+          " heating.",
+          " heating.2\u20134 The",
+          " heating"
+        ]
+      }
+    },
+    {
+      "filename": "NaNbO3.pdf",
+      "d50_nm": [
+        65.0
+      ],
+      "d50_um": [],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          " of dense ceramic remained similar to that of the green sample. Our work demonstrated that \ufb02ash",
+          "thickness of 0.9 mm) at 150 MPa. The green sample was kept at",
+          "quently, the green sample was suspended in a tubular furnace by"
+        ],
+        "heating": [
+          "AC voltage is applied to a sample during heating, which allows",
+          "pret the \ufb02ash sintering, including Joule heating [11], nucleation",
+          "of Frenkel pairs [12], local heating [13], and thermal runaway"
+        ]
+      }
+    },
+    {
+      "filename": "Nb1:3Ta1:3Ti1:3N Cheng.pdf",
+      "d50_nm": [],
+      "d50_um": [
+        10.0,
+        30.0,
+        45.0,
+        20.0,
+        20.0,
+        5.0,
+        20.0,
+        5.0
+      ],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "a sintering technique in which a green ceramic is densified ",
+          "re in an inert atmosphere chamber.) E, Photo of a green pellet of NbN-",
+          "the green sample compact initially (with 0.15 A initial cur"
+        ],
+        "heating": [
+          "\u00a025.2\u00a0A/mm2) and temperature, occurred without preheating. The threshold power ",
+          "Joule heating provides an estimate of the ultimate sample tempe",
+          "cooling for all the batches to minimize overheating and for-"
+        ]
+      }
+    },
+    {
+      "filename": "Ni Badimele Raj.pdf",
+      "d50_nm": [
+        44.0
+      ],
+      "d50_um": [
+        60.0,
+        40.0,
+        44.0
+      ],
+      "green_density_pct": [
+        86.0
+      ],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "The green density of these samples was 85%\u201387%.",
+          "\ud835\udf0cexp(3\ud835\udf161),8 where \ud835\udf0c\ud835\udc54is the green density, \ud835\udf0cis the final",
+          "a green density of 86% yields >99% for the final density."
+        ],
+        "heating": [
+          "Although ceramics required auxiliary heating with a",
+          "from Joule heating and (ii) The emission peak increases",
+          "during flash measured without furnace heating\u2014in"
+        ]
+      }
+    },
+    {
+      "filename": "Ni supplementary.pdf",
+      "d50_nm": [],
+      "d50_um": [],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {}
+    },
+    {
+      "filename": "Perovskite Wang.pdf",
+      "d50_nm": [
+        20.0,
+        40.0
+      ],
+      "d50_um": [],
+      "green_density_pct": [
+        87.6
+      ],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "rial. For this process, a voltage is applied to a green body which is",
+          "current \ufb02owing through the green body during the heating process.",
+          "current, Joule heating occurs in the green body, yielding a tem-"
+        ],
+        "heating": [
+          "involves electric currents to induce self-heating of a ceramic ma-",
+          "current \ufb02owing through the green body during the heating process.",
+          "current, Joule heating occurs in the green body, yielding a tem-"
+        ]
+      }
+    },
+    {
+      "filename": "Phase syncrhonicity Raj .pdf",
+      "d50_nm": [
+        25.0,
+        11.0,
+        7.0,
+        7.0,
+        10.0,
+        8.0
+      ],
+      "d50_um": [
+        0.2,
+        1.0
+      ],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "ed using the equation: \ufffd= \ufffd\ufffd\ufffd\u22123\ufffd, where \ufffd\ufffd is the green density.7 ",
+          "The green density was measured from the weight and the volu",
+          "The green density of dog-bone shape sample was measured fro"
+        ],
+        "heating": [
+          "binder burn-out at 600\u00b0C for 1 h with a heating rate of 2 \u00b0C min\u20131. ",
+          "They were pre-sintered by heating up to 900\u00b0C at 10 \u00b0C min\u20131",
+          "was done by heating the specimen up to 1500\u00b0C without applying "
+        ]
+      }
+    },
+    {
+      "filename": "Porcelain Sglavo.pdf",
+      "d50_nm": [],
+      "d50_um": [],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [
+        20.0
+      ],
+      "context": {
+        "green": [
+          "gage section was 20 mm. The bulk density of green bodies",
+          "rain and linear strain rate measured on porcelain green pellet"
+        ],
+        "heating": [
+          "former route cannot be reproduced just by a rapid heating",
+          "viscosity decreases abruptly upon heating under the applica-",
+          "Linseis L75 dilatometer was used with heating rate of"
+        ]
+      }
+    },
+    {
+      "filename": "Power Density at the Onset of Flash Sintering Raj.pdf",
+      "d50_nm": [],
+      "d50_um": [],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [
+        10.0,
+        10.0
+      ],
+      "context": {
+        "heating": [
+          "rm value of power dissipation suggests that Joule heating",
+          "is developed to test if indeed Joule heating alone can lead to",
+          "Joule heating is a necessary but not a su\ufb03cient condition for"
+        ]
+      }
+    },
+    {
+      "filename": "RFS Jalali_Bilayer.pdf",
+      "d50_nm": [
+        50.0
+      ],
+      "d50_um": [
+        40.0,
+        10.0,
+        10.0,
+        100.0
+      ],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "CTLM-1HCF4-C3). After placing the green bilayer within",
+          "micrograph of the \u201cgreen\u201d bilayer specimen where food coloring was added t"
+        ],
+        "heating": [
+          "either isothermal or constant heating rate modes); the"
+        ]
+      }
+    },
+    {
+      "filename": "Rhenium Raj 2.pdf",
+      "d50_nm": [],
+      "d50_um": [],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "green density, qg to be ~ 74 pct.",
+          "initial (green) density, q represents the time dependent",
+          "The Archimedes density of the green sample was 74 pct"
+        ],
+        "heating": [
+          " The experiments were carried out without furnace heating, within a glove box in",
+          "of current without furnace heating.[4] The hardness of",
+          "are too low for optical emission from Joule heating, and"
+        ]
+      }
+    },
+    {
+      "filename": "Rhenium Raj.pdf",
+      "d50_nm": [
+        1500.0
+      ],
+      "d50_um": [],
+      "green_density_pct": [
+        74.0
+      ],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "). Using the Archimedes method, we determined the green ",
+          "initial (green) density, \ud835\udf0c represents the time dependent density"
+        ],
+        "heating": [
+          "furnace heating, metals can be sintered at ambient conditions. Th",
+          "heating, and (ii) the emission peak's intensity increases",
+          "um and iridium at their melting points by a pulse-heating technique. "
+        ]
+      }
+    },
+    {
+      "filename": "STRO Tsur.pdf",
+      "d50_nm": [
+        400.0,
+        1000.0
+      ],
+      "d50_um": [],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "Green",
+          " of  the  porous  green  ceramics",
+          " of  green"
+        ],
+        "heating": [
+          "Joule  heating",
+          " heating",
+          " heating"
+        ]
+      }
+    },
+    {
+      "filename": "Sb2Te3 Nishino.pdf",
+      "d50_nm": [],
+      "d50_um": [],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "heating": [
+          "of a suf\ufb01ciently high Joule-heating rate, such as >10 000 K/s, relative to the therma",
+          "the mold material, can realize uniform sample heating. Based on the analysis results, the sintering of",
+          "by the rapid heating, with the thermoelectric performance of the Sb2Te"
+        ]
+      }
+    },
+    {
+      "filename": "SiC ZrO2 Wang.pdf",
+      "d50_nm": [
+        50.0,
+        230.0
+      ],
+      "d50_um": [],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          " green"
+        ],
+        "heating": [
+          " heating",
+          " heating",
+          " heating"
+        ]
+      }
+    },
+    {
+      "filename": "SiO2 coated Barium titanate Wang.pdf",
+      "d50_nm": [
+        100.0
+      ],
+      "d50_um": [
+        1.0
+      ],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "heating": [
+          "heating. The real temperature of the sample at the curren"
+        ]
+      }
+    },
+    {
+      "filename": "SiO2 glass Sglavo.pdf",
+      "d50_nm": [],
+      "d50_um": [
+        0.1
+      ],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "applied to a green ceramic specimen subjected to isothermal or const",
+          "Fig. 2 reports the dilatometric curves of the green glass samples"
+        ],
+        "heating": [
+          "heating rate treatment. Since ceramic materials are chara",
+          "heating",
+          "The power input is the energy dissipated by Joule heating (Win = V"
+        ]
+      }
+    },
+    {
+      "filename": "Sm2O3 doped CeO2 Jiang.pdf",
+      "d50_nm": [],
+      "d50_um": [
+        0.54,
+        0.36,
+        1.21
+      ],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "trical conductivity of the green bodies. The introduction of graphite into",
+          "the green body of ceramics would trigger a thermal runaway ",
+          "uniaxially pressed under 300 MPa into green pellets. The samples had"
+        ],
+        "heating": [
+          "wn in Fig. 1(b) (CS at 1450 \u00b0C for 120 min with a heating rate of",
+          "value (see Table 1). Of course, only Joule heating alone cannot explain"
+        ]
+      }
+    },
+    {
+      "filename": "SrFe12O19 Perejon.pdf",
+      "d50_nm": [],
+      "d50_um": [
+        1.0
+      ],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [
+        5.0,
+        10.0
+      ],
+      "context": {
+        "green": [
+          "green state [20]. This new methodology has been denomin",
+          "into the holes of the handles of the green-body dog-bones in order to",
+          "in a greener way, that leads to energy and time saving, whic"
+        ],
+        "heating": [
+          "heating of the vials, the experiments were carried out by",
+          "ce was heated from room temperature at a constant heating",
+          "Instruments), at a heating rate of 10 K/min under a nitrogen flow of"
+        ]
+      }
+    },
+    {
+      "filename": "SrTiO2 and KNbO3 Raj.pdf",
+      "d50_nm": [
+        150.0
+      ],
+      "d50_um": [],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "relative green density of the specimens was measured geometrical"
+        ],
+        "heating": [
+          "ese \ufb01rst experiments were carried out at constant heating rate. In"
+        ]
+      }
+    },
+    {
+      "filename": "Strontium Hexaferrite Touch Free Perez-Maqueda Raj.pdf",
+      "d50_nm": [],
+      "d50_um": [
+        1.0,
+        0.1
+      ],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "at a pressure of 35 MPa. The dimensions of the green",
+          "shown in Figure 1a. The green sample pellet, that is, the",
+          "12. Lerdprom W, Green C, Pearmain D. Contactless field enhanced"
+        ],
+        "heating": [
+          "Besides, Johnson et al.11 used flames both for heating",
+          "heating steps: first, the SrFe12O19 powder is prepared by",
+          "heating a mixture of strontium carbonate and iron oxide a"
+        ]
+      }
+    },
+    {
+      "filename": "Technique Yamamoto.pdf",
+      "d50_nm": [
+        50.0
+      ],
+      "d50_um": [
+        20.0
+      ],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "ses the steep power spike, generated when ceramic green compact is heated while an electric",
+          "\ufb01eld, is applied to densify ceramic green compact in an instant. However, there are several",
+          "In \ufb02ash sintering, a ceramic green compact is placed in a"
+        ],
+        "heating": [
+          "results in local heating.",
+          "chain action of heating, increasing electrical conductivity, and",
+          "at this initial stage serves as a heating source, and the"
+        ]
+      }
+    },
+    {
+      "filename": "TiO2 Interface Resistance Jo.pdf",
+      "d50_nm": [],
+      "d50_um": [],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "heating": [
+          "in constant heating rate experiments, the single crystals"
+        ]
+      }
+    },
+    {
+      "filename": "TiO2 Shikhar_Titania_2014.pdf",
+      "d50_nm": [
+        20.0,
+        20.0
+      ],
+      "d50_um": [],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [
+        10.0,
+        10.0,
+        10.0
+      ],
+      "context": {
+        "green": [
+          "where qg is the normalized green density. Note that as l < l0,",
+          "The green densities of the samples varied from 0.468 to",
+          "cles as the green samples were prepared by uniaxial pressing."
+        ],
+        "heating": [
+          "experiments were carried out at a constant heating rate of",
+          "density at 1000\u00b0C for 20 h.10 At a constant heating rate of",
+          "constant heating rate experiments with the \ufb01eld of 120 V/cm."
+        ]
+      }
+    },
+    {
+      "filename": "TiO2 Yadav.pdf",
+      "d50_nm": [
+        900.0,
+        850.0,
+        800.0,
+        800.0,
+        400.0,
+        400.0,
+        800.0,
+        400.0,
+        800.0,
+        800.0,
+        850.0
+      ],
+      "d50_um": [],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "heating": [
+          "heating-rate-sintering and flash-sintering. Just recently",
+          "brand new results on tungsten carbide.10 Local heating",
+          "field and heating thfurnace at a constant rate. The power"
+        ]
+      }
+    },
+    {
+      "filename": "UO2 McClellan.pdf",
+      "d50_nm": [],
+      "d50_um": [],
+      "green_density_pct": [
+        55.0,
+        55.0,
+        95.0
+      ],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "obtain a green density of 55% theoretical density (TD). The cyli",
+          "(green), unstable (red), and stable, respectively. Furth",
+          "creating a metastable (green and red) equilibrium on the leftmost"
+        ],
+        "heating": [
+          "and joule heating [21]. However, there is now a general agreement",
+          "that thermal runaway from joule heating is largely responsible for",
+          "between Joule heating and the heat losses to the environment:"
+        ]
+      }
+    },
+    {
+      "filename": "Urania McClellan.pdf",
+      "d50_nm": [],
+      "d50_um": [],
+      "green_density_pct": [
+        81.0,
+        91.0,
+        65.0,
+        58.0,
+        91.0,
+        81.0,
+        93.0,
+        91.0,
+        81.0,
+        91.0
+      ],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "integrity, resulting in green densities of 7.09 g/cm3 (65% TD), while",
+          "green densities of 5.94 g/cm3 (58% TD). The volume of t",
+          "triangles) and 1650 \u0001C (green diamonds) is shown. In Fig. 6(b) the"
+        ],
+        "heating": [
+          "heating. When the mode switches to current control, and t",
+          "that the heating is controlled by the applied current. The details",
+          " during FS for both pellets. This is due to Joule heating in"
+        ]
+      }
+    },
+    {
+      "filename": "W Raj.pdf",
+      "d50_nm": [
+        12.0
+      ],
+      "d50_um": [
+        12.0,
+        1.0,
+        12.0
+      ],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "under a Carver hydraulic press was deployed. The green",
+          "green density, \ud835\udf0c\ud835\udc54, and the time-dependent density, \ud835\udf0c, i",
+          "tion (2), using the green density to be approximately"
+        ],
+        "heating": [
+          "ing methods, ultrafast heating rate,8 and cold sintering,9",
+          "ultrafast heating rate experiments and flash sintering was",
+          "out a furnace, to assess the influence of furnace heating on"
+        ]
+      }
+    },
+    {
+      "filename": "WC 3 Sglavo.pdf",
+      "d50_nm": [
+        4.0,
+        2.0,
+        1.4,
+        4226.0,
+        4193.0,
+        4233.0,
+        26.0
+      ],
+      "d50_um": [],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "heating": [
+          "ture, ultrafast heating rates and non-equilibrium",
+          "sure according to the following heating/cooling",
+          "cycle: (i) rapid heating (200 \u0003C /min) from room"
+        ]
+      }
+    },
+    {
+      "filename": "WC Grasso.pdf",
+      "d50_nm": [
+        600.0
+      ],
+      "d50_um": [
+        0.09,
+        0.11,
+        0.09
+      ],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "heating": [
+          " the \ufb01ring process. Starting from the 1970s, high heating rates have been",
+          "with heating rates in the order of 104 K/min [11], was named F",
+          "underlying mechanisms include: preferential overheating of the grain boundaries leading"
+        ]
+      }
+    },
+    {
+      "filename": "WC Sglavo.pdf",
+      "d50_nm": [
+        240.0,
+        70.0
+      ],
+      "d50_um": [],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "tungsten carbide green bodies",
+          "resistivity of the material in the green",
+          "nated current with WC green bodies and the conditions, if existing,"
+        ],
+        "heating": [
+          "\u0001 A thermal runaway of Joule heating is",
+          "resistive heating regime, thus",
+          "ermal insulating ceramic die allows the ultrafast heating"
+        ]
+      }
+    },
+    {
+      "filename": "WC ZrB2 Mazo.pdf",
+      "d50_nm": [
+        240.0,
+        6.0,
+        1.5
+      ],
+      "d50_um": [
+        3.0,
+        3.0,
+        6.0,
+        15.0,
+        5.0
+      ],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "d50": [
+          "(D50 = 1.5\u20133 \u03bcm). Two batches of WC nano-powder contai"
+        ],
+        "green": [
+          "The green sample was compressed between the molybdenum elec",
+          "ed under the assumption that the impedance of the green body ",
+          "the initial thickness of the green pellet and its shrinkage. "
+        ],
+        "heating": [
+          "induces its very rapid heating. Said phenomenon is possible because of ",
+          " flow along the material thus inducing very rapid heating of the ",
+          "very rapid heating (in the order of \u2248103\u2013104 K/min); an evident brig"
+        ]
+      }
+    },
+    {
+      "filename": "WC paper 3 Sglavo.pdf",
+      "d50_nm": [
+        240.0
+      ],
+      "d50_um": [],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "green bodies",
+          "powerful tool for the ultrarapid consolidation of green ceramic com-",
+          "because of an initial negative dependence of the green material resistivity with tempera-"
+        ],
+        "heating": [
+          "heating rates exceeding 1000 \u0001C/s, a condition that theor",
+          "eramic body internally subjected to intense Joule heating. For",
+          "(1000e2000 A), this generating exceptional heating and sintering"
+        ]
+      }
+    },
+    {
+      "filename": "WC second paper Sglavo .pdf",
+      "d50_nm": [
+        6.0,
+        25.0
+      ],
+      "d50_um": [
+        3.0,
+        1.0,
+        30.0,
+        3.0,
+        6.0,
+        20.0,
+        15.0,
+        10.0,
+        0.5,
+        3.0,
+        0.5,
+        1.0,
+        5.0,
+        5.0,
+        0.5
+      ],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "Fig. 6(c) show colours towards the green, that corresponds to a prismatic "
+        ],
+        "heating": [
+          "for 5 min under 60 MPa uniaxial pressure, using a heating rate of ",
+          "[41] R. Raj, Joule heating during flash-sintering, J. Eur. Ceram. Soc 32 (20"
+        ]
+      }
+    },
+    {
+      "filename": "ZnO Wang.pdf",
+      "d50_nm": [
+        100.0
+      ],
+      "d50_um": [
+        1.3,
+        1.7,
+        3.1
+      ],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [
+        10.0,
+        10.0
+      ],
+      "context": {
+        "green": [
+          "To prepare the green body for \ufb02ash sintering, ZnO powder (Sigma",
+          "green density of 55\u201360%. The green pellets were loaded into a stage",
+          " orange arrows indicate stacking faults while the green"
+        ],
+        "heating": [
+          "seconds [1]. This technique combines furnace heating and an applied",
+          "the heating rate [21,29]. On the other hand, another study co",
+          "the pre-\ufb02ash temperature of 700 \u00b0C at a heating rate of 10 \u00b0C/min. A"
+        ]
+      }
+    },
+    {
+      "filename": "ZnO Zno-Bi2O3 Luo.pdf",
+      "d50_nm": [
+        210.0,
+        50.0
+      ],
+      "d50_um": [],
+      "green_density_pct": [
+        90.8
+      ],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "cInterdisciplinary School of Green Energy, Ulsan National Institute of Science & Tec",
+          "at \u0002300 MPa in a mold (1/4 inch diameter) into green spec-",
+          "Bi2O3-doped ZnO green specimens were 63.5 \u00b1 0.8% and"
+        ],
+        "heating": [
+          "may be related to (1) Joule heating at grain boundaries that",
+          "heating and defect generation (including possibly uncon-",
+          "Joule heating alone is not su\ufb03cient for accounting for the"
+        ]
+      }
+    },
+    {
+      "filename": "ZrN Cheng.pdf",
+      "d50_nm": [
+        24.0
+      ],
+      "d50_um": [
+        20.0,
+        20.0,
+        20.0,
+        1.0
+      ],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "compacted short cylindrical green sample (e.g., 0.1 g ZrN",
+          "of sample mass and, as a result, the green thickness would",
+          "tially \u223c1 mm thick green ZrN sample (\u223c0.04 g). Such an"
+        ],
+        "heating": [
+          "densify ceramic powders, even without preheating or pre-",
+          "and Joule heating (preheating might be needed to generate",
+          "the sample, leading to more Joule heating and even higher"
+        ]
+      }
+    },
+    {
+      "filename": "ZrO2-CeO2 Valdez.pdf",
+      "d50_nm": [],
+      "d50_um": [
+        74.0,
+        0.47,
+        0.95,
+        0.49,
+        1.2,
+        2.0
+      ],
+      "green_density_pct": [
+        87.0,
+        93.0,
+        86.0,
+        62.0,
+        90.0,
+        90.0,
+        77.0,
+        92.0,
+        90.0,
+        94.0,
+        94.0
+      ],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "4.0 \u00b10.2 mm long with a green density of 61 \u00b1 1% TD.",
+          "Likewise, the green pellets in this study had a 3:4 aspect"
+        ],
+        "heating": [
+          "all tested conditions the furnace heating rate was 10\u25e6C\u22c5min\u22121 and the pellets were let to c",
+          "heating caused by the electric current during RFS was",
+          "8. Raj R. Joule heating during flash-sintering. J Eur Ceram Soc."
+        ]
+      }
+    },
+    {
+      "filename": "alpha SiC Todd.pdf",
+      "d50_nm": [],
+      "d50_um": [
+        5.9,
+        0.5,
+        0.75,
+        60.0,
+        1.0,
+        5.9,
+        0.5,
+        1.8,
+        0.1,
+        5.9,
+        0.5
+      ],
+      "green_density_pct": [
+        94.0,
+        94.0
+      ],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "the green body [14] . ",
+          "rs and cold isostatically pressed at 200 MPa. The green bodies ",
+          "of the green body between the \ufb02ash sintering electrodes were: "
+        ],
+        "heating": [
+          "was attributed to the rapid heating and the formation of a liquid phase. The densest ",
+          "Flash sintering involves the heating of a powder compact whilst ",
+          "preheating specimens in a furnace and subjecting them to ele"
+        ]
+      }
+    },
+    {
+      "filename": "c-ZrO2 Raj.pdf",
+      "d50_nm": [],
+      "d50_um": [],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "heating": [
+          "by applying an electric field and then heating the furnace at a constant rate [1]. Once the flas",
+          "physics of flash sintering. Local heating at such interfaces [7,8], even melting [9,10] hav",
+          "heating at particle-particle interfaces are the genesis o"
+        ]
+      }
+    },
+    {
+      "filename": "c-ZrO2 Yoshida.pdf",
+      "d50_nm": [
+        1.0,
+        275.0,
+        450.0,
+        450.0
+      ],
+      "d50_um": [
+        0.125,
+        0.02,
+        4.7,
+        5.6
+      ],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "Flash sintering, in which ceramics green compact is densi\ufb01ed ",
+          "static pressing at 392 MPa for 10 min. The powder green ",
+          "[17] C.A. Grimley , S. Funni , C. Green , E.C. Dickey , A thermal perspective of \ufb02ash "
+        ],
+        "heating": [
+          "away through Joule heating and positively temperature- ",
+          "Joule heating, kinetic analysis indicates that the rates of \ufb02as",
+          "stics of \ufb02ash sintering: thermal runaway of Joule heating, J. Eur. Ce- "
+        ]
+      }
+    },
+    {
+      "filename": "3YSZ Naik.pdf",
+      "d50_nm": [
+        600.0,
+        100.0,
+        69.0,
+        59.0,
+        62.0,
+        10.0,
+        40.0,
+        68.0,
+        600.0,
+        100.0
+      ],
+      "d50_um": [],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "heating": [
+          "it occurs at the furnace temperature. Joule heating is a consequence of nucleation not the cause of i",
+          "heatingremainsofthegreatestinterest,13,14 althoughthetemp",
+          "erefore, occurs at the furnace temperature. Joule heating is a"
+        ]
+      }
+    },
+    {
+      "filename": "3YSZ Raj Joulse Heating.pdf",
+      "d50_nm": [],
+      "d50_um": [],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "heating": [
+          " heating",
+          " heating.",
+          " heating"
+        ]
+      }
+    },
+    {
+      "filename": "3YSZ Raj.pdf",
+      "d50_nm": [
+        60.0,
+        150.0,
+        60.0
+      ],
+      "d50_um": [],
+      "green_density_pct": [
+        50.4
+      ],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "econds at B8501C to full density, starting from a green density",
+          "green powder compacts at high temperatures. Sintering o"
+        ],
+        "heating": [
+          "ess). This \ufb01nding is explained by the local Joule heating at",
+          "local heating at grain boundaries formed at the particle\u2013partic",
+          "junctions. It appears that this local heating can unleash a run-"
+        ]
+      }
+    },
+    {
+      "filename": "Al2O3 Sglavo.pdf",
+      "d50_nm": [
+        300.0
+      ],
+      "d50_um": [],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "d50": [
+          " d50 =",
+          " (d50 ="
+        ],
+        "green": [
+          " green"
+        ],
+        "heating": [
+          " heating",
+          " heating",
+          " heating"
+        ]
+      }
+    },
+    {
+      "filename": "Flash Review Yu.pdf",
+      "d50_nm": [
+        400.0,
+        70.0,
+        15.0,
+        526.0,
+        70.0,
+        350.0,
+        60.0,
+        760.0,
+        730.0,
+        230.0,
+        30.0,
+        20.0,
+        200.0,
+        30.0,
+        100.0,
+        500.0,
+        300.0,
+        80.0,
+        100.0,
+        100.0,
+        150.0,
+        300.0,
+        320.0,
+        70.0,
+        400.0,
+        20.0,
+        20.0,
+        30.0,
+        757.0,
+        210.0,
+        210.0,
+        50.0,
+        50.0,
+        589.0,
+        671.0,
+        900.0,
+        325.0
+      ],
+      "d50_um": [
+        10.0,
+        100.0,
+        0.55,
+        0.15,
+        0.49,
+        0.97,
+        1.0,
+        0.3,
+        0.3,
+        0.33,
+        2.5,
+        1.9,
+        3.0,
+        3.0,
+        3.0,
+        0.15,
+        1.0,
+        5.0,
+        10.0,
+        1.11,
+        4.0,
+        1.0,
+        0.5,
+        12.6,
+        0.45,
+        2.0,
+        20.0,
+        2.36,
+        3.5,
+        1.17,
+        8.0,
+        10.0,
+        0.2,
+        2.4,
+        11.8,
+        1.5,
+        0.8,
+        1.5,
+        1.0,
+        10.0,
+        10.0,
+        1.2,
+        1.0,
+        0.6,
+        11.5,
+        11.5,
+        0.6,
+        50.0
+      ],
+      "green_density_pct": [
+        75.0,
+        94.0,
+        88.0,
+        95.0,
+        94.0,
+        95.0,
+        94.0
+      ],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "green",
+          "tors (green), oxygen ion conductors (blue) and insulating",
+          "2.1.1. Green sample preparation and sample"
+        ],
+        "heating": [
+          "nt sintering technique involving electrical Joule heating,",
+          "heating",
+          "tering (SPS) technique (uses Joule heating of conduc-"
+        ]
+      }
+    },
+    {
+      "filename": "MgO doped Al2O3 Raj.pdf",
+      "d50_nm": [
+        300.0,
+        2.0,
+        490.0
+      ],
+      "d50_um": [],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "at 280 MPa in a dog bone shaped die, to a green density of",
+          "The dimensions of the cold-pressed, green sample are given in",
+          "Fig. 2. Dimensions of the \u201cgreen sample\u201d in mm. The thickness of the samples"
+        ],
+        "heating": [
+          "limited by the slow moving charged species. Joule heating of the specimen during \ufb02ash sintering cannot acco",
+          "Joule heating of the specimen precipitated by the surge in powe",
+          "1. Local heating at grain boundaries: local resistance at"
+        ]
+      }
+    },
+    {
+      "filename": "Review Yu.pdf",
+      "d50_nm": [
+        400.0,
+        70.0,
+        15.0,
+        526.0,
+        70.0,
+        350.0,
+        60.0,
+        760.0,
+        730.0,
+        230.0,
+        30.0,
+        20.0,
+        200.0,
+        30.0,
+        100.0,
+        500.0,
+        300.0,
+        80.0,
+        100.0,
+        100.0,
+        150.0,
+        300.0,
+        320.0,
+        70.0,
+        400.0,
+        20.0,
+        20.0,
+        30.0,
+        757.0,
+        210.0,
+        210.0,
+        50.0,
+        50.0,
+        589.0,
+        671.0,
+        900.0,
+        325.0
+      ],
+      "d50_um": [
+        10.0,
+        100.0,
+        0.55,
+        0.15,
+        0.49,
+        0.97,
+        1.0,
+        0.3,
+        0.3,
+        0.33,
+        2.5,
+        1.9,
+        3.0,
+        3.0,
+        3.0,
+        0.15,
+        1.0,
+        5.0,
+        10.0,
+        1.11,
+        4.0,
+        1.0,
+        0.5,
+        12.6,
+        0.45,
+        2.0,
+        20.0,
+        2.36,
+        3.5,
+        1.17,
+        8.0,
+        10.0,
+        0.2,
+        2.4,
+        11.8,
+        1.5,
+        0.8,
+        1.5,
+        1.0,
+        10.0,
+        10.0,
+        1.2,
+        1.0,
+        0.6,
+        11.5,
+        11.5,
+        0.6,
+        50.0
+      ],
+      "green_density_pct": [
+        75.0,
+        94.0,
+        88.0,
+        95.0,
+        94.0,
+        95.0,
+        94.0
+      ],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "green",
+          "tors (green), oxygen ion conductors (blue) and insulating",
+          "2.1.1. Green sample preparation and sample"
+        ],
+        "heating": [
+          "nt sintering technique involving electrical Joule heating,",
+          "heating",
+          "tering (SPS) technique (uses Joule heating of conduc-"
+        ]
+      }
+    },
+    {
+      "filename": "SiC Grasso.pdf",
+      "d50_nm": [],
+      "d50_um": [],
+      "green_density_pct": [
+        82.2
+      ],
+      "heating_rate_Cmin": [
+        200.0
+      ],
+      "context": {
+        "d50": [
+          "Hillsboro,OR) and XRD (Siemens Di\ufb00raktometer-D5000;"
+        ],
+        "heating": [
+          "ing) of the samples after a su\ufb03cient preheating temperature",
+          "suggest that the FSPS heating rate was of the order of",
+          "su\ufb03cient preheating (1600\u0001C) of the material to achieve FSPS."
+        ]
+      }
+    },
+    {
+      "filename": "SiC Todd.pdf",
+      "d50_nm": [],
+      "d50_um": [],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "s) and DRS data at 1100 A (red lines) and 1170 A (green lines) for ZrB2; A) Temperature and",
+          "d lines) and FRS data of Al2O3 sintered at 410 A (green lines); A) Temperature"
+        ],
+        "heating": [
+          "with heating rates higher than 20006C/min and an energy consum",
+          "high sintering temperatures (up to ,2400uC), high heating",
+          "efficiency of this process. Therefore, the higher heating rate"
+        ]
+      }
+    },
+    {
+      "filename": "SnO2 Muccillo.pdf",
+      "d50_nm": [
+        373.0
+      ],
+      "d50_um": [],
+      "green_density_pct": [
+        44.5,
+        41.8,
+        45.2,
+        94.0
+      ],
+      "heating_rate_Cmin": [],
+      "context": {
+        "green": [
+          "SnO2 green",
+          " green",
+          " a  SnO2 green"
+        ],
+        "heating": [
+          " heating",
+          " heating",
+          " heating"
+        ]
+      }
+    },
+    {
+      "filename": "SrTiO2 Karakuscu.pdf",
+      "d50_nm": [
+        266.0,
+        520.0,
+        150.0,
+        50.0
+      ],
+      "d50_um": [],
+      "green_density_pct": [
+        50.0
+      ],
+      "heating_rate_Cmin": [
+        10.0
+      ],
+      "context": {
+        "green": [
+          "Milawaukee, WI) in water to improve the green body",
+          "lly pressed into a dog bone shape with a relative green"
+        ],
+        "heating": [
+          "electrical heating of graphite dies along with uniaxial pres-",
+          "was increased from RT to 1400\u00b0C with a heating rate of 10\u00b0",
+          "versus furnace temperature at constant heating rate of 10\u00b0C/min."
+        ]
+      }
+    },
+    {
+      "filename": "ZrO2 Benthem.pdf",
+      "d50_nm": [
+        40.0
+      ],
+      "d50_um": [],
+      "green_density_pct": [],
+      "heating_rate_Cmin": [],
+      "context": {
+        "heating": [
+          "migration [12,13], Joule heating [14,15], and self-cleaning",
+          "capable of both heating and biasing. Figure 1 shows the",
+          "serving as a resistive heating element [27,28]. The non-"
+        ]
+      }
+    }
+  ]
+}
