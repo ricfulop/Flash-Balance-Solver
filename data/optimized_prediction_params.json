@@ -1,0 +1,41 @@
+{
+  "formula": "E_crit = (C / \u221a\u03c3(T)) \u00d7 (\u03c3\u2080/10\u2074)^a\u2081 \u00d7 (Ea)^a\u2082 \u00d7 (d\u2085\u2080/500)^a\u2083 \u00d7 (T/Tm)^a\u2084",
+  "exponents": {
+    "sigma_0": 0.12007507002368079,
+    "Ea": -0.27446222698004197,
+    "d50": -0.08406633888764642,
+    "T_Tm": 0.1473019782959666
+  },
+  "family_constants": {
+    "oxide": 30,
+    "pyrochlore": 30,
+    "high_entropy_oxide": 110,
+    "nitride": 150,
+    "fluorite": 165,
+    "composite": 495,
+    "oxide_composite": 175,
+    "perovskite": 185,
+    "spinel": 345,
+    "corundum": 70,
+    "metal": 140,
+    "glass_ceramic": 310,
+    "rutile": 45,
+    "ferrite": 495,
+    "actinide-oxide": 495,
+    "carbide": 155,
+    "garnet": 350,
+    "wurtzite": 290,
+    "glass": 335
+  },
+  "reference_values": {
+    "sigma_0_ref": 10000.0,
+    "Ea_ref": 1.0,
+    "d50_ref": 500
+  },
+  "accuracy": {
+    "median_error_pct": 39.87887283343102,
+    "within_15_pct": 24,
+    "within_30_pct": 52,
+    "total_samples": 135
+  }
+}

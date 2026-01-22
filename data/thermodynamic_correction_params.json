@@ -1,0 +1,22 @@
+{
+  "description": "Optimized E_crit prediction with thermodynamic properties",
+  "formula": "E_crit = (C / \u221a\u03c3(T)) \u00d7 (T/Tm)^a \u00d7 (Eg/3.0)^b \u00d7 (Ef/4.0)^c \u00d7 (Tm/2500)^d",
+  "exponents": {
+    "a_ttm": 0.2999999999999997,
+    "b_eg": 0.1799999999999998,
+    "c_ef": 0.07999999999999985,
+    "d_tm": 0.19999999999999973
+  },
+  "reference_values": {
+    "Eg_ref": 3.0,
+    "Ef_ref": 4.0,
+    "Tm_ref": 2500
+  },
+  "accuracy": {
+    "median_error_pct": 66.13443227795389,
+    "mean_error_pct": 1421.500843633507,
+    "within_15_pct": 15,
+    "within_30_pct": 24,
+    "total_samples": 135
+  }
+}

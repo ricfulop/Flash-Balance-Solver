@@ -1,0 +1,69 @@
+{
+  "description": "Improved E_crit prediction formula with thermodynamic corrections",
+  "version": "2.0",
+  "formula": "E_crit = (C_family / \u221a\u03c3(T)) \u00d7 (\u03c3\u2080/10\u2074)^0.12 \u00d7 (Ea)^-0.27 \u00d7 (d\u2085\u2080/500)^-0.08 \u00d7 (T/Tm)^0.15",
+  "family_constants": {
+    "Fluorite": 165,
+    "Perovskite": 185,
+    "Spinel": 345,
+    "Wurtzite": 290,
+    "Rutile": 45,
+    "Metal": 140,
+    "Corundum": 70,
+    "Carbide": 155,
+    "Nitride": 150,
+    "Garnet": 350,
+    "Glass": 335,
+    "Universal": 176
+  },
+  "correction_exponents": {
+    "sigma_0": 0.12,
+    "Ea": -0.27,
+    "d50": -0.08,
+    "T_Tm": 0.15,
+    "HR": 0.05
+  },
+  "reference_values": {
+    "sigma_0_ref": 10000.0,
+    "Ea_ref": 1.0,
+    "d50_ref": 500,
+    "HR_ref": 10,
+    "Tm_ref": 2500
+  },
+  "accuracy_comparison": {
+    "baseline_formula": {
+      "description": "E = C / \u221a\u03c3(T)",
+      "median_error_pct": 58,
+      "within_15_pct": 13,
+      "within_30_pct": 25
+    },
+    "with_corrections": {
+      "description": "E = (C/\u221a\u03c3) \u00d7 corrections",
+      "median_error_pct": 40,
+      "within_15_pct": 18,
+      "within_30_pct": 39
+    },
+    "machine_learning": {
+      "description": "Random Forest with all features",
+      "median_error_pct": 31,
+      "within_15_pct": 24,
+      "within_30_pct": 49
+    },
+    "with_calibrated_lambda": {
+      "description": "Full solver with calibrated \u03bb_flash",
+      "median_error_pct": 5,
+      "within_15_pct": 90,
+      "within_30_pct": 95
+    }
+  },
+  "key_finding": "\u03bb_flash (Flash Activation Length) captures material-specific effects that cannot be predicted from general thermodynamic properties. To achieve <15% error, calibrated \u03bb_flash values are required.",
+  "feature_importance": {
+    "log_sigma_T": 0.508,
+    "Ef_eV (defect formation)": 0.11,
+    "Tm_K (melting point)": 0.074,
+    "d50_nm (particle size)": 0.07,
+    "Eg_eV (band gap)": 0.052,
+    "family": 0.044,
+    "T/Tm (homologous temp)": 0.038
+  }
+}
