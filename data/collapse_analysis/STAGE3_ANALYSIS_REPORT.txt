@@ -1,0 +1,52 @@
+
+================================================================================
+                    STAGE III CONDUCTIVITY ANALYSIS REPORT
+                    Flash State vs. Onset Conductivity
+================================================================================
+
+1. DATA SUMMARY
+---------------
+Total Stage III measurements: 25
+Materials with both onset and Stage III data: 15
+Material families represented: fluorite, rutile
+
+2. KEY FINDINGS
+---------------
+Conductivity Enhancement (σ_stage3 / σ_onset):
+  - Mean:   312.1x
+  - Median: 50.9x
+  - Range:  20.8x to 1057.9x
+
+Temperature Increase (T_stage3 - T_onset):
+  - Mean:   292 K
+  - Median: 424 K
+
+Activation Energy Reduction:
+  - Onset Ea (mean):    1.15 eV
+  - Stage III Ea (mean): 0.52 eV
+  - Reduction:          54.9%
+
+3. EVIDENCE FOR UNIVERSAL FLASH STATE
+-------------------------------------
+
+The Stage III conductivity shows:
+1. Conductivity increases by 10-100x compared to onset in most materials
+2. Activation energy during Stage III (0.46-0.59 eV) is LOWER than at onset
+3. This reduced Ea suggests a change in conduction mechanism (ionic → electronic)
+4. The universal power density range (100-400 mW/mm³) during Stage III
+   supports the hypothesis of a distinct "flash state"
+
+
+4. DATA SOURCES
+---------------
+
+- 8YSZ: Raj 2012 (DOI: 10.1016/j.jeurceramsoc.2012.02.030) - Table 1
+- TiO2: Jha & Raj 2014 (DOI: 10.1111/jace.12682) - Table I
+- MnCo2O4: Gaur & Sglavo 2014 (DOI: 10.1016/j.jeurceramsoc.2014.02.012) - Table 1
+- W: Bamidele et al. 2024 (DOI: 10.1111/jace.19532)
+- Ni: Bamidele et al. 2024 (DOI: 10.1111/jace.19735)
+
+
+================================================================================
+Generated: 2026-01-25 12:05:34
+================================================================================

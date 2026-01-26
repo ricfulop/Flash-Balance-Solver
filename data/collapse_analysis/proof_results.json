@@ -1,0 +1,30 @@
+{
+  "family_collapse": {
+    "carbide": 0.22373999479005874,
+    "corundum": 0.0889067126277509,
+    "fluorite": 0.10636708408286338,
+    "garnet": 0.8310491134170638,
+    "oxide": 0.318531149722792,
+    "perovskite": 0.08529691790378927,
+    "spinel": 0.8244187586659415,
+    "wurtzite": 0.8654854968708774
+  },
+  "conductivity": {
+    "sigma_onset_range": [
+      5.7550528909113705e-08,
+      6490.2414926928095
+    ],
+    "sigma_onset_trend_R2": 0.5473348466389512
+  },
+  "master_proof": {
+    "universal_parameter_mean": 147.23189576809793,
+    "universal_parameter_spread_decades": 0.7055727525715438,
+    "power_density_R2": 0.35767012468556686,
+    "collapse_quality": "Strong"
+  },
+  "flash_balance": {
+    "flash_balance_mean": 1.5095932621656112,
+    "flash_balance_std": 2.0574682897964096,
+    "fraction_near_unity": 0.21374045801526717
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "power_density": {
+    "power_density_collapse_R2": 0.35767012468556686,
+    "log_P_mean": 8.336003808257486,
+    "log_P_std": 1.4111455051430877,
+    "collapse_slope": -0.25492895313292285
+  },
+  "conductivity": {
+    "E_sigma_scaling_exponent": -0.1940127297004327,
+    "E_sigma_scaling_R2": 0.33928720593429507,
+    "theory_match": "Moderate"
+  },
+  "lambda_flash": {
+    "lambda_mean_um": 4.611398472046755,
+    "lambda_std_decades": 0.9594994733331789,
+    "n_materials": 134
+  },
+  "flash_number": {
+    "flash_number_mean": 4.8246162897415383e-05,
+    "flash_number_spread_decades": 2.0383367358342013,
+    "universality_quality": "Moderate"
+  },
+  "master_collapse": {
+    "master_collapse_R2": 0.20874175956091606,
+    "master_collapse_exponent": -0.501154267001771,
+    "theoretical_exponent": 2.0,
+    "exponent_deviation": 2.501154267001771
+  }
+}

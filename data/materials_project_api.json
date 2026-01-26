@@ -1,0 +1,132 @@
+{
+  "BaTiO3": {
+    "mp_id": "mp-5777",
+    "epsilon_electronic": null,
+    "epsilon_ionic": null,
+    "epsilon_total": null,
+    "born_charge_cation": null,
+    "born_charge_anion": null,
+    "band_gap": 2.2929999999999993,
+    "formation_energy": -3.492277977666666
+  },
+  "ZrO2": {
+    "mp_id": "mp-2858",
+    "epsilon_electronic": null,
+    "epsilon_ionic": null,
+    "epsilon_total": null,
+    "born_charge_cation": null,
+    "born_charge_anion": null,
+    "band_gap": 3.5322,
+    "formation_energy": -3.813617754999999
+  },
+  "TiO2": {
+    "mp_id": "mp-390",
+    "epsilon_electronic": null,
+    "epsilon_ionic": null,
+    "epsilon_total": null,
+    "born_charge_cation": null,
+    "born_charge_anion": null,
+    "band_gap": 2.0586,
+    "formation_energy": -3.5080554519444442
+  },
+  "SiC": {
+    "mp_id": "mp-1204356",
+    "epsilon_electronic": null,
+    "epsilon_ionic": null,
+    "epsilon_total": null,
+    "born_charge_cation": null,
+    "born_charge_anion": null,
+    "band_gap": 1.8389000000000002,
+    "formation_energy": -0.30594644486842204
+  },
+  "PbTiO3": {
+    "mp_id": "mp-20459",
+    "epsilon_electronic": null,
+    "epsilon_ionic": null,
+    "epsilon_total": null,
+    "born_charge_cation": null,
+    "born_charge_anion": null,
+    "band_gap": 1.812999999999999,
+    "formation_energy": -2.7305897856666643
+  },
+  "W": {
+    "mp_id": "mp-91",
+    "epsilon_electronic": null,
+    "epsilon_ionic": null,
+    "epsilon_total": null,
+    "born_charge_cation": null,
+    "born_charge_anion": null,
+    "band_gap": 0.0,
+    "formation_energy": 0.0
+  },
+  "CeO2": {
+    "mp_id": "mp-20194",
+    "epsilon_electronic": null,
+    "epsilon_ionic": null,
+    "epsilon_total": null,
+    "born_charge_cation": null,
+    "born_charge_anion": null,
+    "band_gap": 1.8647,
+    "formation_energy": -3.9271761966666663
+  },
+  "MgAl2O4": {
+    "mp_id": "mp-3536",
+    "epsilon_electronic": null,
+    "epsilon_ionic": null,
+    "epsilon_total": null,
+    "born_charge_cation": null,
+    "born_charge_anion": null,
+    "band_gap": 5.1095,
+    "formation_energy": -3.370001377142852
+  },
+  "Al2O3": {
+    "mp_id": "mp-1143",
+    "epsilon_electronic": null,
+    "epsilon_ionic": null,
+    "epsilon_total": null,
+    "born_charge_cation": null,
+    "born_charge_anion": null,
+    "band_gap": 5.853700000000001,
+    "formation_energy": -3.426551008
+  },
+  "TiN": {
+    "mp_id": "mp-492",
+    "epsilon_electronic": null,
+    "epsilon_ionic": null,
+    "epsilon_total": null,
+    "born_charge_cation": null,
+    "born_charge_anion": null,
+    "band_gap": 0.0,
+    "formation_energy": -1.9426672827083311
+  },
+  "Ni": {
+    "mp_id": "mp-23",
+    "epsilon_electronic": null,
+    "epsilon_ionic": null,
+    "epsilon_total": null,
+    "born_charge_cation": null,
+    "born_charge_anion": null,
+    "band_gap": 0.0,
+    "formation_energy": 0.0
+  },
+  "SrTiO3": {
+    "mp_id": "mp-4651",
+    "epsilon_electronic": null,
+    "epsilon_ionic": null,
+    "epsilon_total": null,
+    "born_charge_cation": null,
+    "born_charge_anion": null,
+    "band_gap": 1.848799999999999,
+    "formation_energy": -3.551662291666667
+  },
+  "SnO2": {
+    "mp_id": "mp-856",
+    "epsilon_electronic": null,
+    "epsilon_ionic": null,
+    "epsilon_total": null,
+    "born_charge_cation": null,
+    "born_charge_anion": null,
+    "band_gap": 0.6519,
+    "formation_energy": -2.107482005
+  }
+}
