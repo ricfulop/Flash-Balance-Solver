@@ -12,3 +12,12 @@ dist/
 .venv
 venv/
 ENV/
+
+# macOS
+.DS_Store
+
+# PDF papers (large binary files)
+*.pdf
+
+# Additional folders
+Additional collapse papers/
